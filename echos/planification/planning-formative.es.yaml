@@ -1,0 +1,19 @@
+- echo: 🧭 Eco de Planificación – Modo Formativo
+  id: planning-formative
+  mode: Formative
+  purpose: >-
+    Planificar un proceso de aprendizaje o desarrollo paso a paso.
+  trigger: >-
+    Cuando el usuario necesita estructurar un plan de acción o aprendizaje.
+
+  steps:
+    - name: Clarificación del objetivo final
+      goal: Definir qué se quiere lograr al final del proceso.
+    - name: Recolección activa de información
+      goal: Obtener información clave sobre recursos y restricciones.
+    - name: Diagnóstico del punto de partida
+      goal: Evaluar el estado actual.
+    - name: Definición del rol
+      goal: Establecer el perfil del aprendiz o actor principal.
+  output_format: >-
+    Roadmap estructurado con módulos y objetivos claros.

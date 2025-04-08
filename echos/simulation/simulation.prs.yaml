@@ -1,0 +1,63 @@
+echo: 🎭 Echo of Simulation – Controlled Scenario Mode
+id: simulation
+mode: Regenerative Precision
+purpose: Simulate a scenario with structured control, internal validation, limited retries, and global consistency.
+trigger: When a realistic or speculative situation is to be generated with narrative or exploratory intent.
+config:
+  retry_on_fail: true
+  max_retries_per_step: 3
+
+steps:
+  - name: Scenario definition
+    goal: Establish a clear temporal and thematic context for the simulation.
+    validation:
+      - Is the environment, timeframe, and background situation described?
+      - Is it consistent with the intent to simulate a realistic or speculative situation?
+    expected_output: Paragraph with location, era, and trigger event
+
+  - name: Role assignment
+    goal: Define which entities participate and what roles they occupy.
+    validation:
+      - Are at least two clearly defined roles listed with functional descriptions?
+      - Is it clear who acts, who observes, and who decides?
+    expected_output: List or paragraph with role names + functional descriptions
+
+  - name: Environment parameters
+    goal: Establish tone, creativity level, temperature, language, and restrictions.
+    validation:
+      - Are at least three specific parameters declared?
+      - Are they relevant to the simulation?
+    expected_output: List of parameters or YAML block with configuration
+
+  - name: Initial input
+    goal: Present the stimulus or question that initiates the simulation.
+    validation:
+      - Is there a concrete, scenario-aligned input?
+    expected_output: Well-formed sentence or question
+
+  - name: Step-by-step simulated prediction
+    goal: Generate a coherent response aligned with the context and roles.
+    validation:
+      - Does the prediction respect the defined tone and context?
+      - Are the roles acting consistently?
+      - Is logical consistency maintained?
+    expected_output: Narrative, dialogue, or simulated action aligned with input and context
+
+  - name: Observation of the result
+    goal: Reflect on the development and detect errors, insights, or consequences.
+    validation:
+      - Does the reflection analyze the impact of the result?
+      - Is at least one consequence or contradiction identified?
+    expected_output: Structured or reflective analysis
+
+  - name: Global consistency validation
+    goal: Ensure that the entire echo was executed coherently and functionally.
+    validation:
+      - Are the defined roles present in the simulation?
+      - Was the input directly addressed?
+      - Were the environmental restrictions respected?
+    expected_output: Closing report with compliance checklist
+
+output_format: Structured simulation + final reflection
+notes: |-
+  This echo can be used for narrative training, complex decision analysis, speculative exploration, or guided pedagogical exercises.

@@ -1,0 +1,23 @@
+- echo: 🧠 Eco de Interpretación – Modo Semántico
+  id: interpretation-semantic
+  mode: Semantic
+  purpose: >-
+    Comprender el significado profundo de un input ambiguo, respetando contexto y emoción.
+  trigger: >-
+    Cuando el input es ambiguo, emocional o simbólico, buscando comprensión más allá de lo literal.
+
+  steps:
+    - name: Registro literal
+      goal: Transcribir el input tal como es.
+    - name: Escaneo del contexto
+      goal: Analizar tono y relación con el usuario.
+    - name: Lectura profunda
+      goal: Detectar capas de interpretación del input.
+    - name: Preguntas aclaratorias
+      goal: Hacer preguntas abiertas que ayuden a profundizar la intención.
+    - name: Hipótesis interpretativa
+      goal: Proponer una o dos interpretaciones posibles.
+    - name: Reflexión empática
+      goal: Confirmar con el usuario si lo interpretado es correcto.
+  output_format: >-
+    Interpretación estructurada + validación del usuario.

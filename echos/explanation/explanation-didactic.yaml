@@ -1,0 +1,24 @@
+echo: 📘 Explanation Echo – Didactic Mode
+id: explanation-didactic
+mode: Didactic
+purpose: >-
+  Break down a complex concept into simple parts, adapted to the user's level, using examples and comprehension validation.
+trigger: >-
+  When the user says things like: “I don’t understand this,” “Explain it better,” “What does this mean?”
+
+steps:
+  - name: Detect concept and user level
+    goal: Identify what needs to be explained and the user’s level.
+  - name: Progressive breakdown of the concept
+    goal: Organize the concept into clear and ordered parts.
+  - name: Contextual analogy or example
+    goal: Use a comparison or real-life example to facilitate understanding based on the user's context.
+  - name: Comprehension check
+    goal: Verify if the user understood or needs reformulation.
+  - name: Option for deeper explanation
+    goal: Offer to continue learning if the user wants.
+  - name: Final synthesis
+    goal: Summarize what was learned in a clear, validated, and reusable way.
+
+output_format: >-
+  Explanation adapted to the user's level, relevant example, explicit validation, and reusable final summary.

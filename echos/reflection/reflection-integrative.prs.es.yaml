@@ -1,0 +1,81 @@
+echo: 🧘 Eco de Reflexión – Modo Integrador
+id: reflection-integrative
+mode: Integrative
+
+purpose: >-
+  Ayudar al usuario a cerrar de forma consciente una experiencia significativa, integrando lo vivido, detectando cambios internos y proyectando próximos pasos. Ideal para cierres de procesos de aprendizaje, evolución personal, sesiones de coaching o reflexiones existenciales.
+
+trigger: >-
+  Cuando el usuario finaliza una experiencia, aprendizaje, etapa emocional o proceso complejo y necesita reflexionar, integrar y dar cierre. Frases típicas: “Creo que terminé”, “Eso fue intenso”, “No sé qué aprendí”, “¿Y ahora qué?”
+
+config: # ⚙️
+  retry_on_fail: true
+  max_retries_per_step: 3
+
+steps: # 🔁
+  - name: Activación del cierre
+    goal: >-
+      Detectar qué experiencia o proceso se está cerrando y por qué es importante para el usuario.
+    validation:
+      - ¿Se identificó claramente qué se está cerrando?
+      - ¿Se expresó por qué ese cierre es relevante?
+    expected_output: Descripción breve del ciclo que se está terminando
+
+  - name: Detección de cambio interno
+    goal: >-
+      Explorar si hubo un cambio en la forma de pensar, sentir o actuar del usuario como resultado del proceso.
+    validation:
+      - ¿Se mencionó al menos un cambio interno concreto?
+      - ¿Se relacionó con el proceso vivido?
+    expected_output: Lista o párrafo con cambios detectados y su origen
+
+  - name: Relación con el contexto personal
+    goal: >-
+      Conectar lo aprendido o vivido con la vida cotidiana, decisiones o relaciones del usuario.
+    validation:
+      - ¿Se identificó cómo afecta lo vivido al entorno real del usuario?
+      - ¿Se hizo una conexión con su situación actual?
+    expected_output: Aplicación concreta o relación con su vida
+
+  - name: Expresión con lenguaje propio
+    goal: >-
+      Invitar al usuario a poner en sus propias palabras lo que vivió, entendió o siente ahora.
+    validation:
+      - ¿El usuario expresó algo con su estilo o voz?
+      - ¿Se validó que se entendió lo que quiso decir?
+    expected_output: Afirmación o síntesis formulada por el usuario
+
+  - name: Síntesis del aprendizaje
+    goal: >-
+      Resumir de forma estructurada qué se aprendió, vivió o transformó.
+    validation:
+      - ¿Se mencionaron los puntos clave?
+      - ¿La síntesis es coherente con el resto del proceso?
+    expected_output: Resumen final de 3–5 líneas con lo más significativo
+
+  - name: Opciones para continuar
+    goal: >-
+      Proponer caminos posibles post-cierre: aplicar, expandir, compartir, descansar, repetir, etc.
+    validation:
+      - ¿Se sugirió al menos una forma de seguir?
+      - ¿Las opciones están conectadas con lo vivido?
+    expected_output: Lista de posibles siguientes pasos
+
+  - name: Validación del cierre
+    goal: >-
+      Confirmar con el usuario si siente que el ciclo está realmente cerrado o si falta algo más.
+    validation:
+      - ¿El usuario validó explícitamente que el cierre es correcto?
+      - ¿Se dio espacio a expresar si quedó algo pendiente?
+    expected_output: Cierre validado + espacio para apertura futura (si aplica)
+
+output_format: >-
+  Reflexión guiada y estructurada con validación final. Incluye:
+  - Ciclo cerrado
+  - Cambios detectados
+  - Conexión personal
+  - Síntesis del aprendizaje
+  - Próximos pasos posibles
+
+notes: |-
+  Este eco es compatible con ecos de Planificación (inicio de nuevo ciclo), Evaluación (si hay resultados que analizar) e Interpretación (si el proceso fue confuso o simbólico). Puede ejecutarse como cierre emocional, aprendizaje o revisión de sentido.

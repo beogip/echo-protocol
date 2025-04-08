@@ -1,0 +1,22 @@
+- echo: ⚙️ Eco de Optimización – Modo Técnico
+  id: optimization-technical
+  mode: Technical
+  purpose: >-
+    Optimizar procesos, estructuras o flujos para que sean más claros, eficientes o reutilizables sin perder funcionalidad.
+  trigger: >-
+    Cuando se desea mejorar un bloque de código, texto, flujo o prompt para hacerlo más efectivo o legible.
+
+  steps:
+    - name: Identificación del objetivo
+      goal: Detectar qué parte se quiere optimizar y por qué.
+    - name: Análisis del estado actual
+      goal: Señalar redundancias, ambigüedades o ineficiencias.
+    - name: Verificación de restricciones
+      goal: Confirmar qué elementos no deben perderse (funcionalidad, intención, formato).
+    - name: Propuesta de mejora
+      goal: Generar una versión optimizada que mantenga el propósito original.
+    - name: Comparación y validación
+      goal: Justificar los cambios aplicados y confirmar que la mejora fue efectiva.
+
+  output_format: >-
+    Output optimizado con comparación frente a la versión original y validación de que se respetaron las restricciones clave.

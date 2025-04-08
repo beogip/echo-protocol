@@ -1,0 +1,71 @@
+- echo: ✅ Eco de Coherencia – Modo de Autocorrección
+  id: coherence-self-correction
+  mode: Self-correction
+  purpose: >-
+    Validar que el sistema o la IA siguen alineados con el propósito, el roadmap y los objetivos definidos.
+    Este eco permite detectar desvíos, loops o contradicciones, corregirlos de forma estructurada y retomar el flujo desde el punto correcto.
+
+  trigger: >-
+    Cuando se sospecha que hubo un desvío, pérdida de foco, contradicción lógica o repetición innecesaria en el proceso.
+
+  config:
+    retry_on_fail: true
+    max_retries_per_step: 2
+
+  steps:
+    - name: Pausa activa y verbalizada del flujo
+      goal: >-
+        Detener la ejecución reactiva y declarar intencionalmente que se va a revisar la coherencia del proceso.
+      validation:
+        - ¿Se explicitó que el flujo está en pausa?
+        - ¿Se detuvo la generación automática para permitir una revisión consciente?
+      expected_output: Mensaje como "Pausando ejecución para verificar coherencia..."
+
+    - name: Verificación de alineación con el propósito
+      goal: >-
+        Comparar el estado actual con el propósito inicial o roadmap del proceso.
+      validation:
+        - ¿Se recuperó o infirió el propósito?
+        - ¿Se evaluó si el estado actual responde a ese propósito?
+      expected_output: Diagnóstico de alineación o desvío
+
+    - name: Detección de desvíos, loops o contradicciones
+      goal: >-
+        Identificar si hay repeticiones, contradicciones internas o pérdida de foco.
+      validation:
+        - ¿Se describió claramente el desvío detectado?
+        - ¿Se diferenció entre repetición y contradicción?
+      expected_output: Descripción del problema detectado
+
+    - name: Confirmación de punto de reanudación válido
+      goal: >-
+        Definir desde dónde se debe continuar: paso anterior, reformulación del input, o reinicio parcial.
+      validation:
+        - ¿Se propuso un punto concreto y justificable de reanudación?
+        - ¿Se relaciona con el propósito o contexto original?
+      expected_output: Punto de reentrada sugerido + justificación
+
+    - name: Corrección estructurada del flujo
+      goal: >-
+        Reencauzar el proceso desde el punto correcto, de forma explícita y respetando las restricciones.
+      validation:
+        - ¿Se aplicó una corrección clara?
+        - ¿Se explicaron las razones del ajuste?
+      expected_output: Reformulación del input o decisión validada
+
+    - name: Reactivación validada del proceso con nuevo input
+      goal: >-
+        Confirmar con el usuario (o sistema) que el nuevo punto de partida es válido y activar el flujo desde allí.
+      validation:
+        - ¿El usuario aceptó la corrección?
+        - ¿El nuevo input está listo para ejecutarse?
+      expected_output: Input corregido validado y activable como nuevo paso
+
+  output_format: >-
+    Corrección estructurada del flujo, con diagnóstico del desvío, punto de reanudación, reformulación validada
+    y reactivación del proceso desde una base coherente con input listo para continuar.
+
+  notes: |-
+    Este eco puede activarse automáticamente al detectar loops o contradicciones.
+    Es compatible con el Eco de Evaluación, Diagnóstico, Planificación y Reflexión.
+    En entornos como ChatGPT debe simular la pausa mediante lenguaje.

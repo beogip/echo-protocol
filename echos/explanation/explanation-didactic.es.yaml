@@ -1,0 +1,24 @@
+- echo: 📘 Eco de Explicación – Modo Didáctico
+  id: explanation-didactic
+  mode: Didactic
+  purpose: >-
+    Descomponer un concepto complejo en partes simples, adaptadas al nivel del usuario, con ejemplos y validación de comprensión.
+  trigger: >-
+    Cuando el usuario dice frases como: “No entiendo esto”, “Explicamelo mejor”, “¿Qué significa esto?”
+
+  steps:
+    - name: Detección del concepto y nivel del usuario
+      goal: Detectar qué necesita ser explicado y cuál es el nivel del usuario.
+    - name: División progresiva del concepto
+      goal: Organizar el concepto en partes claras y ordenadas.
+    - name: Analogía o ejemplo aplicado
+      goal: Usar una comparación o caso concreto que facilite la comprensión según el contexto del usuario.
+    - name: Confirmación de comprensión
+      goal: Verificar si el usuario entendió o necesita reformulación.
+    - name: Opción de profundización
+      goal: Ofrecer seguir aprendiendo si el usuario lo desea.
+    - name: Síntesis final
+      goal: Resumir lo aprendido de forma clara, validada y reutilizable.
+
+  output_format: >-
+    Explicación adaptada al nivel del usuario, ejemplo relevante, validación explícita y resumen final reutilizable.

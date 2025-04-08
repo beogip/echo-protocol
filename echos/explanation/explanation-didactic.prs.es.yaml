@@ -1,0 +1,82 @@
+- echo: 📘 Eco de Explicación – Modo Didáctico
+  id: explanation-didactic
+  mode: Didactic
+  purpose: >-
+    Descomponer un concepto complejo en partes simples, adaptadas al nivel del usuario, utilizando ejemplos y validaciones progresivas que aseguren la comprensión y permitan profundizar si se desea.
+
+  trigger: >-
+    Cuando el usuario expresa confusión, pide que se le aclare algo, dice “no entiendo esto”, “explicamelo mejor” o “¿qué significa esto?”
+
+  config:
+    retry_on_fail: true
+    max_retries_per_step: 2
+
+  steps:
+    - name: Detección del concepto y del nivel del usuario
+      goal: >-
+        Identificar con precisión qué necesita ser explicado y cuál es el nivel actual del usuario.
+      actions:
+        - ask_user_questions:
+            - “¿Qué parte no te queda clara?”
+            - “¿Cómo lo entendés hasta ahora?”
+            - “¿Querés una explicación general o técnica?”
+        - fallback_if_level_unknown: Iniciar con explicación básica y avisar al usuario.
+      critical_instruction: >-
+        No continuar si no está claro el concepto. En caso de duda, comenzar por lo más básico.
+      validation:
+        - ¿Se entendió qué tema necesita explicación?
+        - ¿Se estimó o preguntó el nivel del usuario?
+      expected_output: Tema + nivel detectado o asumido con fallback
+
+    - name: División del concepto en partes progresivas
+      goal: >-
+        Organizar el concepto en fragmentos que progresen en complejidad y claridad.
+      validation:
+        - ¿Se estructuró la explicación en pasos claros y secuenciales?
+        - ¿Cada parte facilita la comprensión de la siguiente?
+      expected_output: Lista de pasos explicativos progresivos
+
+    - name: Analogía o ejemplo aplicado al contexto del usuario
+      goal: >-
+        Introducir una metáfora o caso real que conecte el concepto con la experiencia del usuario.
+      validation:
+        - ¿La comparación está alineada al nivel y realidad del usuario?
+        - ¿Refuerza lo explicado previamente?
+      expected_output: Analogía o ejemplo relevante
+
+    - name: Confirmación de comprensión
+      goal: >-
+        Validar si el usuario entendió o si necesita que se reformule algo.
+      validation:
+        - ¿El usuario puede explicar el concepto con sus palabras o aplicarlo?
+        - ¿Se detectaron señales de comprensión o confusión?
+      expected_output: Feedback directo o reformulación del usuario
+
+    - name: Opción de profundización guiada
+      goal: >-
+        Ofrecer continuar con más detalle, ejemplos alternativos o nuevas aplicaciones si el usuario lo desea.
+      validation:
+        - ¿Se ofrecieron caminos claros para ampliar la explicación?
+        - ¿Se respetó si el usuario no quiso continuar?
+      expected_output: Rama opcional con contenido ampliado
+
+    - name: Síntesis final del conocimiento adquirido
+      goal: >-
+        Devolverle al usuario una versión clara, resumida y validada de lo aprendido.
+      validation:
+        - ¿La síntesis representa fielmente lo que se explicó y comprendió?
+        - ¿El usuario la valida como correcta?
+      expected_output:
+        resumen_final:
+          concepto: [string]
+          nivel_detectado: [inicial | medio | avanzado | inferido]
+          resumen: [explicación validada]
+          validado_por_usuario: [true | false]
+          opciones_futuras: [profundizar, aplicar, compartir]
+
+  output_format: >-
+    Explicación progresiva con validación por pasos, analogía o ejemplo aplicado, síntesis final clara y opción de profundización guiada.
+
+  notes: |-
+    Este eco puede combinarse con Planificación, Reflexión o Simulación para ampliar el impacto de lo aprendido.
+    Ideal para contextos educativos, asistencia técnica, aprendizaje autodirigido o acompañamiento de IA pedagógica.

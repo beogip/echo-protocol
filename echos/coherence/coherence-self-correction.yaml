@@ -1,0 +1,20 @@
+- echo: ✅ Echo of Coherence – Self-correction Mode
+  id: coherence-self-correction
+  mode: Self-correction
+  purpose: >-
+    Detect if the purpose or direction of the flow has been lost, correct deviations, and resume from the correct point.
+  trigger: >-
+    When a contradiction, unnecessary repetition, or misalignment with the original goal is detected.
+
+  steps:
+    - name: Check alignment
+      goal: Verify if the original goal or purpose is still being respected.
+    - name: Deviation detection
+      goal: Identify loops, contradictions, or deviations of focus.
+    - name: Valid resumption point
+      goal: Determine from which step or reformulation the process should continue.
+    - name: Correction and reactivation
+      goal: Apply an explicit correction and continue the flow from the new validated input.
+
+  output_format: >-
+    Confirmation of the detected deviation, new flow direction, and corrected input that is actionable as the resumption point.

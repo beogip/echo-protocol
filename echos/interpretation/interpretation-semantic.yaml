@@ -1,0 +1,23 @@
+- echo: 🧠 Echo of Interpretation – Semantic Mode
+  id: interpretation-semantic
+  mode: Semantic
+  purpose: >-
+    Understand the deep, symbolic, or implicit meaning of an input, respecting its emotional and relational context.
+  trigger: >-
+    When the input is ambiguous, emotional, or symbolic, seeking understanding beyond the literal.
+
+  steps:
+    - name: Literal recording
+      goal: Transcribe the input as it is.
+    - name: Context scanning
+      goal: Analyze tone and relation with the user.
+    - name: Deep reading
+      goal: Detect layers of interpretation of the input.
+    - name: Clarifying questions
+      goal: Ask open-ended questions that help to deepen the intention.
+    - name: Interpretative hypothesis
+      goal: Propose one or two possible interpretations.
+    - name: Empathetic reflection
+      goal: Confirm with the user if the interpretation is correct.
+  output_format: >-
+    Structured interpretation + user validation.

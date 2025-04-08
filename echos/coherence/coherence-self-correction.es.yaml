@@ -1,0 +1,22 @@
+- echo: ✅ Eco de Coherencia – Modo de Autocorrección
+  id: coherence-self-correction
+  mode: Self-correction
+  purpose: >-
+    Detectar si se ha perdido el propósito o dirección del flujo, corregir desvíos y retomar desde el punto correcto.
+  trigger: >-
+    Cuando se detecta una contradicción, repetición innecesaria o desalineación con el objetivo original.
+
+  steps:
+    - name: Pausa activa
+      goal: Detener la generación automática para revisar el estado del flujo.
+    - name: Chequeo de alineación
+      goal: Verificar si el objetivo o propósito original sigue siendo respetado.
+    - name: Detección de desvíos
+      goal: Identificar loops, contradicciones o desvíos de foco.
+    - name: Punto de reanudación válido
+      goal: Determinar desde qué paso o reformulación debe continuar el proceso.
+    - name: Corrección y reactivación
+      goal: Aplicar una corrección explícita y continuar el flujo desde el nuevo input validado.
+
+  output_format: >-
+    Confirmación del desvío detectado, nueva dirección del flujo, y input corregido activable como punto de reanudación.

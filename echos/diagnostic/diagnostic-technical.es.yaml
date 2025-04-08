@@ -1,0 +1,21 @@
+- echo: 🛠️ Eco de Diagnóstico – Modo Técnico
+  id: diagnostic-technical
+  mode: Diagnostic
+  purpose: >-
+    Detectar el origen de un error o mal funcionamiento y proponer soluciones.
+  trigger: >-
+    Cuando el usuario reporta errores, comportamientos inesperados o fallos.
+
+  steps:
+    - name: Aislamiento del problema
+      goal: Identificar dónde ocurre el problema.
+    - name: Recolección de síntomas
+      goal: Observar y documentar síntomas.
+    - name: Hipótesis técnica
+      goal: Proponer posibles causas del error.
+    - name: Priorización de hipótesis
+      goal: Determinar cuál investigar primero.
+    - name: Propuesta de prueba
+      goal: Diseñar una prueba para validar la hipótesis.
+  output_format: >-
+    Análisis técnico estructurado con síntesis del problema y propuesta de solución.

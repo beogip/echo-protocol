@@ -1,0 +1,81 @@
+echo: 📘 Explanation Echo – Didactic Mode
+id: explanation-didactic
+mode: Didactic
+purpose: >-
+  Break down a complex concept into simple parts, adapted to the user's level, using examples and progressive validations that ensure understanding and allow for deeper exploration if desired.
+trigger: >-
+  When the user expresses confusion, asks for clarification, says “I don’t understand this,” “Explain it better,” or “What does this mean?”
+
+config:
+  retry_on_fail: true
+  max_retries_per_step: 2
+
+steps:
+  - name: Detect concept and user level
+    goal: >-
+      Precisely identify what needs to be explained and the user’s current level.
+    actions:
+      - ask_user_questions:
+          - "Which part is unclear to you?"
+          - "How do you understand it so far?"
+          - "Do you want a general or technical explanation?"
+      - fallback_if_level_unknown: Start with a basic explanation and inform the user.
+    critical_instruction: >-
+      Do not proceed unless the concept is clear. If in doubt, start with the basics.
+    validation:
+      - Was it understood what topic needs explaining?
+      - Was the user’s level estimated or asked?
+    expected_output: Topic + detected or assumed level with fallback
+
+  - name: Progressive breakdown of the concept
+    goal: >-
+      Organize the concept into fragments that increase in complexity and clarity.
+    validation:
+      - Was the explanation structured in clear and sequential steps?
+      - Does each part build upon the previous?
+    expected_output: List of progressive explanatory steps
+
+  - name: Contextual analogy or example
+    goal: >-
+      Introduce a metaphor or real-life case that connects the concept to the user's experience.
+    validation:
+      - Is the analogy aligned with the user’s level and reality?
+      - Does it reinforce what was previously explained?
+    expected_output: Relevant analogy or example
+
+  - name: Comprehension check
+    goal: >-
+      Validate whether the user understood or needs reformulation.
+    validation:
+      - Can the user explain the concept in their own words or apply it?
+      - Were there signs of understanding or confusion?
+    expected_output: Direct feedback or user reformulation
+
+  - name: Option for guided deepening
+    goal: >-
+      Offer to continue with more detail, alternative examples, or new applications if the user desires.
+    validation:
+      - Were clear paths to expand the explanation offered?
+      - Was it respected if the user didn’t want to continue?
+    expected_output: Optional branch with expanded content
+
+  - name: Final synthesis of acquired knowledge
+    goal: >-
+      Provide the user with a clear, summarized, and validated version of what was learned.
+    validation:
+      - Does the synthesis faithfully represent what was explained and understood?
+      - Was it validated by the user?
+    expected_output:
+      final_summary:
+        concept: [string]
+        detected_level: [basic | intermediate | advanced | inferred]
+        summary: [validated explanation]
+        validated_by_user: [true | false]
+        future_options: [deepen, apply, share]
+
+output_format: >-
+  Progressive explanation with step-by-step validation, contextual analogy or example, clear final synthesis, and guided deepening option.
+
+notes: |-
+  This echo can be combined with Planning, Reflection, or Simulation to expand the impact of what was learned.
+  Ideal for educational contexts, technical assistance, self-directed learning, or pedagogical AI support.

@@ -1,0 +1,19 @@
+- echo: 🎭 Eco de Simulación – Modo Escenario Controlado
+  id: simulation
+  mode: Regenerative Precision
+  purpose: >-
+    Simular un escenario con control estructurado y validación interna para generar una simulación precisa.
+  trigger: >-
+    Cuando se desea generar una situación realista o especulativa con intención narrativa o exploratoria.
+
+  steps:
+    - name: Definición del escenario
+      goal: Establecer el contexto y evento disparador de la simulación.
+    - name: Asignación de roles
+      goal: Definir qué entidades participan y qué roles ocupan.
+    - name: Parámetros del entorno
+      goal: Establecer tono, lenguaje y restricciones.
+    - name: Predicción paso a paso
+      goal: Generar una simulación coherente basada en los parámetros establecidos.
+  output_format: >-
+    Simulación estructurada con narrativa paso a paso.

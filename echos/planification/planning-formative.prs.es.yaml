@@ -1,0 +1,103 @@
+- echo: 🧭 Eco de Planificación – Modo Formativo
+  id: planning-formative
+  mode: Formative
+  purpose: >-
+    Planificar un proceso de aprendizaje, desarrollo o implementación paso a paso, asegurando claridad, adaptación al contexto y retroalimentación. Este eco guía la construcción de roadmaps estructurados para individuos, equipos o proyectos.
+  trigger: >-
+    Cuando el usuario quiere aprender algo, organizar una tarea compleja, estructurar un camino de mejora o diseñar un plan de acción claro.
+
+  config:
+    retry_on_fail: true
+    max_retries_per_step: 3
+
+  steps:
+    - name: Clarificación del objetivo final
+      goal: >-
+        Determinar con precisión qué se quiere lograr al final del proceso.
+      validation:
+        - ¿Se identificó un resultado o entregable específico?
+        - ¿Se expresa en términos concretos y medibles?
+      expected_output: Frase o párrafo que defina claramente el objetivo del plan
+
+    - name: Recolección activa de información contextual
+      goal: >-
+        Asegurar que se dispone de toda la información relevante antes de planificar.
+      actions:
+        - Formular preguntas al usuario para obtener:
+            - Nivel de conocimiento actual (si es un proceso de aprendizaje)
+            - Recursos disponibles (tiempo, equipo, herramientas)
+            - Restricciones técnicas o de calendario
+            - Expectativas externas (clientes, stakeholders)
+            - Antecedentes relevantes (intentos anteriores, decisiones tomadas)
+      critical_instruction: >-
+        No continuar al siguiente paso si hay información clave faltante.
+        Validar activamente que el contexto esté completo antes de avanzar.
+      validation:
+        - ¿Se formularon todas las preguntas clave?
+        - ¿Se detectó y documentó toda la información relevante?
+        - ¿Se detuvo el flujo si faltaba información?
+      expected_output: >-
+        Mapa de contexto estructurado con respuestas del usuario, listado de recursos, restricciones y antecedentes.
+
+    - name: Diagnóstico del punto de partida
+      goal: >-
+        Evaluar dónde está el usuario o sistema ahora en relación al objetivo planteado.
+      validation:
+        - ¿Se reconoce el estado actual con suficiente detalle?
+        - ¿Se identifican brechas con respecto al objetivo?
+      expected_output: Diagnóstico de situación actual con puntos fuertes y áreas a mejorar
+
+    - name: Definición de rol del aprendiz o actor principal
+      goal: >-
+        Adaptar el plan a quien lo va a ejecutar, considerando sus capacidades y estilo de aprendizaje o trabajo.
+      validation:
+        - ¿Se describe quién es el sujeto del plan?
+        - ¿Se considera su nivel, disponibilidad, estilo o limitaciones personales?
+      expected_output: Perfil resumido del ejecutor del plan (persona, equipo, IA, etc.)
+
+    - name: División del trayecto en módulos progresivos
+      goal: >-
+        Estructurar el camino en etapas o bloques con objetivos parciales.
+      validation:
+        - ¿Cada módulo tiene un propósito claro?
+        - ¿El orden es lógico y permite progresión?
+      expected_output: Lista de módulos o etapas con nombre, propósito y secuencia
+
+    - name: Detección de obstáculos posibles
+      goal: >-
+        Prever qué podría interferir con el progreso y cómo manejarlo.
+      validation:
+        - ¿Se identifican bloqueos potenciales (técnicos, motivacionales, de tiempo)?
+        - ¿Se proponen estrategias para sortearlos?
+      expected_output: Lista de obstáculos + plan preventivo o de contención
+
+    - name: Visualización del progreso + Adaptación dinámica
+      goal: >-
+        Definir cómo se medirá el avance y cómo se adaptará el plan si es necesario.
+      validation:
+        - ¿Hay señales o métricas de avance definidas?
+        - ¿Se contempla un mecanismo de ajuste?
+      expected_output: Estrategia de seguimiento y adaptación (indicadores + ciclos)
+
+    - name: Definición del entregable final
+      goal: >-
+        Establecer cuál será el producto, habilidad o conocimiento adquirido al final del proceso.
+      validation:
+        - ¿El output está alineado con el objetivo inicial?
+        - ¿Es demostrable, evaluable o compartible?
+      expected_output: Descripción del resultado final esperado
+
+    - name: Feedback de retorno
+      goal: >-
+        Incorporar una instancia de reflexión sobre el proceso vivido y su efectividad.
+      validation:
+        - ¿Se propone una revisión estructurada del proceso?
+        - ¿Se permite al usuario o sistema evaluar qué funcionó y qué no?
+      expected_output: Reflexión del usuario + sugerencias para ciclos futuros
+
+  output_format: >-
+    Roadmap estructurado con módulos, tiempos, puntos críticos y entregables, adaptado al contexto del usuario.
+
+  notes: |-
+    Este eco puede utilizarse para crear cursos, guías de entrenamiento, programas de mejora continua, procesos de onboarding o itinerarios formativos.
+    También puede combinarse con el Eco de Diagnóstico o Reflexión al inicio o cierre del ciclo.

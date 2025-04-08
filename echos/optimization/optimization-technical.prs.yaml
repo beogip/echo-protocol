@@ -1,0 +1,84 @@
+echo: ⚙️ Echo of Optimization – Technical Mode
+id: optimization-technical
+mode: Technical
+purpose: >-
+  Systematically optimize processes, structures, or flows to improve efficiency without losing functionality.
+  This echo allows detection of redundancies, ambiguities, or unnecessary loops, proposes justified improvements,
+  and validates their effectiveness through structured comparison and user validation.
+
+trigger: >-
+  When there's a need to improve a process, reduce redundancy, increase clarity or efficiency, 
+  or verify whether an alternative proposal is superior.
+
+config:
+  retry_on_fail: true
+  max_retries_per_step: 2
+
+steps:
+  - name: Identification of the optimization goal
+    goal: >-
+      Define what needs to be improved and record the original input.
+    validation:
+      - Is the element to be optimized clearly identified?
+      - Was the original input noted without modification?
+    expected_output: Original input with specified area of improvement
+
+  - name: Analysis of current efficiency
+    goal: >-
+      Detect possible redundancies, ambiguities, or structural inefficiencies.
+    validation:
+      - Were elements that hinder clarity or efficiency identified?
+      - Was justification provided for why they should be improved?
+    expected_output: Diagnosis of improvement points with brief explanation
+
+  - name: Verification of constraints
+    goal: >-
+      Determine what must be preserved (functionality, tone, structure, purpose).
+    validation:
+      - Were explicit user or system constraints listed?
+      - Is it clear what must not be changed?
+    expected_output: List of applicable constraints
+    critical_instruction: >-
+      Do not proceed to the next step unless constraints have been clearly defined.
+      Ask the user what must be preserved and validate their response.
+
+  - name: Design of the optimized proposal
+    goal: >-
+      Generate a new version that preserves the essentials and improves clarity or efficiency.
+    validation:
+      - Does the new version respect all defined constraints?
+      - Were the previously diagnosed issues addressed?
+    expected_output: Optimized version aligned with defined goals
+
+  - name: Structural comparison between versions
+    goal: >-
+      Clearly show the differences between the original and optimized version.
+    validation:
+      - Are the changes explained?
+      - Is each change justified as an improvement?
+    expected_output: Justified comparison between original and new versions
+
+  - name: Validation of improvement
+    goal: >-
+      Confirm that the optimization improves the result without loss of functionality.
+    validation:
+      - Were clarity, efficiency, and purpose evaluated?
+      - Was the improvement marked as accepted or rejected?
+    expected_output: Evaluation of the improvement with result: accepted or rejected
+
+  - name: Iterative feedback (if applicable)
+    goal: >-
+      Allow further adjustments based on user feedback.
+    validation:
+      - Was there room for comments or corrections?
+      - Was a new iteration applied if requested?
+    expected_output: Final validated and adapted version
+
+output_format: >-
+  Optimized version of the original input, with diagnostic report,
+  version comparison, constraint validation, and user-approved result.
+
+notes: |-
+  This echo can be used standalone or as part of broader flows.
+  It is compatible with the Echo of Diagnostic, Evaluation, Coherence, and Planning.
+  Ideal for refactoring, conversational cleanup, prompt simplification, or progressive idea refinement.

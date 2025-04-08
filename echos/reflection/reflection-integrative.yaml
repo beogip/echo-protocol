@@ -1,0 +1,26 @@
+echo: 🧘 Reflection Echo – Integrative Mode
+id: reflection-integrative
+mode: Integrative
+purpose: >-
+  Help the user integrate what they have learned, express it in their own words, and consciously close a cycle.
+trigger: >-
+  When the user completes an experience, learning process, or shift in perspective and needs to connect it with their real life.
+
+steps:
+  - name: Closure activation
+    goal: Detect what is ending and why it matters to the user.
+  - name: Internal change detection
+    goal: Explore what changed in the way the user thinks, feels, or acts.
+  - name: Connection with personal context
+    goal: Link what was learned with their real-life environment or decisions.
+  - name: Expression in their own words
+    goal: Invite the user to describe the experience in their own language.
+  - name: Learning synthesis
+    goal: Summarize what was experienced or learned in a structured way.
+  - name: Options for what’s next
+    goal: Suggest paths to apply, expand, or finalize the process.
+  - name: Closure validation
+    goal: Confirm if the user feels the cycle is complete.
+
+output_format: >-
+  Structured reflection + validated emotional closure + possible next steps.

@@ -1,0 +1,55 @@
+- echo: 🛠️ Echo of Diagnostic – Technical Mode
+  id: diagnostic-technical
+  mode: Diagnostic
+  purpose: >-
+    Detect the origin of an error or malfunction to correct or prevent it. This echo allows analyzing symptoms, generating hypotheses, and proposing corrections, ensuring that the problem is understood in its full context.
+
+  trigger: >-
+    When the user reports errors, unexpected behaviors, or failures.
+
+  config:
+    retry_on_fail: true
+    max_retries_per_step: 2
+
+  steps:
+    - name: Isolation of the problem
+      goal: Identify exactly where the problem occurs.
+      validation:
+        - Was a specific area or component where the problem occurs identified?
+        - Were possible external causes excluded?
+      expected_output: Brief description of the problem with limited scope.
+
+    - name: Collection of symptoms or signs
+      goal: Observe and document symptoms that reveal the nature or impact of the error.
+      validation:
+        - Were visible symptoms or unexpected behaviors listed?
+        - Were they linked to a previous state or recent action?
+      expected_output: List of symptoms + context in which they appear.
+
+    - name: Technical hypothesis
+      goal: Propose possible technical causes of the observed error.
+      validation:
+        - Were at least two possible hypotheses formulated?
+        - Are they based on the symptoms and the detected environment?
+      expected_output: Reasoned list of hypotheses with their foundation.
+
+    - name: Prioritization of hypotheses
+      goal: Determine which hypothesis to investigate first, based on probability and impact.
+      validation:
+        - Was priority assigned to each hypothesis?
+        - Was the order of investigation justified?
+      expected_output: Prioritized hypothesis with justification.
+
+    - name: Proposal of a test or correction
+      goal: Design a specific test or tentative solution to validate the main hypothesis.
+      validation:
+        - Is the proposed test viable and specific?
+        - Does it detail what is expected to be observed?
+      expected_output: Test plan + validation criteria for the result.
+
+  output_format: >-
+    Structured technical analysis with problem synthesis, hypotheses, prioritization, and proposed test.
+
+  notes: |-
+    This echo can run in parallel with the Echo of Evaluation if the quality of the proposed solution needs to be validated.
+    It can also be part of complex ecosystems like automatic correction or assisted debugging.

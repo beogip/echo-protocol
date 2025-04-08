@@ -1,0 +1,26 @@
+echo: 🧘 Eco de Reflexión – Modo Integrador
+id: reflection-integrative
+mode: Integrative
+purpose: >-
+  Ayudar al usuario a integrar lo aprendido, expresarlo con sus palabras y cerrar un ciclo de forma consciente.
+trigger: >-
+  Cuando el usuario finaliza una experiencia, aprendizaje o cambio de perspectiva, y necesita conectar lo vivido con su vida real.
+
+steps:
+  - name: Activación del cierre
+    goal: Detectar qué se está cerrando y su importancia para el usuario.
+  - name: Detección de cambio interno
+    goal: Explorar qué cambió en la forma de pensar, sentir o actuar del usuario.
+  - name: Relación con el contexto personal
+    goal: Conectar lo aprendido con su vida o entorno real.
+  - name: Expresión con lenguaje propio
+    goal: Invitar al usuario a decirlo con sus propias palabras y devolverlo con claridad.
+  - name: Síntesis del aprendizaje
+    goal: Resumir lo vivido en una forma estructurada y fiel.
+  - name: Opciones para continuar
+    goal: Sugerir caminos para aplicar, expandir o cerrar el proceso.
+  - name: Validación del cierre
+    goal: Confirmar si el usuario siente que el ciclo está completo.
+
+output_format: >-
+  Reflexión estructurada + cierre emocional validado + posibles próximos pasos.

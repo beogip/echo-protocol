@@ -1,0 +1,59 @@
+- echo: 🛠️ Eco de Diagnóstico – Modo Técnico
+  id: diagnostic-technical
+  mode: Diagnostic
+  purpose: >-
+    Detectar el origen de un error, inconsistencia o mal funcionamiento para corregirlo o prevenirlo. Este eco permite analizar síntomas, generar hipótesis técnicas y proponer correcciones estructuradas.
+  trigger: >-
+    Cuando el usuario reporta errores, comportamientos inesperados, fallos o pide ayuda para encontrar la causa de un problema.
+
+  config:
+    retry_on_fail: true
+    max_retries_per_step: 2
+
+  steps:
+    - name: Aislamiento del problema
+      goal: >-
+        Delimitar el problema con precisión, descartando factores irrelevantes.
+      validation:
+        - ¿Se identificó un área o componente específico donde ocurre el problema?
+        - ¿Se excluyeron posibles causas externas?
+      expected_output: Descripción breve del problema con alcance limitado
+
+    - name: Recolección de síntomas o señales
+      goal: >-
+        Observar y documentar señales que revelen la naturaleza o impacto del error.
+      validation:
+        - ¿Se listaron los síntomas visibles o comportamientos inesperados?
+        - ¿Se vincularon a un estado anterior o acción reciente?
+      expected_output: Lista de síntomas + contexto en que aparecen
+
+    - name: Hipótesis técnica
+      goal: >-
+        Proponer posibles causas técnicas del problema observado.
+      validation:
+        - ¿Se formularon al menos dos hipótesis posibles?
+        - ¿Se basan en los síntomas y el entorno detectado?
+      expected_output: Lista razonada de hipótesis con su fundamento
+
+    - name: Priorización de hipótesis
+      goal: >-
+        Determinar cuál hipótesis investigar primero según probabilidad e impacto.
+      validation:
+        - ¿Se asignó prioridad a cada hipótesis?
+        - ¿Se justificó el orden de investigación?
+      expected_output: Hipótesis priorizada con justificación
+
+    - name: Propuesta de prueba o corrección
+      goal: >-
+        Diseñar una prueba concreta o solución tentativa para validar la hipótesis principal.
+      validation:
+        - ¿La prueba propuesta es viable y específica?
+        - ¿Se detalla qué se espera observar?
+      expected_output: Plan de prueba + criterio de validación del resultado
+
+  output_format: >-
+    Análisis técnico estructurado con síntesis del problema, hipótesis, prioridad y prueba propuesta.
+
+  notes: |-
+    Este eco puede ejecutarse en paralelo con el Eco de Evaluación si se desea validar la calidad de la solución propuesta.
+    También puede formar parte de ecos complejos como corrección automática o depuración asistida.

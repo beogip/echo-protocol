@@ -1,0 +1,84 @@
+- echo: ⚙️ Eco de Optimización – Modo Técnico
+  id: optimization-technical
+  mode: Technical
+  purpose: >-
+    Optimizar procesos, estructuras o flujos de forma sistemática, mejorando eficiencia sin perder funcionalidad.
+    Este eco permite detectar redundancias, ambigüedades o loops innecesarios, proponer mejoras justificadas
+    y validar su efectividad mediante comparación estructurada y validación del usuario.
+
+  trigger: >-
+    Cuando se quiere mejorar un proceso, reducir redundancia, aumentar claridad o eficiencia, 
+    o verificar si una propuesta alternativa es superior.
+
+  config:
+    retry_on_fail: true
+    max_retries_per_step: 2
+
+  steps:
+    - name: Identificación del objetivo de optimización
+      goal: >-
+        Establecer qué se desea mejorar y anotar el input original.
+      validation:
+        - ¿Está claramente identificado el elemento a optimizar?
+        - ¿Se anotó el input original sin modificar?
+      expected_output: Texto original con foco de mejora especificado
+
+    - name: Análisis de eficiencia actual
+      goal: >-
+        Detectar posibles redundancias, ambigüedades o ineficiencias estructurales.
+      validation:
+        - ¿Se identificaron elementos que entorpecen la eficiencia o claridad?
+        - ¿Se justificó por qué pueden mejorarse?
+      expected_output: Diagnóstico de puntos mejorables con explicación breve
+
+    - name: Verificación de restricciones
+      goal: >-
+        Determinar qué debe conservarse (funcionalidad, tono, estructura, propósito).
+      validation:
+        - ¿Se listaron restricciones explícitas del usuario o del sistema?
+        - ¿Se entiende claramente qué no se puede cambiar?
+      expected_output: Lista de restricciones aplicables
+      critical_instruction: >-
+        No continuar al siguiente paso si no se definieron claramente las restricciones de la optimización.
+        Preguntar al usuario qué debe mantenerse y validar su respuesta.
+
+    - name: Diseño de propuesta optimizada
+      goal: >-
+        Generar una nueva versión que mantenga lo esencial y mejore la eficiencia o claridad.
+      validation:
+        - ¿La nueva versión respeta todas las restricciones definidas?
+        - ¿Se eliminaron o mejoraron los puntos detectados en el análisis previo?
+      expected_output: Versión optimizada, alineada a los objetivos definidos
+
+    - name: Comparación estructural entre versiones
+      goal: >-
+        Mostrar de forma clara las diferencias entre la versión original y la optimizada.
+      validation:
+        - ¿Se explican los cambios realizados?
+        - ¿Se justifica por qué cada cambio mejora el resultado?
+      expected_output: Comparación justificada entre versiones original y nueva
+
+    - name: Validación de mejora
+      goal: >-
+        Confirmar que la optimización realmente mejora el resultado sin pérdida de funcionalidad.
+      validation:
+        - ¿Se evaluó claridad, eficiencia y propósito?
+        - ¿Se marcó si la mejora fue aprobada o no?
+      expected_output: Evaluación de mejora con resultado: aceptada o rechazada
+
+    - name: Feedback iterativo (si aplica)
+      goal: >-
+        Permitir ajustes adicionales basados en la respuesta del usuario.
+      validation:
+        - ¿Se ofreció espacio para comentarios o correcciones?
+        - ¿Se aplicó una nueva iteración si el usuario lo pidió?
+      expected_output: Versión final validada y adaptada
+
+  output_format: >-
+    Versión optimizada del input original, acompañada de diagnóstico,
+    comparación entre versiones, validación de restricciones y resultado aprobado por el usuario.
+
+  notes: |-
+    Este eco puede ejecutarse solo o como parte de flujos más amplios.
+    Es compatible con los ecos de Diagnóstico, Evaluación, Coherencia y Planificación.
+    Ideal para refactorizaciones, depuración conversacional, simplificación de prompts, o mejora progresiva de ideas.

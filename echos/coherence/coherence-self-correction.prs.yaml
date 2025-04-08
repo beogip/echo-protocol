@@ -1,0 +1,62 @@
+- echo: ✅ Echo of Coherence – Self-correction Mode
+  id: coherence-self-correction
+  mode: Self-correction
+  purpose: >-
+    Detect if the purpose or direction of the flow has been lost, correct deviations, and resume from the correct point.
+    This echo helps identify and correct contradictions, unnecessary loops, or misalignments, and guides the flow back to its intended goal.
+
+  trigger: >-
+    When a contradiction, unnecessary repetition, or misalignment with the original goal is detected.
+
+  config:
+    retry_on_fail: true
+    max_retries_per_step: 2
+
+  steps:
+    - name: Check alignment with the purpose
+      goal: >-
+        Compare the current state with the original purpose or roadmap of the process.
+      validation:
+        - Was the purpose recovered or inferred?
+        - Was it evaluated if the current state responds to that purpose?
+      expected_output: Diagnosis of alignment or deviation
+
+    - name: Deviation detection, loops, or contradictions
+      goal: >-
+        Identify if there are repetitions, internal contradictions, or loss of focus.
+      validation:
+        - Was the deviation clearly described?
+        - Was the difference between repetition and contradiction identified?
+      expected_output: Description of the detected problem
+
+    - name: Valid resumption point
+      goal: >-
+        Define from which step or reformulation the process should continue.
+      validation:
+        - Was a concrete and justifiable resumption point proposed?
+        - Is it related to the original purpose or context?
+      expected_output: Suggested resumption point + justification
+
+    - name: Structured correction of the flow
+      goal: >-
+        Reengage the process from the correct point, explicitly, respecting the restrictions.
+      validation:
+        - Was a clear correction applied?
+        - Were the reasons for the adjustment explained?
+      expected_output: Reformulation of the input or validated decision
+
+    - name: Validated reactivation of the process with new input
+      goal: >-
+        Confirm with the user (or system) that the new starting point is valid and activate the flow from there.
+      validation:
+        - Did the user accept the correction?
+        - Is the new input ready for execution?
+      expected_output: Corrected input validated and actionable as the new step
+
+  output_format: >-
+    Structured correction of the flow, with diagnosis of the deviation, resumption point, validated reformulation,
+    and reactivation of the process from a coherent base with input ready to continue.
+
+  notes: |-
+    This echo can be triggered automatically when loops or contradictions are detected.
+    It is compatible with the Echo of Evaluation, Diagnosis, Planning, and Reflection.

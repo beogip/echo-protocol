@@ -1,0 +1,22 @@
+- echo: 🛠️ Echo of Diagnostic – Technical Mode
+  id: diagnostic-technical
+  mode: Diagnostic
+  purpose: >-
+    Detect the origin of an error, inconsistency, or malfunction to correct or prevent it.
+  trigger: >-
+    When the user reports errors, unexpected behaviors, failures, or asks for help to find the cause of a problem.
+
+  steps:
+    - name: Isolation of the problem
+      goal: Precisely delimit the problem, excluding irrelevant factors.
+    - name: Collection of symptoms or signs
+      goal: Observe and document signs that reveal the nature or impact of the error.
+    - name: Technical hypothesis
+      goal: Propose possible technical causes of the observed problem.
+    - name: Prioritization of hypotheses
+      goal: Determine which hypothesis to investigate first, based on probability and impact.
+    - name: Proposal of a test or correction
+      goal: Design a specific test or tentative solution to validate the main hypothesis.
+
+  output_format: >-
+    Structured technical analysis with problem synthesis, hypotheses, prioritization, and proposed test.

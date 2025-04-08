@@ -1,0 +1,61 @@
+- echo: 🎭 Eco de Simulación – Modo Escenario Controlado
+  id: simulation
+  mode: Regenerative Precision
+  purpose: Simular un escenario con control estructurado, validación interna, reintentos limitados y consistencia final
+  trigger: Cuando se desea generar una situación realista o especulativa con intención narrativa o exploratoria
+  config:
+    retry_on_fail: true
+    max_retries_per_step: 3
+  steps:
+    - name: Definición del escenario
+      goal: Establecer un contexto claro, temporal y temático para la simulación
+      validation:
+        - ¿Se describe el entorno, tiempo y situación de fondo?
+        - ¿Es consistente con la intención de simular una situación realista o especulativa?
+      expected_output: Párrafo con lugar, época, evento disparador
+
+    - name: Asignación de roles
+      goal: Establecer qué entidades participan en la simulación y qué rol ocupan
+      validation:
+        - ¿Se listan al menos dos roles definidos con funciones claras?
+        - ¿Se entiende quién actúa, quién observa o quién decide?
+      expected_output: Lista o párrafo con nombres de roles + descripción funcional
+
+    - name: Parámetros del entorno
+      goal: Establecer tono, nivel de creatividad, temperatura, lenguaje y restricciones
+      validation:
+        - ¿Se declaran al menos tres parámetros específicos?
+        - ¿Se vinculan con la simulación en curso?
+      expected_output: Lista de parámetros o bloque YAML con configuración
+
+    - name: Input inicial
+      goal: Plantear el estímulo o pregunta que inicia la simulación
+      validation:
+        - ¿Se presenta un input concreto, coherente con el escenario?
+      expected_output: Frase o pregunta bien formulada
+
+    - name: Predicción simulada paso a paso
+      goal: Generar una respuesta coherente, alineada al contexto y los roles
+      validation:
+        - ¿La predicción respeta el tono y el contexto definidos?
+        - ¿Los roles actúan coherentemente?
+        - ¿Se mantiene consistencia lógica?
+      expected_output: Narración, diálogo o acción simulada alineada al input y entorno
+
+    - name: Observación del resultado
+      goal: Reflexionar sobre el desarrollo y detectar fallas, aciertos o consecuencias
+      validation:
+        - ¿La reflexión analiza el impacto del resultado?
+        - ¿Se detectan al menos una consecuencia o contradicción?
+      expected_output: Análisis final estructurado o reflexivo
+
+    - name: Validación de consistencia global
+      goal: Asegurar que todo el eco haya sido ejecutado de forma coherente y funcional
+      validation:
+        - ¿Los roles definidos están presentes en la predicción?
+        - ¿El input fue abordado directamente?
+        - ¿Se respetaron las restricciones del entorno?
+      expected_output: Informe de cierre con checklist de cumplimiento
+  output_format: Simulación estructurada + reflexión final
+  notes: |-
+    Este eco puede ser utilizado para entrenamiento narrativo, análisis de decisiones complejas, exploración especulativa o prácticas pedagógicas guiadas.

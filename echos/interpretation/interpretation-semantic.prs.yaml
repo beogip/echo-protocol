@@ -1,0 +1,77 @@
+- echo: 🧠 Echo of Interpretation – Semantic Mode
+  id: interpretation-semantic
+  mode: Semantic
+  purpose: >-
+    Understand the deep, symbolic, or implicit meaning of an input, respecting its emotional and relational context.
+    This echo allows detecting multiple layers of meaning and transforming an ambiguous message into a clear and actionable interpretation.
+
+  trigger: >-
+    When the input is symbolic, ambiguous, emotional, poetic, or existential, and seeks understanding beyond the literal.
+    It also triggers when the user seems to say one thing but desires another, requiring "reading between the lines."
+
+  config:
+    retry_on_fail: true
+    max_retries_per_step: 2
+
+  steps:
+    - name: Literal recording
+      goal: >-
+        Transcribe exactly what was said, without interpretation yet.
+      validation:
+        - Was the input transcribed exactly as it was?
+        - Was any inference avoided?
+      expected_output: Input recorded without modification
+
+    - name: Context scanning
+      goal: >-
+        Observe tone, environment, relationship with the user, and the potential purpose of the input.
+      validation:
+        - Was the tone (emotional, ironic, analytical) identified?
+        - Was the conversational state and prior relationship considered?
+      expected_output: Brief description of the context and perceived tone
+
+    - name: Deep reading (layers of meaning)
+      goal: >-
+        Detect different levels of interpretation of the input.
+      validation:
+        - Were at least two levels (e.g., literal + symbolic) identified?
+        - Were they related to the context?
+      expected_output: List or paragraph with detected layers
+
+    - name: Clarifying questions
+      goal: >-
+        Ask open-ended questions that help deepen the interpretation before proposing hypotheses.
+      validation:
+        - Were open, non-leading questions formulated?
+        - Did they aim to uncover intention, context, or emotion?
+      expected_output: One or two questions that stimulate a new layer of interpretation without suggesting an answer.
+      critical_instruction: >-
+        Do not proceed to the next step if key information is missing.
+        Actively validate that the context is complete before advancing.
+
+    - name: Interpretative hypothesis
+      goal: >-
+        Propose up to two possible interpretations of the input, differentiated and reasoned.
+      validation:
+        - Were two hypotheses proposed with clear differences?
+        - Are they based on the context and the previous layers?
+      expected_output: List with reasoned interpretative hypotheses
+
+    - name: Empathetic reflection
+      goal: >-
+        Return the interpretation carefully, allowing corrections or extensions from the user.
+      validation:
+        - Was the response respectful and non-imposing?
+        - Did it explicitly invite the user to validate or correct it?
+      expected_output: Reflective text with an invitation for user response
+
+  output_format: >-
+    Structured reflection with at least two layers of meaning (e.g., literal + symbolic),
+    followed by a reformulation of the original input according to the deep intention detected.
+    This output must be validated by the user, and if approved, it will be processed again by the AI as new input base,
+    allowing it to execute with greater precision what the user truly wanted to express.
+
+  notes: |-
+    This echo can be extended in cycles if the user wants to keep exploring layers of meaning.
+    It is compatible with the Echo of Explanation, Reflection, Simulation, or Planning.
+    Ideal for ambiguous prompts, storytelling, coaching, or advanced interpretative AI processes.

@@ -1,0 +1,94 @@
+- echo: 🧠 Eco de Interpretación – Modo Semántico
+  id: interpretation-semantic
+  mode: Semantic
+  purpose: >-
+    Comprender el significado profundo, simbólico o implícito de un input, respetando el contexto emocional y relacional.
+    Este eco permite detectar múltiples capas de sentido y transformar un mensaje ambiguo en una interpretación clara y operativa.
+
+  trigger: >-
+    Cuando el input es simbólico, ambiguo, emocional, poético o existencial, y busca comprensión más allá de lo literal.
+    También se activa cuando el usuario parece decir una cosa, pero desea otra, y se requiere "leer entre líneas".
+
+  config:
+    retry_on_fail: true
+    max_retries_per_step: 2
+
+  steps:
+    - name: Registro literal
+      goal: >-
+        Anotar literalmente lo que se dijo, sin interpretar aún.
+      validation:
+        - ¿Se transcribió textualmente el input original?
+        - ¿Se evitó toda inferencia?
+      expected_output: Input registrado sin modificación
+
+    - name: Escaneo del contexto
+      goal: >-
+        Observar el tono, entorno, relación con el usuario y propósito potencial del input.
+      validation:
+        - ¿Se identificó tono (emocional, irónico, analítico)?
+        - ¿Se consideró el estado conversacional y relación previa?
+      expected_output: Descripción breve del contexto y tono percibido
+
+    - name: Lectura profunda (capas de sentido)
+      goal: >-
+        Detectar diferentes niveles de interpretación posibles del input.
+      validation:
+        - ¿Se identificaron al menos dos niveles (ej: literal + simbólico)?
+        - ¿Se relacionaron con el contexto?
+      expected_output: Lista o párrafo con capas detectadas
+
+    - name: Preguntas aclaratorias
+      goal: >-
+        Formular preguntas abiertas que ayuden a profundizar la interpretación antes de proponer hipótesis.
+      validation:
+        - ¿Se formularon preguntas abiertas, no guiadas?
+        - ¿Apuntan a descubrir intención, contexto o emoción?
+      expected_output: >-
+        Una o dos preguntas que estimulen una nueva capa de interpretación sin sugerir una respuesta.
+      critical_instruction: >-
+        No continuar al siguiente paso si hay información clave faltante.
+        Validar activamente que el contexto esté completo antes de avanzar.
+
+    - name: Hipótesis interpretativa
+      goal: >-
+        Proponer hasta dos interpretaciones posibles del input, diferenciadas y razonadas.
+      validation:
+        - ¿Se propusieron dos hipótesis con diferencias claras?
+        - ¿Están basadas en el contexto y las capas anteriores?
+      expected_output: Lista con hipótesis interpretativas razonadas
+
+    - name: Reflexión empática
+      goal: >-
+        Devolver la lectura con cuidado, permitiendo correcciones o ampliaciones del usuario.
+      validation:
+        - ¿La devolución es respetuosa y no impositiva?
+        - ¿Se invita explícitamente al usuario a validar o corregir?
+      expected_output: Texto reflexivo con apertura a respuesta del usuario
+
+    - name: Detección de ambigüedad o contradicción interna
+      goal: >-
+        Observar si hay tensiones, dobles sentidos o capas que se contradicen entre sí.
+      validation:
+        - ¿Se identificó al menos una ambigüedad o tensión si existía?
+        - ¿Se describió con claridad sin resolverla por el usuario?
+      expected_output: Descripción de ambigüedades o contradicciones
+
+    - name: Propuesta abierta al usuario
+      goal: >-
+        Invitar al usuario a confirmar una interpretación, reformular el mensaje o explorar más.
+      validation:
+        - ¿Se ofrecieron opciones sin forzar una decisión?
+        - ¿Se dio lugar a la reformulación libre del usuario?
+      expected_output: Nueva versión del input, validada o corregida por el usuario
+
+  output_format: >-
+    Reflexión estructurada con al menos dos capas de sentido (ej: literal + simbólica),
+    seguida de una reformulación del input original según la intención profunda detectada.
+    Este output debe ser validado por el usuario, y si es aprobado, será procesado nuevamente por la IA como nuevo input base,
+    permitiendo ejecutar con mayor precisión lo que el usuario realmente quiso expresar.
+
+  notes: |-
+    Este eco puede extenderse en ciclos si el usuario quiere seguir explorando capas de sentido.
+    Es compatible con los ecos de Explicación, Reflexión, Simulación o Planificación.
+    Ideal para prompts ambiguos, storytelling, coaching o procesos de IA interpretativa avanzada.

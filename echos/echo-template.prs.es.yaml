@@ -1,0 +1,33 @@
+- echo: Nombre del eco en español – Modo [Nombre del modo] # 📌 Nombre humano del eco
+  id: [nombre-corto-en-kebab-case] # ✅ ID único en inglés, sin espacios, formato URL-safe
+  mode: [Nombre del modo en inglés] # Ej: Evaluative, Diagnostic, Regenerative Precision, etc.
+  purpose: >- # 🎯 ¿Qué objetivo cumple este eco?
+    Describí qué tipo de proceso guía este eco, para qué sirve y en qué contexto debe activarse. 
+    Sé claro pero flexible, puede tener aplicaciones múltiples.
+  trigger: >- # ⏱ ¿Cuándo debe activarse este eco?
+    Especificá qué tipo de input, situación o lenguaje dispara este eco.
+    Puede ser una frase típica, un estado del sistema o un tipo de tarea.
+
+  config: # ⚙️ Configuraciones opcionales del eco
+    retry_on_fail: true # ¿Debe reintentar pasos si fallan? true/false
+    max_retries_per_step: 3 # Número máximo de intentos por paso si no se valida
+
+  steps: # 🔁 Lista de pasos que debe ejecutar el eco
+    - name: [Nombre del paso en español] # 🧩 Nombre corto y descriptivo del paso
+      goal: >- # 🎯 ¿Qué busca lograr este paso?
+        Explicá brevemente el propósito de este paso en el flujo.
+      validation: # ✅ Condiciones que deben cumplirse para darlo por válido
+        - ¿Qué cosas específicas deben estar presentes o cumplirse?
+        - Usá lenguaje claro tipo checklist
+      expected_output: >- # 📤 ¿Qué tipo de output se espera al final del paso?
+        Describí el formato del resultado o su contenido ideal
+
+    # ⬆️ Repetí esta estructura por cada paso necesario del eco
+
+  output_format: >- # 🧾 ¿Cómo se ve el resultado completo del eco?
+    Describí si el eco devuelve una simulación, reflexión, análisis estructurado, etc.
+    Esto ayuda a saber qué esperar como salida global.
+
+  notes: |-
+    # 📝 Cualquier aclaración adicional sobre cómo se aplica este eco
+    Explicá si es combinable con otros ecos, si tiene versiones, excepciones, o si puede ejecutarse automáticamente.

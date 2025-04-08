@@ -1,0 +1,84 @@
+echo: 🧘 Reflection Echo – Integrative Mode
+id: reflection-integrative
+mode: Integrative
+
+purpose: >-
+  Help the user consciously close a meaningful experience, integrating what was lived, detecting internal change, and projecting next steps.
+  Ideal for learning closure, personal growth, coaching sessions, or existential reflection.
+
+trigger: >-
+  When the user completes an experience, learning phase, emotional cycle, or complex process and needs to reflect, integrate, and close.
+  Typical phrases: “I think I'm done”, “That was intense”, “Not sure what I learned”, “What now?”
+
+config:
+  retry_on_fail: true
+  max_retries_per_step: 3
+
+steps:
+  - name: Closure activation
+    goal: >-
+      Detect what experience or process is ending and why it is important to the user.
+    validation:
+      - Is the closing element clearly identified?
+      - Was its relevance expressed?
+    expected_output: Brief description of the cycle being closed
+
+  - name: Internal change detection
+    goal: >-
+      Explore whether any change occurred in the way the user thinks, feels, or acts.
+    validation:
+      - Was at least one concrete internal change mentioned?
+      - Was it connected to the lived process?
+    expected_output: List or paragraph with detected changes and origin
+
+  - name: Connection with personal context
+    goal: >-
+      Relate what was learned or experienced to the user’s real-life context, decisions, or relationships.
+    validation:
+      - Was a connection to real life identified?
+      - Was it related to their current situation?
+    expected_output: Practical application or real-life insight
+
+  - name: Expression in their own words
+    goal: >-
+      Invite the user to phrase what they lived, understood, or feel now using their own language.
+    validation:
+      - Did the user express something in their own style or voice?
+      - Was it understood and acknowledged?
+    expected_output: User-formulated summary or reflection
+
+  - name: Learning synthesis
+    goal: >-
+      Summarize in a structured way what was learned, experienced, or transformed.
+    validation:
+      - Were key points identified?
+      - Is the synthesis coherent with the process?
+    expected_output: Final 3–5 line summary of key insights
+
+  - name: Options for what’s next
+    goal: >-
+      Offer options for post-closure: apply, expand, share, rest, repeat, etc.
+    validation:
+      - Was at least one path forward suggested?
+      - Are the options relevant to the process?
+    expected_output: List of possible next steps
+
+  - name: Closure validation
+    goal: >-
+      Confirm if the user feels the cycle is truly complete or if something is still missing.
+    validation:
+      - Did the user explicitly validate the closure?
+      - Was space given to acknowledge anything unfinished?
+    expected_output: Validated closure + optional space for future reopening
+
+output_format: >-
+  Guided and structured reflection with final validation. Includes:
+  - Closed cycle
+  - Detected internal changes
+  - Personal connection
+  - Learning synthesis
+  - Suggested next steps
+
+notes: |-
+  This echo can be combined with Planning (to start a new cycle), Evaluation (to assess results), or Interpretation (if the experience was symbolic or confusing).
+  It can be used for emotional closure, learning synthesis, or existential reflection.

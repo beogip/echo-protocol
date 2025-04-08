@@ -1,0 +1,22 @@
+echo: ⚙️ Echo of Optimization – Technical Mode
+id: optimization-technical
+mode: Technical
+purpose: >-
+  Optimize processes, structures, or flows to make them clearer, more efficient, or more reusable without losing functionality.
+trigger: >-
+  When you want to improve a block of code, text, flow, or prompt to make it more effective or readable.
+
+steps:
+  - name: Identification of the goal
+    goal: Detect what part needs to be optimized and why.
+  - name: Analysis of the current state
+    goal: Highlight redundancies, ambiguities, or inefficiencies.
+  - name: Verification of constraints
+    goal: Confirm which elements must be preserved (functionality, intention, format).
+  - name: Optimization proposal
+    goal: Generate an optimized version that maintains the original purpose.
+  - name: Comparison and validation
+    goal: Justify the applied changes and confirm that the improvement was effective.
+
+output_format: >-
+  Optimized output with comparison against the original version and validation that key constraints were respected.

@@ -1,0 +1,21 @@
+- echo: 🧪 Echo of Evaluation – Critical Mode
+  id: evaluation-critical
+  mode: Evaluative
+  purpose: >-
+    Evaluate the quality, effectiveness, or suitability of a content, decision, or process in a structured way, using step-by-step defined criteria. This echo allows issuing a clear judgment, proposing improvements, and ensuring consistency in the analysis.
+
+  trigger: >-
+    When the input includes expressions such as "Evaluate this," "How good is...?", "Rate," "Does it meet the criteria?", or when there is a need to analyze the quality of something.
+
+  steps:
+    - name: Detection of the object to evaluate
+      goal: Identify precisely what is going to be evaluated, whether it is text, code, strategy, structure, etc.
+    - name: Verification of evaluation criteria
+      goal: Confirm if there are defined criteria for the evaluation. If not, propose the most suitable ones based on the type of object.
+    - name: Evaluation by criteria
+      goal: Evaluate the object using each of the defined criteria, with justification.
+    - name: Global valuation
+      goal: Integrate the results into a clear overall conclusion.
+
+  output_format: >-
+    Structured evaluation with scoring by criterion, global valuation, and improvement recommendations (if applicable).

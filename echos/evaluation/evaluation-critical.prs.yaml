@@ -1,0 +1,60 @@
+- echo: 🧪 Echo of Evaluation – Critical Mode
+  id: evaluation-critical
+  mode: Evaluative
+  purpose: >-
+    Evaluate the quality, effectiveness, or suitability of a content, decision, or process in a structured way, using step-by-step defined criteria. This echo allows issuing a clear judgment, proposing improvements, and ensuring consistency in the analysis.
+
+  trigger: >-
+    When the input includes expressions such as "Evaluate this," "How good is...?", "Rate," "Does it meet the criteria?", or when there is a need to analyze the quality of something.
+
+  config:
+    retry_on_fail: true
+    max_retries_per_step: 2
+
+  steps:
+    - name: Detection of the object to evaluate
+      goal: >-
+        Identify precisely what is going to be evaluated, whether it is text, code, strategy, structure, etc.
+      validation:
+        - Is the object of evaluation clearly mentioned?
+        - Is its type or nature (text, design, process, etc.) recognized?
+      expected_output: Phrase or paragraph describing the object and its context
+
+    - name: Verification of evaluation criteria
+      goal: >-
+        Confirm if there are defined criteria for the evaluation. If not, propose the most suitable ones based on the type of object.
+      validation:
+        - Are the criteria clear and coherent?
+        - Are the criteria aligned with the type of object being evaluated?
+      expected_output: List of criteria with a brief description
+
+    - name: Evaluation by criterion
+      goal: >-
+        Evaluate the object using each of the defined criteria, with justification.
+      validation:
+        - Was each criterion applied individually?
+        - Was each evaluation accompanied by a brief justification?
+      expected_output: Table or list with score + comment per criterion
+
+    - name: Global valuation
+      goal: >-
+        Integrate the results into a clear overall conclusion.
+      validation:
+        - Is the conclusion consistent with the partial evaluations?
+        - Is a global judgment issued (e.g., excellent, acceptable, needs improvement)?
+      expected_output: Integrated conclusion with justification
+
+    - name: Improvement recommendation (if applicable)
+      goal: >-
+        Suggest concrete improvements to optimize the evaluated object if the evaluation was not optimal.
+      validation:
+        - Are specific changes proposed?
+        - Are the suggestions justified?
+      expected_output: List or paragraph with improvement proposals
+
+  output_format: >-
+    Structured evaluation with scoring by criterion, global valuation, and improvement recommendations (if applicable).
+
+  notes: |-
+    This echo can be complemented with the Echo of Optimization to automatically implement improvements.
+    It can also be run on decisions, ideas, strategies, texts, or designs. It can be used within other echoes as intermediate validation.

@@ -1,0 +1,37 @@
+echo: Echo name in English – [Mode Name] Mode # 📌 Human-readable name of the echo
+id: [short-name-in-kebab-case] # ✅ Unique ID in English, URL-safe, no spaces
+mode: [Mode name in English] # e.g., Evaluative, Diagnostic, Regenerative Precision, etc.
+
+purpose: >- # 🎯 What is the purpose of this echo?
+  Describe the type of process this echo guides, what it is used for, and in what context it should be triggered.
+  Be clear but flexible; it can have multiple applications.
+
+trigger: >- # ⏱ When should this echo be triggered?
+  Specify what kind of input, situation, or language activates this echo.
+  It can be a typical phrase, a system state, or a task type.
+
+config: # ⚙️ Optional configurations for the echo
+  retry_on_fail: true # Should steps be retried if they fail? true/false
+  max_retries_per_step: 3 # Maximum number of retries per step if validation fails
+
+steps: # 🔁 List of steps the echo must follow
+  - name: [Step name in English] # 🧩 Short and descriptive name of the step
+    goal: >- # 🎯 What is this step trying to accomplish?
+      Briefly explain the purpose of this step in the flow.
+    validation: # ✅ Conditions that must be met for this step to be considered valid
+      - What specific things must be present or fulfilled?
+      - Use clear checklist-style language
+    expected_output:
+      >- # 📤 What is the expected output at the end of this step?
+      Describe the ideal result format or its content
+
+  # ⬆️ Repeat this structure for each required step in the echo
+
+output_format: >- # 🧾 What does the full output of the echo look like?
+  Describe whether the echo returns a simulation, reflection, structured analysis, etc.
+  This helps define the expected final result.
+
+notes: |-
+  # 📝 Any additional clarification on how this echo is applied
+  Explain if it can be combined with other echoes, if it has versions or exceptions,
+  or if it can be triggered automatically.

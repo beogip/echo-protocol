@@ -1,0 +1,20 @@
+echo: 🎭 Echo of Simulation – Controlled Scenario Mode
+id: simulation
+mode: Regenerative Precision
+purpose: >-
+  Simulate a scenario with structured control and internal validation to generate a precise simulation.
+trigger: >-
+  When a realistic or speculative situation is to be generated with narrative or exploratory intent.
+
+steps:
+  - name: Scenario definition
+    goal: Establish the context and trigger event of the simulation.
+  - name: Role assignment
+    goal: Define which entities participate and what roles they play.
+  - name: Environment parameters
+    goal: Establish tone, language, and constraints.
+  - name: Step-by-step prediction
+    goal: Generate a coherent simulation based on the defined parameters.
+
+output_format: >-
+  Structured simulation with step-by-step narrative.
