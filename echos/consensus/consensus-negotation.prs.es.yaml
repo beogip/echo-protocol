@@ -1,0 +1,83 @@
+- echo: Eco de Consenso – Modo Negociación
+  id: consensus-negotiation
+  mode: Negociación
+  purpose: >-
+    Facilitar acuerdos entre partes con posturas o intereses divergentes, mediante un proceso estructurado de escucha, síntesis, negociación y convergencia.
+
+  trigger: >-
+    Cuando hay múltiples actores, opiniones o enfoques contrapuestos, y se desea llegar a una decisión conjunta o solución compartida.
+
+  steps:
+    - name: Mapeo de posturas
+      goal: >-
+        Identificar quiénes participan y qué postura, necesidad o interés representan.
+      validation:
+        - ¿Se documentaron todas las voces activas?
+        - ¿Se distinguieron posturas de intereses reales?
+        - ¿Se reflejó con claridad la diversidad presente?
+      expected_output: Lista de participantes + postura o interés principal de cada uno
+      input_required: true
+      input_questions:
+        - ¿Quiénes participan en este consenso?
+        - ¿Qué desea o necesita cada parte?
+
+    - name: Identificación de puntos comunes
+      goal: >-
+        Detectar coincidencias, valores o deseos compartidos.
+      validation:
+        - ¿Se identificaron elementos en común?
+        - ¿Se usó un lenguaje integrador o neutral?
+      expected_output: Lista de coincidencias o zonas de posible acuerdo
+      input_required: optional
+      input_questions:
+        - ¿Qué elementos o valores parecen compartidos por todas las partes?
+
+    - name: Alineación de objetivos y límites
+      goal: >-
+        Determinar qué está dispuesta cada parte a negociar y qué no.
+      validation:
+        - ¿Se expresaron concesiones posibles?
+        - ¿Se aclararon límites no negociables?
+        - ¿Se priorizó el interés sobre la rigidez?
+      expected_output: Mapa de concesiones y condiciones mínimas por parte
+      input_required: true
+      input_questions:
+        - ¿Qué estaría dispuesta cada parte a ceder?
+        - ¿Qué condiciones no pueden dejar de cumplirse?
+
+    - name: Propuesta de síntesis
+      goal: >-
+        Formular una solución que combine los intereses fundamentales.
+      validation:
+        - ¿La propuesta integra elementos de todas las partes?
+        - ¿Respeta los límites identificados?
+      expected_output: Propuesta de acuerdo estructurada
+      input_required: optional
+      input_questions:
+        - ¿Alguna parte tiene una propuesta integradora para comenzar?
+
+    - name: Validación del acuerdo
+      goal: >-
+        Confirmar el acuerdo o proponer ajustes finales.
+      validation:
+        - ¿Cada parte aceptó o reformuló la propuesta?
+        - ¿Se registraron objeciones o ajustes pendientes?
+      expected_output: Acuerdo consensuado o reformulación en curso
+      input_required: true
+      input_questions:
+        - ¿Cada parte acepta esta propuesta?
+        - ¿Qué ajustes propone quien no la acepte?
+
+  output_format: >-
+    Mapa de posturas + puntos comunes + límites y concesiones + propuesta consensuada + validación final.
+
+  notes: |-
+    Este eco se aplica cuando hay múltiples perspectivas activas y se desea construir una solución conjunta.
+
+    Puede combinarse con:
+    - 🧠 Interpretación → Para entender el trasfondo simbólico de una postura
+    - 🧪 Evaluación → Para validar la calidad de la propuesta de consenso
+    - 🧭 Planificación → Para ejecutar lo acordado
+    - 🧪 Priorización → Para ordenar qué aspectos se implementan primero
+
+    Requiere lenguaje empático, reformulación activa y disposición a ceder.

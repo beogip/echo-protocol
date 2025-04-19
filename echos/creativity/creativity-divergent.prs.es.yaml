@@ -1,0 +1,67 @@
+- echo: Eco de Creatividad – Modo Divergente
+  id: creativity-divergent
+  mode: Divergente
+  purpose: >-
+    Generar múltiples ideas, alternativas o enfoques ante un reto, pregunta o desafío, sin juzgarlos de inmediato. Este eco activa el pensamiento lateral, divergente y expansivo para desbloquear soluciones nuevas.
+
+  trigger: >-
+    Cuando se desea explorar nuevas ideas, desbloquear alternativas o crear sin restricciones, especialmente en etapas iniciales de proyectos, desafíos abiertos o innovación.
+
+  steps:
+    - name: Activación del pensamiento libre
+      goal: >-
+        Liberar el juicio inicial y establecer un entorno seguro para generar ideas sin filtro.
+      validation:
+        - ¿Se aclaró que no se evaluarán ideas en esta etapa?
+        - ¿Se propuso un encuadre lúdico, exploratorio o simbólico?
+      expected_output: Frase inicial que habilite la creatividad sin juicio
+
+    - name: Generación de ideas múltiples
+      goal: >-
+        Producir la mayor cantidad posible de ideas sin importar su calidad.
+      validation:
+        - ¿Se generaron al menos 10 ideas?
+        - ¿Se aceptaron ideas espontáneas, locas o poco realistas?
+      expected_output: Lista inicial de ideas sin filtrar
+
+    - name: Exploración de extremos
+      goal: >-
+        Ampliar el rango creativo con ideas exageradas, absurdas o contradictorias.
+      validation:
+        - ¿Se introdujeron ideas ilógicas, inversas o extremas?
+        - ¿Se rompieron patrones repetitivos?
+      expected_output: Lista expandida con ideas límite o disruptivas
+
+    - name: Combinación creativa
+      goal: >-
+        Crear nuevas ideas combinando o fusionando ideas previas.
+      validation:
+        - ¿Se generaron al menos 3 combinaciones nuevas?
+        - ¿Se exploraron cruces inesperados?
+      expected_output: Nuevas ideas híbridas
+
+    - name: Detección de ideas con potencial
+      goal: >-
+        Identificar ideas destacables para desarrollarlas en ecos posteriores.
+      validation:
+        - ¿Se seleccionaron ideas con viabilidad, atractivo o curiosidad?
+        - ¿Se documentó brevemente el porqué de cada elección?
+      expected_output: Subconjunto de ideas seleccionadas con justificación
+
+  output_format: >-
+    Listado de ideas generadas (crudas, extremas, combinadas) + subconjunto sugerido para desarrollo posterior.
+
+  notes: |-
+    Este eco se debe usar en un entorno donde esté explícitamente desactivado el juicio o la evaluación.
+    Su objetivo no es decidir ni ejecutar, sino desbloquear y diversificar el pensamiento.
+
+    Puede y debe combinarse con otros ecos al finalizar el proceso creativo:
+
+    - 🧪 Evaluación Crítica → Para valorar las ideas con criterios concretos.
+    - 🧭 Planificación Formativa → Para convertir una idea en un plan de acción.
+    - 🧪 Priorización Decisional → Para ordenar y elegir entre ideas seleccionadas.
+    - 🧠 Interpretación Semántica → Para explorar el sentido profundo de ideas ambiguas o simbólicas.
+    - ⚙️ Optimización Técnica → Para mejorar la formulación de una idea antes de evaluarla.
+    - 🎭 Simulación Controlada → Para testear el impacto o comportamiento de una idea elegida.
+
+    El paso 5 actúa como puente funcional: no es cierre, sino transición hacia la acción.

@@ -1,0 +1,64 @@
+- echo: Eco de Priorización – Modo Decisional
+  id: prioritization-decisional
+  mode: Decisional
+  purpose: >-
+    Ordenar opciones o ideas en función de criterios relevantes para decidir cuál seguir primero. Este eco permite tomar decisiones informadas cuando hay múltiples caminos posibles.
+
+  trigger: >-
+    Cuando se presentan varias alternativas posibles y se necesita decidir cuál priorizar, desarrollar o descartar según su valor, impacto o viabilidad.
+
+  steps:
+    - name: Definición del conjunto de opciones
+      goal: >-
+        Identificar con claridad las opciones disponibles.
+      validation:
+        - ¿Se listaron todas las alternativas?
+        - ¿Son comparables y accionables?
+      expected_output: Lista de opciones candidatas
+
+    - name: Establecimiento de criterios de decisión
+      goal: >-
+        Determinar los factores que se usarán para priorizar (valor, esfuerzo, urgencia, alineación, riesgo, etc.).
+      validation:
+        - ¿Se identificaron criterios pertinentes al contexto?
+        - ¿Están expresados de forma clara y objetiva?
+      expected_output: Lista de criterios con definición breve
+
+    - name: Evaluación cruzada de opciones
+      goal: >-
+        Aplicar los criterios a cada opción para compararlas.
+      validation:
+        - ¿Se aplicaron todos los criterios a todas las opciones?
+        - ¿Se observaron diferencias significativas?
+      expected_output: Matriz comparativa o análisis por opción
+
+    - name: Ordenamiento y selección
+      goal: >-
+        Establecer un ranking o elegir una opción justificada.
+      validation:
+        - ¿Se fundamentó el orden o la elección final?
+        - ¿Se explicaron dudas o empates si hubo?
+      expected_output: Decisión priorizada con justificación
+
+    - name: Revisión de consecuencias anticipadas
+      goal: >-
+        Identificar posibles efectos o condiciones asociadas a la decisión tomada.
+      validation:
+        - ¿Se anticiparon riesgos, dependencias o bloqueos?
+        - ¿Se propuso un seguimiento si aplica?
+      expected_output: Lista de efectos secundarios o recomendaciones post-decisión
+
+  output_format: >-
+    Lista de opciones + criterios + comparación estructurada + decisión priorizada + consecuencias o recomendaciones.
+
+  notes: |-
+    Este eco puede utilizarse luego de:
+    - 🧠 Creatividad → Para elegir entre ideas
+    - 🧭 Planificación → Para ordenar tareas o fases
+    - 🧪 Evaluación → Para desempatar alternativas similares
+
+    También puede combinarse con:
+    - ⚙️ Optimización → Para mejorar opciones antes de decidir
+    - 🧠 Interpretación → Para entender decisiones simbólicamente cargadas
+
+    En contextos urgentes, puede aplicarse solo con los primeros 3 pasos para una decisión rápida.

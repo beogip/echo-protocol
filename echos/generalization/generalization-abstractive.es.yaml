@@ -1,0 +1,35 @@
+- echo: Eco de Generalización – Modo Abstractivo
+  id: generalization-abstractive
+  mode: Abstractivo
+  purpose: >-
+    Extraer aprendizajes y principios generales desde un caso concreto para aplicarlos en otros contextos.
+  trigger: >-
+    Cuando se quiere transformar una experiencia o análisis en conocimiento transferible.
+
+  steps:
+    - name: Caso base
+      goal: Describir la situación específica que se va a usar como base
+
+    - name: Factores clave
+      goal: Detectar qué fue determinante en ese caso
+
+    - name: Principio general
+      goal: Formular la enseñanza o regla que se puede generalizar
+
+    - name: Aplicaciones posibles
+      goal: Explorar dónde más podría aplicarse esa enseñanza
+
+    - name: Síntesis transferible
+      goal: Redactar el principio de forma clara y reutilizable
+
+  output_format: Caso + principio extraído + usos sugeridos + síntesis reutilizable
+
+  notes: |-
+    Este eco permite convertir experiencias en aprendizajes aplicables a otros contextos.
+
+    Puede combinararse con:
+    - 🧘 Reflexión → Para detectar aprendizajes antes de generalizar
+    - 🧪 Evaluación → Para validar si lo aprendido es útil en otras situaciones
+    - ⚙️ Optimización → Para mejorar la formulación del principio
+
+    Útil en formación, diseño, docencia, feedback o cuando se quiere sistematizar una lección aprendida.

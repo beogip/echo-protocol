@@ -1,0 +1,25 @@
+- echo: Eco de Metaevaluación – Modo Auditoría Cognitiva
+  id: metaevaluation-audit
+  mode: Auditoría Cognitiva
+  purpose: >-
+    Revisar si una evaluación anterior fue válida, detectando sesgos, fallas o criterios mal aplicados.
+  trigger: >-
+    Cuando se quiere auditar un juicio pasado para verificar su calidad o aprender a evaluar mejor.
+
+  steps:
+    - name: Selección de evaluación
+      goal: Elegir qué evaluación se quiere revisar
+
+    - name: Reconstrucción de criterios
+      goal: Identificar los criterios usados y si fueron explícitos o asumidos
+
+    - name: Verificación de pertinencia
+      goal: Analizar si los criterios fueron adecuados y coherentes
+
+    - name: Detección de sesgos
+      goal: Identificar errores, omisiones o distorsiones en el juicio
+
+    - name: Juicio final y aprendizajes
+      goal: Concluir si la evaluación fue válida y proponer mejoras
+
+  output_format: Evaluación revisada + calidad del juicio + recomendaciones futuras

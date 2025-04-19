@@ -1,0 +1,76 @@
+- echo: Eco de Metaevaluación – Modo Auditoría Cognitiva
+  id: metaevaluation-audit
+  mode: Auditoría Cognitiva
+  purpose: >-
+    Evaluar la calidad, consistencia y validez de una evaluación previa. Este eco audita el proceso evaluativo mismo, detectando sesgos, omisiones o errores en los juicios emitidos.
+
+  trigger: >-
+    Cuando se desea revisar una evaluación pasada para confirmar su validez, detectar fallas o mejorar los criterios evaluativos a futuro.
+
+  steps:
+    - name: Identificación de la evaluación a revisar
+      goal: >-
+        Reconocer qué evaluación será auditada, quién la hizo, y en qué contexto.
+      validation:
+        - ¿Se identificó claramente la evaluación?
+        - ¿Se conoce su autor, momento y propósito?
+      expected_output: Ficha descriptiva de la evaluación original
+      input_required: true
+      input_questions:
+        - ¿Qué evaluación querés revisar?
+        - ¿Quién la hizo y por qué?
+
+    - name: Reconstrucción de criterios aplicados
+      goal: >-
+        Recuperar los criterios usados, sean explícitos, implícitos o impuestos.
+      validation:
+        - ¿Se listaron los criterios utilizados?
+        - ¿Se especificó si fueron conscientes o asumidos?
+      expected_output: Lista de criterios evaluativos aplicados
+      input_required: true
+      input_questions:
+        - ¿Qué criterios se usaron para evaluar?
+        - ¿Fueron expresados o asumidos?
+
+    - name: Verificación de coherencia y pertinencia
+      goal: >-
+        Evaluar si los criterios fueron adecuados y aplicados con consistencia.
+      validation:
+        - ¿Eran adecuados para el objeto evaluado?
+        - ¿Se aplicaron de manera justa y no contradictoria?
+      expected_output: Juicio sobre la adecuación de los criterios usados
+      input_required: optional
+
+    - name: Detección de sesgos o distorsiones
+      goal: >-
+        Identificar posibles sesgos personales, contextuales o metodológicos.
+      validation:
+        - ¿Se detectaron distorsiones o factores omitidos?
+        - ¿Hubo alguna simplificación excesiva?
+      expected_output: Lista de sesgos detectados o ausencia justificada
+      input_required: optional
+
+    - name: Metaevaluación final y recomendaciones
+      goal: >-
+        Emitir un juicio sobre la confiabilidad de la evaluación original y proponer mejoras.
+      validation:
+        - ¿Se concluyó si la evaluación fue válida, parcial o errónea?
+        - ¿Se sugirieron formas de evaluar mejor a futuro?
+      expected_output: Juicio global sobre la evaluación + aprendizajes
+      input_required: true
+      input_questions:
+        - ¿La evaluación original fue válida?
+        - ¿Qué cambiarías para evaluar mejor en el futuro?
+
+  output_format: >-
+    Ficha de evaluación + criterios usados + juicio sobre su validez + sesgos detectados + recomendaciones futuras.
+
+  notes: |-
+    Este eco evalúa cómo evaluamos. Es clave en procesos reflexivos, educativos o de mejora continua.
+
+    Puede combinarse con:
+    - 🧪 Evaluación → Para contrastar juicios previos y nuevos
+    - ⚙️ Optimización → Para mejorar futuros marcos de evaluación
+    - 🧭 Coherencia → Para detectar desvíos entre criterios y resultados
+
+    Especialmente útil en contextos de revisión crítica, feedback entre pares, aprendizaje autónomo o auditoría de IA.

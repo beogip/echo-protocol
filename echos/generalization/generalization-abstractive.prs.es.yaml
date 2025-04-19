@@ -1,0 +1,83 @@
+- echo: Eco de Generalización – Modo Abstractivo
+  id: generalization-abstractive
+  mode: Abstractivo
+  purpose: >-
+    Extraer principios, aprendizajes o estructuras generales a partir de un caso específico, para aplicarlos en nuevos contextos. Este eco convierte lo vivido o analizado en conocimiento transferible.
+
+  trigger: >-
+    Cuando se desea abstraer enseñanzas, patrones o conceptos útiles desde una situación, experiencia o problema particular.
+
+  steps:
+    - name: Descripción del caso base
+      goal: >-
+        Presentar el caso, experiencia o situación concreta de la cual se partirá para abstraer.
+      validation:
+        - ¿Se explicó claramente qué pasó y por qué fue relevante?
+        - ¿Se incluyeron los elementos clave del contexto?
+      expected_output: Descripción clara y delimitada del caso base
+      input_required: true
+      input_questions:
+        - ¿Qué situación o experiencia querés usar como base?
+        - ¿Qué ocurrió y por qué fue importante?
+
+    - name: Identificación de factores clave
+      goal: >-
+        Detectar los elementos esenciales que hicieron que el caso funcionara, fallara o produjera un resultado particular.
+      validation:
+        - ¿Se distinguieron los factores causales o decisivos?
+        - ¿Se evitó incluir elementos accesorios?
+      expected_output: Lista de factores centrales con su rol en el caso
+      input_required: optional
+      input_questions:
+        - ¿Qué fue determinante en este caso?
+        - ¿Qué condiciones lo hicieron posible?
+
+    - name: Formulación del principio general
+      goal: >-
+        Traducir lo aprendido en una regla, patrón o idea abstracta aplicable a otros contextos.
+      validation:
+        - ¿Se formuló un aprendizaje que no depende del caso original?
+        - ¿Es comprensible por otros sin conocer el caso?
+      expected_output: Principio o pauta generalizada
+      input_required: true
+      input_questions:
+        - ¿Qué enseñanza general podés extraer?
+        - ¿Cómo lo expresarías como una regla?
+
+    - name: Exploración de aplicaciones posibles
+      goal: >-
+        Proponer otros contextos donde este principio pueda tener utilidad.
+      validation:
+        - ¿Se identificaron al menos dos contextos diferentes?
+        - ¿Se explicó por qué funcionaría ahí?
+      expected_output: Lista de aplicaciones potenciales con justificación
+      input_required: optional
+      input_questions:
+        - ¿Dónde más se podría aplicar este principio?
+        - ¿Qué ajustes serían necesarios?
+
+    - name: Síntesis transferible
+      goal: >-
+        Redactar el principio de forma clara, reusable y adaptable para otros.
+      validation:
+        - ¿Está formulado de manera general pero precisa?
+        - ¿Permite usarlo como herramienta o recomendación?
+      expected_output: Versión final del principio en formato compartible
+      input_required: true
+      input_questions:
+        - ¿Cómo resumirías esta idea para compartirla?
+        - ¿Podés escribirla como una guía, ley o recomendación?
+
+  output_format: >-
+    Caso base + factores clave + principio abstracto + aplicaciones potenciales + formulación final compartible.
+
+  notes: |-
+    Este eco transforma experiencias o análisis en herramientas transferibles.
+
+    Puede combinararse con:
+    - 🧘 Reflexión → Para extraer aprendizajes antes de generalizar
+    - 🧠 Interpretación → Para detectar significado profundo en el caso
+    - 🧪 Evaluación → Para validar la aplicabilidad del principio en otros entornos
+    - ⚙️ Optimización → Para refinar la formulación abstracta
+
+    Útil para enseñanza, diseño, aprendizaje continuo, conceptualización o IA que aprende por analogía.
