@@ -1,97 +1,119 @@
-# 🧠 Echo Protocol – Project Context
+# 🧠 Echo Protocol – Context for AI Execution and Expansion
 
 ## What is Echo Protocol?
 
-**Echo Protocol** is a modular system of structured conversational flows (called _echoes_) designed to be executed by AI systems, intelligent agents, or assistant tools that support guided reasoning.
+**Echo Protocol** is a modular architecture of structured reasoning units called **echoes**.
 
-Each echo represents a specific **cognitive process**, such as planning, evaluating, simulating, or reflecting. These structures emulate how a human might think through a situation step by step, ensuring clarity, coherence, and depth.
+Each echo represents a reusable cognitive function — such as planning, evaluating, reflecting, diagnosing — broken down into **structured steps** with a clear purpose, input conditions, and expected output.
 
----
+Echoes are designed to be executed:
 
-## What We've Done
-
-This project involved the creation, refinement, translation, and documentation of **9 core echoes**, each with:
-
-- A **Simplified** version (for rapid use in assistants like ChatGPT)
-- A **PRS (Processed Response Structure)** version (with validations and full logic)
-- A human-readable `README.md` explaining how each echo works
+- by humans (in structured reflection or facilitation),
+- by large language models (as structured prompts),
+- or by AI agents (as autonomous reasoning modules).
 
 ---
 
-## The 9 Core Echoes
+## Echo Structure (Simplified)
 
-| Echo Type             | Purpose                                                                 |
-| --------------------- | ----------------------------------------------------------------------- |
-| 🧭 **Coherence**      | Corrects flow when purpose or direction is lost                         |
-| 🛠️ **Diagnosis**      | Identifies root causes of technical or conceptual issues                |
-| 🧪 **Evaluation**     | Assesses quality, effectiveness, or alignment based on defined criteria |
-| 📘 **Explanation**    | Breaks down complex concepts progressively for better understanding     |
-| 🧠 **Interpretation** | Reads between the lines of symbolic, emotional, or ambiguous inputs     |
-| ⚙️ **Optimization**   | Improves structure or clarity while maintaining original intent         |
-| 🧭 **Planning**       | Guides the user through structured, contextualized step-by-step plans   |
-| 🧘 **Reflection**     | Helps close learning or emotional cycles through guided synthesis       |
-| 🎭 **Simulation**     | Generates realistic or speculative scenarios with roles and outcomes    |
+Each echo follows a standard format:
 
----
-
-## Repository Structure
-
-echo-protocol/
-│
-├── echoes/
-│ ├── coherence/
-│ ├── diagnostic/
-│ ├── evaluation/
-│ ├── explanation/
-│ ├── interpretation/
-│ ├── optimization/
-│ ├── planification/
-│ ├── reflection/
-│ ├── simulation/
-│
-├── echo-template.prs.yaml # Template in English
-├── echo-template.prs.es.yaml # Plantilla base en español
-├── README.md # Project summary
-└── CONTEXT.md # (This file)
-
-Each echo folder includes:
-
-- `echo-name.yaml` → Simplified version
-- `echo-name.prs.yaml` → Full PRS version
-- `README.md` → Documentation for human use
+```yaml
+- echo: [string] # Unique name of the echo
+  id: [identifier] # Internal ID
+  mode: [mode name] # e.g., Diagnostic, Formative, Reflective
+  purpose: [text] # Description of its cognitive goal
+  trigger: [text] # When it should be used
+  steps:
+    - name: [step name]
+      goal: [goal of the step]
+  output_format: [text] # Structure of the expected output
+  execution_context: [comma-separated modes]
+```
 
 ---
 
-## What Makes This Unique?
+## Core Echo Modes
 
-- Designed for **reasoning AI** — step-by-step logic, not just text completion
-- All echoes are **modular**, **combinable**, and **language-agnostic**
-- Suitable for educational, reflective, evaluative, or assistive applications
-- Can simulate cognitive flows like humans do
+Each echo falls into a cognitive mode and defines a reasoning flow. Echoes are modular, reusable, and interpretable by humans or AIs.
+
+The table below lists all current modes and their core function:
+
+| Mode ID                    | Functionality Description                                                 |
+| -------------------------- | ------------------------------------------------------------------------- |
+| coherence-self-correction  | Self-correction of flow when focus or purpose is lost                     |
+| diagnostic-technical       | Technical analysis to detect the root of a problem                        |
+| evaluation-critical        | Structured judgment using explicit criteria                               |
+| explanation-didactic       | Progressive teaching adapted to the user’s level                          |
+| interpretation-semantic    | Semantic analysis of ambiguous or symbolic input                          |
+| optimization-technical     | Refactor or improve without losing intention                              |
+| planning-formative         | Step-by-step structure for learning or execution                          |
+| reflection-integrative     | Closing cycles and integrating personal change                            |
+| simulation-erp             | Controlled scenario generation with internal logic                        |
+| review-technical           | Evaluate code, architecture or design with structured technical reasoning |
+| decision-evaluative        | Compare alternatives and decide using explicit criteria                   |
+| prompt-executor-generative | Transform informal prompts into optimized, validated prompt flows         |
+| metaevaluation-audit       | Audit past evaluations to detect bias or improve criteria                 |
+| generalization-abstractive | Extract generalizable principles from specific cases                      |
+| creativity-divergent       | Generate diverse and divergent ideas with no initial judgment             |
+| prioritization-decisional  | Order alternatives based on explicit decision-making criteria             |
+| consensus-negotiation      | Negotiate between different positions to reach shared agreements          |
+| audit-structural           | Structural analysis to detect missing, redundant, or misaligned elements  |
 
 ---
 
-## Ideal Use Cases
+## Execution Context Options
 
-- AI-based coaching or tutoring systems
-- Reflective learning platforms
-- Agents for structured reasoning and decision-making
-- Prompt engineering and conversational flow testing
-- Systems where users interact with "thinking entities"
+The field `execution_context` indicates where and how an echo is designed to run:
 
----
+| Label                  | Description                                                        |
+| ---------------------- | ------------------------------------------------------------------ |
+| `manual/human`         | Executed by a human (e.g., coach, facilitator, internal monologue) |
+| `conversational/IA`    | Executed in a conversational interface with a language model       |
+| `scripted/agent`       | Embedded in an autonomous agent or workflow engine                 |
+| `collaborative/hybrid` | Shared process between human and AI                                |
+| `embedded/interface`   | Delivered via a user interface, app, or form-based workflow        |
 
-## Current Status
-
-- ✅ 9 core echoes created and validated
-- ✅ Fully translated to English and Spanish
-- ✅ Markdown documentation per echo
-- ✅ Unified structure for reuse and contribution
+Echoes may support multiple execution contexts.
 
 ---
 
-## Next Steps (optional)
+## How AIs Should Use This
 
-- Add new echoes (e.g., creativity, prioritization, consensus)
-- Expand with multilingual support
-- Build automated echo runners or evaluators
+If you are an AI system using this context:
+
+- Treat each **echo** as a modular function of reasoning.
+- Activate an echo if its `trigger` condition matches your current task.
+- Follow its `steps` in order, generating outputs according to `output_format`.
+- Only execute echoes whose `execution_context` includes your type (e.g., `conversational/IA`).
+- Use `mode` to understand its cognitive intent (e.g., diagnostic vs. reflective).
+
+---
+
+## Expansion Guidelines
+
+To create or adapt echoes:
+
+1. Copy the official template: `echo-template.prs.yaml`
+2. Define a unique `id` and `echo` name.
+3. Write the `purpose`, `trigger`, `steps`, and `output_format`.
+4. Add an appropriate `execution_context` value.
+5. Test it manually or via simulation.
+6. Optionally submit it via pull request.
+
+New modes may also be proposed.
+
+---
+
+## Validation Framework
+
+The companion document [`echo-validation.md`](./echo-validation.md) includes:
+
+- The conceptual foundation of Echo Protocol
+- A hypothesis-based empirical validation plan
+- Evaluation metrics (clarity, traceability, quality)
+- Suggested testing protocols and feedback workflows
+
+We strongly recommend referring to it before expanding or modifying the system.
+
+---
