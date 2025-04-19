@@ -1,4 +1,4 @@
-- echo: Eco de Priorización – Modo Decisional
+- echo: 🔢 Eco de Priorización – Modo Decisional
   id: prioritization-decisional
   mode: Decisional
   purpose: >-
@@ -53,7 +53,7 @@
 
   notes: |-
     Este eco puede utilizarse luego de:
-    - 🧠 Creatividad → Para elegir entre ideas
+    - 🌟 Creatividad → Para elegir entre ideas
     - 🧭 Planificación → Para ordenar tareas o fases
     - 🧪 Evaluación → Para desempatar alternativas similares
 

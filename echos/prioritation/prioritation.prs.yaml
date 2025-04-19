@@ -1,0 +1,65 @@
+echo: 🔢 Echo of Prioritization – Decisional Mode
+id: prioritization-decisional
+mode: Decisional
+purpose: >-
+  Rank options or ideas based on relevant criteria to decide which one to pursue first.
+  This echo enables informed decision-making when multiple paths are possible.
+
+trigger: >-
+  When multiple alternatives are available and it’s necessary to decide which to prioritize, develop, or discard based on value, impact, or feasibility.
+
+steps:
+  - name: Definition of the option set
+    goal: >-
+      Clearly identify the available options.
+    validation:
+      - Were all alternatives listed?
+      - Are they comparable and actionable?
+    expected_output: Candidate options list
+
+  - name: Establishment of decision criteria
+    goal: >-
+      Define the factors to be used for prioritization (e.g., value, effort, urgency, alignment, risk).
+    validation:
+      - Were context-relevant criteria identified?
+      - Are they clearly and objectively stated?
+    expected_output: List of criteria with brief definitions
+
+  - name: Cross-evaluation of options
+    goal: >-
+      Apply the criteria to each option for comparison.
+    validation:
+      - Were all criteria applied to all options?
+      - Were significant differences observed?
+    expected_output: Comparative matrix or per-option analysis
+
+  - name: Ranking and selection
+    goal: >-
+      Establish a ranked list or justify the final selection.
+    validation:
+      - Was the final order or selection properly justified?
+      - Were ties or doubts clearly addressed?
+    expected_output: Prioritized decision with justification
+
+  - name: Review of anticipated consequences
+    goal: >-
+      Identify potential effects or conditions related to the selected decision.
+    validation:
+      - Were risks, dependencies, or blockers anticipated?
+      - Was follow-up proposed if applicable?
+    expected_output: List of side effects or post-decision recommendations
+
+output_format: >-
+  Options list + criteria + structured comparison + prioritized decision + consequences or recommendations
+
+notes: |-
+  This echo can be used after:
+  - 🌟 Creativity – To choose among ideas
+  - 🧭 Planning – To order tasks or phases
+  - 🧪 Evaluation – To break ties between similar alternatives
+
+  It can also be combined with:
+  - ⚙️ Optimization – To refine options before deciding
+  - 🧠 Interpretation – To understand symbolically loaded choices
+
+  In urgent contexts, it can be applied using only the first 3 steps for a quick decision.

@@ -1,0 +1,25 @@
+echo: 🔢 Echo of Prioritization – Decisional Mode
+id: prioritization-decisional
+mode: Decisional
+purpose: >-
+  Rank options based on criteria to make clearer decisions.
+trigger: >-
+  When there are multiple viable alternatives and a choice must be made about which to pursue or in what order.
+
+steps:
+  - name: Listing options
+    goal: Name all possible alternatives
+
+  - name: Defining criteria
+    goal: Establish the basis for decision-making (value, effort, urgency, etc.)
+
+  - name: Comparative evaluation
+    goal: Analyze each option according to the defined criteria
+
+  - name: Prioritized selection
+    goal: Rank the options and justify the decision
+
+  - name: Review of effects
+    goal: Anticipate consequences and post-decision needs
+
+output_format: Ordered list of options + justified selection + key implications
