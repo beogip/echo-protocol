@@ -1,0 +1,25 @@
+echo: 🌟 Echo of Creativity – Divergent Mode
+id: creativity-divergent
+mode: Divergent
+purpose: >-
+  Unlock new ideas and approaches without judging them, encouraging expansive creative thinking.
+trigger: >-
+  When you want to generate free, unexpected, or disruptive alternatives to solve a challenge or design something new.
+
+steps:
+  - name: Activation of free thinking
+    goal: Enable creativity by suspending judgment
+
+  - name: Generation of multiple ideas
+    goal: Produce many ideas without filtering
+
+  - name: Exploration of extremes
+    goal: Force illogical, opposite, or exaggerated ideas
+
+  - name: Creative combination
+    goal: Create new ideas by merging previous ones
+
+  - name: Detection of promising ideas
+    goal: Select the most promising ones to develop later
+
+output_format: Raw ideas list + hybrid combinations + selected highlights

@@ -1,0 +1,68 @@
+echo: 🌟 Echo of Creativity – Divergent Mode
+id: creativity-divergent
+mode: Divergent
+purpose: >-
+  Generate multiple ideas, alternatives, or approaches to a challenge, question, or problem without judging them immediately.
+  This echo activates lateral, divergent, and expansive thinking to unlock new solutions.
+
+trigger: >-
+  When you want to explore new ideas, unlock alternatives, or create without restrictions—especially in early stages of projects, open challenges, or innovation sessions.
+
+steps:
+  - name: Activation of free thinking
+    goal: >-
+      Release initial judgment and establish a safe space to generate unfiltered ideas.
+    validation:
+      - Was it clarified that ideas will not be judged at this stage?
+      - Was a playful, exploratory, or symbolic tone introduced?
+    expected_output: Initial phrase that enables judgment-free creativity
+
+  - name: Generation of multiple ideas
+    goal: >-
+      Produce as many ideas as possible, regardless of quality.
+    validation:
+      - Were at least 10 ideas generated?
+      - Were spontaneous, crazy, or unrealistic ideas accepted?
+    expected_output: Initial list of unfiltered ideas
+
+  - name: Exploration of extremes
+    goal: >-
+      Expand the creative range with exaggerated, absurd, or contradictory ideas.
+    validation:
+      - Were illogical, inverse, or extreme ideas introduced?
+      - Were repetitive patterns broken?
+    expected_output: Expanded list with extreme or disruptive ideas
+
+  - name: Creative combination
+    goal: >-
+      Create new ideas by combining or fusing previous ones.
+    validation:
+      - Were at least 3 new combinations generated?
+      - Were unexpected combinations explored?
+    expected_output: New hybrid ideas
+
+  - name: Detection of promising ideas
+    goal: >-
+      Identify standout ideas to be developed in future echoes.
+    validation:
+      - Were ideas selected based on viability, appeal, or curiosity?
+      - Was a brief explanation of each selection provided?
+    expected_output: Subset of selected ideas with justification
+
+output_format: >-
+  List of generated ideas (raw, extreme, combined) + suggested subset for further development
+
+notes: |-
+  This echo must be used in an environment where judgment or evaluation is explicitly deactivated.
+  Its goal is not to decide or execute, but to unlock and diversify thinking.
+
+  It should be combined with other echoes after the creative phase ends:
+
+  - 🧪 Critical Evaluation → To assess ideas with concrete criteria
+  - 🧭 Formative Planning → To turn an idea into an actionable plan
+  - 🔢 Decision-based Prioritization → To select and sequence promising ideas
+  - 🧠 Semantic Interpretation → To explore deeper meanings in ambiguous or symbolic ideas
+  - ⚙️ Technical Optimization → To improve the expression of an idea before evaluating
+  - 🎭 Controlled Simulation → To test an idea’s behavior or impact in context
+
+  Step 5 serves as a functional bridge—it is not a closure, but a transition toward action.
