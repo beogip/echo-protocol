@@ -1,0 +1,83 @@
+echo: 🤝 Echo of Consensus – Negotiation Mode
+id: consensus-negotiation
+mode: Negotiation
+purpose: >-
+  Facilitate agreements between parties with divergent interests through a structured process of listening, synthesis, negotiation, and convergence.
+
+trigger: >-
+  When there are multiple actors, opinions, or opposing views and a joint decision or shared solution is desired.
+
+steps:
+  - name: Mapping of positions
+    goal: >-
+      Identify who is involved and what position, need, or interest they represent.
+    validation:
+      - Were all active voices documented?
+      - Were positions distinguished from actual interests?
+      - Was the diversity of views clearly represented?
+    expected_output: List of participants + main position or interest of each
+    input_required: true
+    input_questions:
+      - Who is involved in this consensus?
+      - What does each party want or need?
+
+  - name: Identification of common ground
+    goal: >-
+      Detect shared values, interests, or intentions.
+    validation:
+      - Were shared elements identified?
+      - Was inclusive or neutral language used?
+    expected_output: List of shared values or potential agreements
+    input_required: optional
+    input_questions:
+      - What elements or values seem shared by all parties?
+
+  - name: Alignment of objectives and limits
+    goal: >-
+      Determine what each party is willing to negotiate and what is non-negotiable.
+    validation:
+      - Were possible concessions expressed?
+      - Were hard boundaries clearly stated?
+      - Was flexibility prioritized over rigidity?
+    expected_output: Map of concessions and minimum conditions per party
+    input_required: true
+    input_questions:
+      - What is each party willing to give up?
+      - What conditions must not be compromised?
+
+  - name: Synthesis proposal
+    goal: >-
+      Formulate a solution that combines the fundamental interests of the parties.
+    validation:
+      - Does the proposal integrate elements from all parties?
+      - Does it respect the identified boundaries?
+    expected_output: Structured consensus proposal
+    input_required: optional
+    input_questions:
+      - Does anyone have an integrative proposal to begin with?
+
+  - name: Agreement validation
+    goal: >-
+      Confirm the agreement or propose final adjustments.
+    validation:
+      - Did each party accept or reformulate the proposal?
+      - Were objections or pending adjustments recorded?
+    expected_output: Consensus agreement or proposal under review
+    input_required: true
+    input_questions:
+      - Does each party accept the proposal?
+      - What adjustments are suggested by any party that disagrees?
+
+output_format: >-
+  Positions map + common ground + limits and concessions + consensus proposal + final validation.
+
+notes: |-
+  This echo is applied when multiple active perspectives are present and a joint solution needs to be built.
+
+  Can be combined with:
+  - 🧠 Interpretation → To understand symbolic or emotional subtext
+  - 🧪 Evaluation → To validate the quality of the proposal
+  - 🧭 Planning → To implement the agreed solution
+  - 🧪 Prioritization → To decide what gets implemented first
+
+  Requires empathetic language, active reformulation, and willingness to compromise.

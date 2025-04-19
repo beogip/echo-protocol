@@ -1,0 +1,25 @@
+echo: 🤝 Echo of Consensus – Negotiation Mode
+id: consensus-negotiation
+mode: Negotiation
+purpose: >-
+  Reach agreements between parties with different views through structured negotiation.
+trigger: >-
+  When there are multiple actors with different positions and a shared solution is desired.
+
+steps:
+  - name: Mapping of positions
+    goal: Identify who is involved and what each party wants
+
+  - name: Identification of common ground
+    goal: Detect shared interests or values between parties
+
+  - name: Alignment of objectives and limits
+    goal: Establish what each party is willing to give up and what is non-negotiable
+
+  - name: Synthesis proposal
+    goal: Formulate a solution that combines the interests
+
+  - name: Agreement validation
+    goal: Confirm that all parties accept the proposal
+
+output_format: Positions + common ground + limits + proposal + final validation
