@@ -1,0 +1,84 @@
+echo: 🧩 Echo of Generalization – Abstractive Mode
+id: generalization-abstractive
+mode: Abstractive
+purpose: >-
+  Extract general principles, lessons, or structures from a specific case to apply them in new contexts.
+  This echo transforms lived or analyzed experiences into transferable knowledge.
+
+trigger: >-
+  When you want to abstract useful lessons, patterns, or concepts from a specific situation, experience, or problem.
+
+steps:
+  - name: Description of the base case
+    goal: >-
+      Present the concrete case, experience, or situation to be used as the base for abstraction.
+    validation:
+      - Was the situation clearly explained and why it was relevant?
+      - Were key contextual elements included?
+    expected_output: Clear, well-defined description of the base case
+    input_required: true
+    input_questions:
+      - What situation or experience do you want to use as a base?
+      - What happened and why was it important?
+
+  - name: Identification of key factors
+    goal: >-
+      Detect the essential elements that made the case succeed, fail, or produce a particular result.
+    validation:
+      - Were causal or decisive factors distinguished?
+      - Were accessory elements excluded?
+    expected_output: List of key factors with their role in the case
+    input_required: optional
+    input_questions:
+      - What was decisive in this case?
+      - What conditions made it possible?
+
+  - name: Formulation of the general principle
+    goal: >-
+      Translate what was learned into a rule, pattern, or abstract idea applicable elsewhere.
+    validation:
+      - Was a lesson formulated that does not depend on the original case?
+      - Is it understandable to others unfamiliar with the case?
+    expected_output: Generalized principle or guideline
+    input_required: true
+    input_questions:
+      - What general lesson can you extract?
+      - How would you express it as a rule?
+
+  - name: Exploration of possible applications
+    goal: >-
+      Suggest other contexts where this principle might be useful.
+    validation:
+      - Were at least two different contexts identified?
+      - Was it explained why it would work there?
+    expected_output: List of potential applications with justification
+    input_required: optional
+    input_questions:
+      - Where else could this principle be applied?
+      - What adjustments would be needed?
+
+  - name: Transferable synthesis
+    goal: >-
+      Write the principle in a clear, reusable, and adaptable way for others.
+    validation:
+      - Is it formulated in a general yet precise manner?
+      - Can it be used as a tool or recommendation?
+    expected_output: Final version of the principle in shareable format
+    input_required: true
+    input_questions:
+      - How would you summarize this idea for others?
+      - Can you express it as a guideline, law, or recommendation?
+
+output_format: >-
+  Base case + key factors + abstract principle + possible applications + final shareable formulation
+
+notes: |-
+  This echo transforms experiences or analyses into transferable tools.
+
+  Can be combined with:
+  - 🧘 Reflection – to extract learnings before generalizing
+  - 🧠 Interpretation – to detect deeper meaning in the case
+  - 🧪 Evaluation – to validate how applicable the principle is in other settings
+  - ⚙️ Optimization – to refine the abstract formulation
+
+  Useful for education, design, lifelong learning, conceptualization, or AI that learns by analogy.

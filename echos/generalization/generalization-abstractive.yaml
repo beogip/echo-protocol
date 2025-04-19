@@ -1,0 +1,35 @@
+echo: 🧩 Echo of Generalization – Abstractive Mode
+id: generalization-abstractive
+mode: Abstractive
+purpose: >-
+  Extract general learnings and principles from a specific case to apply them in other contexts.
+trigger: >-
+  When you want to transform an experience or analysis into transferable knowledge.
+
+steps:
+  - name: Base case
+    goal: Describe the specific situation used as a starting point
+
+  - name: Key factors
+    goal: Detect what was decisive in that case
+
+  - name: General principle
+    goal: Formulate the rule or lesson that can be generalized
+
+  - name: Possible applications
+    goal: Explore where else the principle might apply
+
+  - name: Transferable synthesis
+    goal: Write the principle clearly and in a reusable format
+
+output_format: Case + extracted principle + suggested applications + reusable synthesis
+
+notes: |-
+  This echo helps convert experiences into learnings that are applicable in other contexts.
+
+  It can be combined with:
+  - 🧘 Reflection – to identify insights before generalizing
+  - 🧪 Evaluation – to validate whether the principle is useful elsewhere
+  - ⚙️ Optimization – to refine the wording of the principle
+
+  Useful in training, design, teaching, feedback, or when formalizing a learned lesson.
