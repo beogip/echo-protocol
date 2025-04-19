@@ -1,0 +1,25 @@
+echo: 🧐 Echo of Metaevaluation – Cognitive Audit Mode
+id: metaevaluation-audit
+mode: Cognitive Audit
+purpose: >-
+  Review whether a previous evaluation was valid, detecting biases, errors, or misapplied criteria.
+trigger: >-
+  When you want to audit a past judgment to verify its quality or learn how to evaluate better in the future.
+
+steps:
+  - name: Selection of evaluation
+    goal: Choose which evaluation you want to review
+
+  - name: Reconstruction of criteria
+    goal: Identify which criteria were used, and whether they were explicit or assumed
+
+  - name: Relevance verification
+    goal: Analyze whether the criteria were appropriate and consistent
+
+  - name: Bias detection
+    goal: Identify errors, omissions, or distortions in the judgment
+
+  - name: Final judgment and learning
+    goal: Conclude whether the evaluation was valid and propose improvements
+
+output_format: Reviewed evaluation + quality judgment + future recommendations

@@ -1,0 +1,78 @@
+echo: 🧐 Echo of Metaevaluation – Cognitive Audit Mode
+id: metaevaluation-audit
+mode: Cognitive Audit
+purpose: >-
+  Evaluate the quality, consistency, and validity of a previous evaluation.
+  This echo audits the evaluation process itself, detecting biases, omissions, or errors in the judgments made.
+
+trigger: >-
+  When you want to review a past evaluation to confirm its validity, detect flaws, or improve evaluation criteria moving forward.
+
+steps:
+  - name: Identification of the evaluation to review
+    goal: >-
+      Recognize which evaluation will be audited, who made it, and in what context.
+    validation:
+      - Was the evaluation clearly identified?
+      - Is the author, timing, and purpose known?
+    expected_output: Descriptive summary of the original evaluation
+    input_required: true
+    input_questions:
+      - What evaluation do you want to review?
+      - Who made it and why?
+
+  - name: Reconstruction of applied criteria
+    goal: >-
+      Retrieve the criteria used, whether explicit, implicit, or imposed.
+    validation:
+      - Were the applied criteria listed?
+      - Was it specified whether they were consciously used or assumed?
+    expected_output: List of applied evaluative criteria
+    input_required: true
+    input_questions:
+      - What criteria were used to evaluate?
+      - Were they stated or assumed?
+
+  - name: Verification of coherence and relevance
+    goal: >-
+      Evaluate whether the criteria were appropriate and applied consistently.
+    validation:
+      - Were they adequate for the object evaluated?
+      - Were they applied fairly and without contradiction?
+    expected_output: Judgment on the relevance and coherence of the criteria
+    input_required: optional
+
+  - name: Detection of biases or distortions
+    goal: >-
+      Identify potential personal, contextual, or methodological biases.
+    validation:
+      - Were distortions or missing factors detected?
+      - Was there any oversimplification?
+    expected_output: List of detected biases or justified absence of them
+    input_required: optional
+
+  - name: Final metaevaluation and recommendations
+    goal: >-
+      Issue a judgment on the reliability of the original evaluation and propose ways to improve it.
+    validation:
+      - Was it concluded whether the evaluation was valid, partial, or flawed?
+      - Were recommendations given for improving future evaluations?
+    expected_output: Overall judgment of the evaluation + learnings
+    input_required: true
+    input_questions:
+      - Was the original evaluation valid?
+      - What would you change to evaluate better next time?
+
+output_format: >-
+  Evaluation summary + criteria used + judgment on validity + detected biases + future recommendations
+
+notes: |-
+  This echo evaluates how we evaluate.
+  It is key in reflective, educational, or continuous improvement contexts.
+
+  Can be combined with:
+  - 🧪 Evaluation – To contrast past and new judgments
+  - ⚙️ Optimization – To improve future evaluation frameworks
+  - 🧭 Coherence – To detect misalignment between criteria and results
+
+  Especially useful in peer review, autonomous learning, critical feedback, or auditing AI evaluations.
