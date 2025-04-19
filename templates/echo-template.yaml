@@ -1,0 +1,25 @@
+echo: Echo name in English – [Mode Name] Mode
+id: [short-name-in-kebab-case]
+mode: [Mode name in English] # e.g., Evaluative, Diagnostic, Regenerative Precision, etc.
+
+purpose: >-
+  Briefly describe the purpose of the echo, what process it supports, and when it should be used.
+  This version is simplified and designed for quick execution without validations.
+
+trigger: >-
+  Describe when this echo should be triggered.
+  Typical phrases or situations are enough to guide activation.
+
+steps:
+  - name: [Step 1 name]
+    goal: Describe what this step does.
+
+  - name: [Step 2 name]
+    goal: Describe the second step clearly.
+
+  # Add more steps as needed...
+
+output_format: >-
+  Describe what the final output of the echo looks like (e.g., summary, simulation, reflection).
+
+# No config, validations, or expected_output in simplified versions

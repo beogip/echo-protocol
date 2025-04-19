@@ -50,8 +50,8 @@ To use any echo:
 
 You can create your own echoes using the official templates:
 
-- [echo-template.prs.yaml](./echos/echo-template.prs.yaml) (English)
-- [echo-template.prs.es.yaml](./echos/echo-template.prs.es.yaml) (Español)
+- [echo-template.prs.yaml](./templates/echo-template.prs.yaml) (English)
+- [echo-template.prs.es.yaml](./templates/echo-template.prs.es.yaml) (Español)
 
 ---
 

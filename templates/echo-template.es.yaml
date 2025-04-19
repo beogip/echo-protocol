@@ -1,0 +1,25 @@
+echo: Nombre del eco en español – Modo [Nombre del modo]
+id: [nombre-corto-en-kebab-case]
+mode: [Nombre del modo en inglés] # Ej: Evaluative, Diagnostic, Regenerative Precision, etc.
+
+purpose: >-
+  Describí brevemente el propósito del eco, qué tipo de proceso guía y en qué contexto debe usarse.
+  Esta versión es simplificada y pensada para ejecución rápida sin validaciones.
+
+trigger: >-
+  Explicá cuándo debe activarse este eco.
+  Puede ser una frase típica, una situación, o una intención general.
+
+steps:
+  - name: [Nombre del paso 1]
+    goal: Explicá qué busca hacer este paso.
+
+  - name: [Nombre del paso 2]
+    goal: Describí claramente el segundo paso.
+
+  # Agregá más pasos según necesites...
+
+output_format: >-
+  Explicá qué forma tiene el resultado final del eco (por ejemplo: resumen, simulación, reflexión).
+
+# En versiones simplificadas no se incluyen config, validations ni expected_output.
