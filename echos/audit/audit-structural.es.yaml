@@ -1,0 +1,33 @@
+- echo: 🧾 Eco de Auditoría – Modo Estructural
+  id: audit-structural
+  mode: Auditoría
+  purpose: >-
+    Revisar un sistema funcional para detectar vacíos, redundancias o áreas a mejorar.
+  trigger: >-
+    Cuando se quiere auditar una estructura general como ecos, módulos, herramientas o flujos.
+
+  steps:
+    - name: Mapeo estructural
+      goal: Listar y representar todos los elementos que componen el sistema
+
+    - name: Clasificación funcional
+      goal: Agrupar los elementos por su propósito o tipo de función
+
+    - name: Detección de redundancias
+      goal: Identificar elementos que se superponen o cumplen funciones similares
+
+    - name: Detección de vacíos
+      goal: Detectar funciones necesarias que no están cubiertas
+
+    - name: Propuesta de mejora
+      goal: Proponer reorganización, fusión o creación de nuevos elementos
+
+  output_format: Estructura actual + clasificación funcional + redundancias + vacíos + propuesta de mejora
+
+  notes: |-
+    Este eco permite mejorar arquitecturas de conocimiento o sistemas funcionales.
+
+    Puede combinararse con:
+    - 🧭 Coherencia → Para validar si cada parte cumple su propósito
+    - 🧪 Evaluación → Para revisar la calidad de cada componente
+    - ⚙️ Optimización → Para refinar elementos individuales antes de reorganizar

@@ -24,13 +24,13 @@ Each folder contains:
 | Echo Type                 | Description                                                               |
 | ------------------------- | ------------------------------------------------------------------------- |
 | 🧾 **Audit**              | Structural analysis to detect missing, redundant, or misaligned elements  |
+| ✅ **Coherence**          | Self-correction of flow when focus or purpose is lost                     |
 | 🤝 **Consensus**          | Negotiate between different positions to reach shared agreements          |
 | 🌟 **Creativity**         | Generate diverse and divergent ideas with no initial judgment             |
-| ✅ **Coherence**          | Self-correction of flow when focus or purpose is lost                     |
 | 🧮 **Decision**           | Compare alternatives and decide using explicit criteria                   |
 | 🛠️ **Diagnostic**         | Technical analysis to detect the root of a problem                        |
-| 🔁 **Execution (Prompt)** | Transform informal prompts into optimized, validated prompt flows         |
 | 🧪 **Evaluation**         | Structured judgment using explicit criteria                               |
+| 🔁 **Execution (Prompt)** | Transform informal prompts into optimized, validated prompt flows         |
 | 📘 **Explanation**        | Progressive teaching adapted to the user’s level                          |
 | 🧩 **Generalization**     | Extract generalizable principles from specific cases                      |
 | 🧠 **Interpretation**     | Semantic analysis of ambiguous or symbolic input                          |

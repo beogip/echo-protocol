@@ -1,0 +1,80 @@
+- echo: 🧾 Eco de Auditoría – Modo Estructural
+  id: audit-structural
+  mode: Auditoría
+  purpose: >-
+    Auditar la arquitectura de un sistema funcional (ecos, módulos, flujos, herramientas, etc.) para detectar redundancias, vacíos, incoherencias o áreas de mejora estructural.
+
+  trigger: >-
+    Cuando se desea revisar la estructura general de un sistema para evaluar su organización, completitud y equilibrio funcional.
+
+  steps:
+    - name: Mapeo estructural
+      goal: >-
+        Listar y representar visual o jerárquicamente todos los elementos del sistema a auditar.
+      validation:
+        - ¿Se recuperó el listado completo?
+        - ¿Se representaron relaciones internas o jerarquías?
+      expected_output: Representación estructural del sistema actual
+      input_required: true
+      input_questions:
+        - ¿Qué sistema o conjunto querés auditar?
+        - ¿Podés listar los elementos, módulos o componentes que lo integran?
+
+    - name: Clasificación funcional
+      goal: >-
+        Agrupar los elementos por dominios o categorías según su función, propósito o tipo de razonamiento.
+      validation:
+        - ¿Cada grupo tiene un criterio funcional claro?
+        - ¿Todos los elementos fueron asignados?
+      expected_output: Sistema organizado por dominios funcionales
+      input_required: optional
+      input_questions:
+        - ¿Cómo te gustaría agrupar los elementos: por función, propósito o tipo de lógica?
+        - ¿Ya tenés categorías funcionales predefinidas?
+
+    - name: Detección de redundancias
+      goal: >-
+        Identificar componentes que se solapan en función o lógica.
+      validation:
+        - ¿Se detectaron duplicidades o elementos análogos innecesarios?
+        - ¿Se propusieron fusiones o simplificaciones?
+      expected_output: Lista de redundancias con propuesta de simplificación
+      input_required: optional
+      input_questions:
+        - ¿Hay elementos que sentís que hacen lo mismo o algo muy parecido?
+        - ¿Te gustaría fusionar alguno?
+
+    - name: Detección de vacíos
+      goal: >-
+        Identificar funciones, capacidades o componentes faltantes.
+      validation:
+        - ¿Hay dominios sin cobertura?
+        - ¿Se propusieron ideas para cubrirlos?
+      expected_output: Lista de vacíos + hipótesis de expansión
+      input_required: optional
+      input_questions:
+        - ¿Falta algo que te gustaría que esté cubierto en este sistema?
+        - ¿Hay alguna función que esperabas y no está?
+
+    - name: Propuesta de mejora estructural
+      goal: >-
+        Integrar todos los hallazgos en una propuesta de reorganización, expansión o ajuste.
+      validation:
+        - ¿La propuesta está justificada por la auditoría previa?
+        - ¿Es clara, viable y alineada con los objetivos del sistema?
+      expected_output: Plan de mejora estructurado (con mapa comparativo si aplica)
+      input_required: true
+      input_questions:
+        - ¿Querés reorganizar, eliminar o crear elementos nuevos?
+        - ¿Qué mejoras estructurales te parecen más útiles?
+
+  output_format: >-
+    Representación actual del sistema + clasificación funcional + lista de redundancias + vacíos detectados + propuesta de mejora estructural.
+
+  notes: |-
+    Este eco actúa como una revisión arquitectónica. Ideal para ecosistemas de pensamiento, colecciones conceptuales o herramientas funcionales.
+
+    Combinaciones sugeridas:
+    - 🧭 Coherencia → Para validar el propósito de cada parte
+    - 🧪 Evaluación → Para analizar calidad de cada componente
+    - ⚙️ Optimización → Para mejorar elementos individuales antes de reorganizar
