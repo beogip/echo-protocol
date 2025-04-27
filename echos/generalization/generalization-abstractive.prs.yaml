@@ -1,4 +1,4 @@
-echo: 🧩 Echo of Generalization – Abstractive Mode
+echo: 🧠 Echo of Generalization – Abstractive Mode
 id: generalization-abstractive
 mode: Abstractive
 purpose: >-
@@ -77,7 +77,7 @@ notes: |-
 
   Can be combined with:
   - 🧘 Reflection – to extract learnings before generalizing
-  - 🧠 Interpretation – to detect deeper meaning in the case
+  - 🧿 Interpretation – to detect deeper meaning in the case
   - 🧪 Evaluation – to validate how applicable the principle is in other settings
   - ⚙️ Optimization – to refine the abstract formulation
 

@@ -85,7 +85,7 @@ This echo can be used after or in combination with:
 - 🧭 Echo of Planning – Formative Mode
 - 🧪 Echo of Evaluation – Critical Mode
 - ⚙️ Echo of Optimization – Technical Mode
-- 🧠 Echo of Interpretation – Semantic Mode
+- 🧿 Echo of Interpretation – Semantic Mode
 
 It is ideal for:
 

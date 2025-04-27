@@ -87,7 +87,7 @@ This echo works well with:
 
 - 📘 Echo of Explanation – to explain key decisions or elements inside the simulation.
 - 🧪 Echo of Evaluation – to assess the quality or realism of the simulation.
-- 🧠 Echo of Interpretation – to extract meaning from abstract or symbolic elements in the narrative.
+- 🧿 Echo of Interpretation – to extract meaning from abstract or symbolic elements in the narrative.
 - 🧭 Echo of Planning – to simulate the execution of a predefined plan.
 
 Ideal for:

@@ -32,11 +32,12 @@ Each folder contains:
 | 🧪 **Evaluation**         | Structured judgment using explicit criteria                               |
 | 🔁 **Execution (Prompt)** | Transform informal prompts into optimized, validated prompt flows         |
 | 📘 **Explanation**        | Progressive teaching adapted to the user’s level                          |
-| 🧩 **Generalization**     | Extract generalizable principles from specific cases                      |
-| 🧠 **Interpretation**     | Semantic analysis of ambiguous or symbolic input                          |
+| 🧠 **Generalization**     | Extract generalizable principles from specific cases                      |
+| 🧿 **Interpretation**     | Semantic analysis of ambiguous or symbolic input                          |
 | 🧐 **Metaevaluation**     | Audit past evaluations to detect bias or improve criteria                 |
 | ⚙️ **Optimization**       | Refactor or improve without losing intention                              |
-| 🧭 **Planning**           | Step-by-step structure for learning or execution                          |
+| 🧩 **Orchestration**      | Connect multiple echoes into structured cognitive pipelines               |
+| 🧭 **Planification**      | Step-by-step structure for learning or execution                          |
 | 🔢 **Prioritization**     | Order alternatives based on explicit decision-making criteria             |
 | 🧘 **Reflection**         | Closing cycles and integrating personal change                            |
 | 🎭 **Simulation**         | Controlled scenario generation with internal logic                        |

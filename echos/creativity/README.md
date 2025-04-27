@@ -82,7 +82,7 @@ This echo is meant to be followed by other echoes in the protocol to further dev
 - 🧪 **Echo of Evaluation – Critical Mode**
 - 🧭 **Echo of Planning – Formative Mode**
 - 🔢 **Echo of Prioritization – Decisional Mode**
-- 🧠 **Echo of Interpretation – Semantic Mode**
+- 🧿 **Echo of Interpretation – Semantic Mode**
 - ⚙️ **Echo of Optimization – Technical Mode**
 - 🎭 **Echo of Simulation – Controlled Scenario Mode**
 

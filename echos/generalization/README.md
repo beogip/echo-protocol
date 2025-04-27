@@ -1,4 +1,4 @@
-# 🧩 Echo of Generalization – Abstractive Mode
+# 🧠 Echo of Generalization – Abstractive Mode
 
 ## Description
 
@@ -82,7 +82,7 @@ From my last product launch, what lessons could we extract to apply to future ro
 This echo works well when combined with:
 
 - 🧘 Echo of Reflection – Integrative Mode
-- 🧠 Echo of Interpretation – Semantic Mode
+- 🧿 Echo of Interpretation – Semantic Mode
 - 🧪 Echo of Evaluation – Critical Mode
 - ⚙️ Echo of Optimization – Technical Mode
 

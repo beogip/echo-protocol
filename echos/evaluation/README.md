@@ -82,7 +82,7 @@ This echo is compatible with:
 
 - ⚙️ Echo of Optimization – to improve low-rated outputs automatically
 - 🛠️ Echo of Diagnostic – to detect causes of poor evaluation
-- 🧠 Echo of Interpretation – to clarify the intention behind what is being evaluated
+- 🧿 Echo of Interpretation – to clarify the intention behind what is being evaluated
 - 🧭 Echo of Planning – to assess if a plan is suitable before execution
 
 It is ideal for:

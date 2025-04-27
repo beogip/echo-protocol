@@ -82,7 +82,7 @@ We need to agree on the direction of the product roadmap between design, enginee
 
 This echo works well when combined with:
 
-- 🧠 Echo of Interpretation – to uncover implicit needs or symbolic subtext
+- 🧿 Echo of Interpretation – to uncover implicit needs or symbolic subtext
 - 🧪 Echo of Evaluation – to validate the quality of the proposed agreement
 - 🧭 Echo of Planning – to implement the agreement in structured steps
 - 🔢 Echo of Prioritization – to decide what aspects of the consensus should be addressed first

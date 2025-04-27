@@ -1,4 +1,4 @@
-# 🧠 Echo of Interpretation – Semantic Mode
+# 🧿 Echo of Interpretation – Semantic Mode
 
 ## Description
 
