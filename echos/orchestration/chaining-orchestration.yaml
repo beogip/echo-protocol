@@ -1,0 +1,42 @@
+echo: 🧩 Echo of Cognitive Chaining – Orchestration Mode
+id: chaining-orchestration
+mode: Simplified
+purpose: >-
+  Connect multiple thought echoes into a structured flow, allowing complex processes to be resolved through logical and sequential execution.
+
+trigger: >-
+  When solving a problem that exceeds the capacity of a single echo, by designing a combined flow of multiple echoes.
+
+steps:
+  - name: Detection of the composite goal
+    goal: Define what you want to achieve that cannot be solved by a single echo.
+
+  - name: Selection of relevant echoes
+    goal: Choose which echoes contribute to solving the composite goal.
+
+  - name: Functional sequencing
+    goal: Define in which order the echoes must be executed to create synergy.
+
+  - name: Connection between outputs and inputs
+    goal: Ensure that the output of one echo serves as valid input for the next.
+
+  - name: Continuity validation
+    goal: Establish rules for branching, repetition, or advancement between echoes.
+
+  - name: Flow visualization
+    goal: Represent the chained flow graphically or schematically.
+
+output_format: >-
+  Map of the composed echo flow including:
+    - General goal
+    - Echoes used + their roles
+    - Logical sequence
+    - Connections between echoes
+    - Continuity rules
+
+notes: |-
+  Ideal for building complex cognitive pipelines, reasoning strategies for AI, or structured learning processes.
+  Can be combined with:
+    - 🧭 Coherence → to validate the overall meaning
+    - 🛠 Diagnostic → to detect bottlenecks
+    - 🧪 Evaluation → to measure effectiveness

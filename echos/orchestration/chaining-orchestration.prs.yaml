@@ -1,0 +1,81 @@
+echo: 🧩 Echo of Cognitive Chaining – Orchestration Mode
+id: chaining-orchestration
+mode: Orchestration
+purpose: >-
+  Design and execute composed cognitive flows by logically, sequentially, and verifiably connecting multiple existing echoes from the Echo Protocol system.
+  This echo enables building complex processes by integrating outputs and inputs across multiple echoes to achieve goals that cannot be reached with a single isolated echo.
+
+trigger: >-
+  When solving a complex problem, designing a structured thinking sequence, or creating a modular process by combining multiple system echoes.
+
+steps:
+  - name: Detection of the composite goal
+    goal: >-
+      Identify what you want to achieve that cannot be covered by a single echo, revealing the need to orchestrate multiple cognitive processes.
+    validation:
+      - Was a goal identified that exceeds the scope of a single echo?
+      - Was the expected outcome of the composed flow clearly stated?
+    expected_output: >-
+      Description of the general objective requiring the combination of multiple echoes to be achieved.
+
+  - name: Selection of relevant echoes
+    goal: >-
+      Determine which system echoes can contribute to achieving the composite goal, according to their purposes and capabilities.
+    validation:
+      - Were useful echoes listed with justification?
+      - Was it explained how each echo contributes to the overall goal?
+    expected_output: >-
+      List of selected echoes with a brief justification of their function within the flow.
+
+  - name: Functional sequencing
+    goal: >-
+      Establish the optimal order for executing the echoes to create synergy and logical progression.
+    validation:
+      - Does the sequence respect logical dependencies?
+      - Is the progression justified and redundancy avoided?
+    expected_output: >-
+      Ordered sequence of echoes with rationale for the chosen order.
+
+  - name: Logical connection between outputs and inputs
+    goal: >-
+      Design how outputs from one echo are explicitly transferred as inputs to the next, ensuring semantic and structural continuity.
+    validation:
+      - Does each output match a compatible input in the next echo?
+      - Was the information transfer clearly documented?
+    expected_output: >-
+      Transition map between echoes, showing how inputs/outputs are linked.
+
+  - name: Continuity validation mechanism
+    goal: >-
+      Define rules to decide whether to continue to the next echo, repeat the current one, or stop the flow.
+    validation:
+      - Were explicit conditions for branching, repetition, or advancement defined?
+      - Can the system adapt dynamically based on results?
+    expected_output: >-
+      Set of cognitive flow control conditions (if/then/else logic) applicable to the chaining process.
+
+  - name: Visualization of the composed cognitive flow
+    goal: >-
+      Build a visual or schematic representation of the chaining, showing nodes (echoes) and links (transitions).
+    validation:
+      - Is the structure and order clearly represented?
+      - Does the visualization allow auditing the flow?
+    expected_output: >-
+      Diagram or tree/sequence structure representing the orchestrated flow.
+
+output_format: >-
+  YAML structure containing:
+    - Composite goal
+    - Selected echoes + functions
+    - Logical sequence
+    - Input/output connections
+    - Continuity rules
+    - Cognitive flow visualization
+
+notes: |-
+  This echo acts as a "conductor" of cognitive processes, enabling the composition of complex flows by combining multiple existing echoes.
+  Useful for designing reasoning pipelines, advanced learning flows, problem-solving strategies, or structured AI systems (like Kael).
+  It can be combined with:
+    - 🧭 Coherence Echo → to validate if the chaining still fulfills the original goal
+    - 🛠 Diagnostic Echo → to detect bottlenecks in the flow
+    - 🧪 Evaluation Echo → to assess the effectiveness of the designed chaining

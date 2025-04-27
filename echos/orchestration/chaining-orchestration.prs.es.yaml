@@ -1,0 +1,81 @@
+echo: 🧩 Eco de Encadenamiento Cognitivo – Modo Orquestación
+id: chaining-orchestration
+mode: Orquestación
+purpose: >-
+  Diseñar y ejecutar flujos cognitivos compuestos mediante la conexión lógica, secuencial y validable de múltiples ecos existentes del sistema Echo Protocol.
+  Este eco permite construir procesos complejos, integrando salidas y entradas entre ecos para lograr objetivos que no pueden alcanzarse con un único eco aislado.
+
+trigger: >-
+  Cuando se desea resolver un problema complejo, diseñar una secuencia de pensamiento estructurada o crear un proceso modular combinando múltiples ecos del sistema.
+
+steps:
+  - name: Detección del objetivo compuesto
+    goal: >-
+      Identificar qué se quiere lograr que no pueda ser cubierto por un solo eco, revelando la necesidad de orquestar múltiples procesos cognitivos.
+    validation:
+      - ¿Se detectó un objetivo que excede el alcance de un eco individual?
+      - ¿Se enunció claramente el resultado esperado del flujo compuesto?
+    expected_output: >-
+      Descripción del objetivo general que requiere la combinación de múltiples ecos para alcanzarlo.
+
+  - name: Selección de ecos relevantes
+    goal: >-
+      Determinar qué ecos del sistema pueden contribuir a resolver el objetivo compuesto, según su propósito y capacidades.
+    validation:
+      - ¿Se listaron los ecos útiles de forma justificada?
+      - ¿Se explicó cómo cada uno aporta al objetivo general?
+    expected_output: >-
+      Lista de ecos seleccionados con breve justificación de su función dentro del flujo.
+
+  - name: Ordenamiento funcional de la secuencia
+    goal: >-
+      Establecer el orden óptimo en que deben ejecutarse los ecos para lograr sinergia y progresión lógica del pensamiento.
+    validation:
+      - ¿El orden respeta dependencias lógicas entre pasos?
+      - ¿Se justifica la progresión y se evita redundancia?
+    expected_output: >-
+      Secuencia ordenada de ecos con descripción de por qué ese orden maximiza la efectividad del flujo.
+
+  - name: Conexión lógica entre salidas y entradas
+    goal: >-
+      Diseñar cómo se transfieren explícitamente los resultados de un eco como inputs para el siguiente, asegurando continuidad semántica y estructural.
+    validation:
+      - ¿Cada salida tiene una entrada compatible en el siguiente eco?
+      - ¿Se documentó claramente el traspaso de información?
+    expected_output: >-
+      Mapa de transición entre ecos, indicando cómo se enlazan sus inputs/outputs.
+
+  - name: Mecanismo de validación de continuidad
+    goal: >-
+      Establecer reglas para decidir si continuar al siguiente eco, repetir el actual o detener el flujo.
+    validation:
+      - ¿Se definieron condiciones explícitas de corte, repetición o avance?
+      - ¿El sistema puede adaptarse dinámicamente según los resultados?
+    expected_output: >-
+      Conjunto de condiciones de control de flujo (if/then/else cognitivo) aplicable al encadenamiento.
+
+  - name: Visualización del flujo cognitivo compuesto
+    goal: >-
+      Construir una representación visual o esquemática del encadenamiento, mostrando nodos (ecos) y enlaces (transiciones).
+    validation:
+      - ¿Se representa claramente la estructura y el orden?
+      - ¿La visualización permite auditar el flujo?
+    expected_output: >-
+      Diagrama o estructura tipo árbol/secuencia que represente el flujo orquestado.
+
+output_format: >-
+  Estructura YAML con:
+    - Objetivo compuesto
+    - Ecos seleccionados + funciones
+    - Secuencia lógica
+    - Conexiones input/output
+    - Reglas de continuidad
+    - Visualización del flujo cognitivo
+
+notes: |-
+  Este eco puede actuar como un "director de orquesta" de procesos cognitivos, permitiendo componer flujos complejos combinando múltiples ecos existentes.
+  Es útil para diseñar pipelines de razonamiento, flujos formativos avanzados, estrategias de resolución de problemas o IA estructurada (como Kael).
+  Puede combinarse con:
+    - 🧭 Eco de Coherencia → para validar si el encadenamiento sigue cumpliendo el propósito original
+    - 🛠 Eco de Diagnóstico → para detectar cuellos de botella en el flujo
+    - 🧪 Eco de Evaluación → para valorar la efectividad del encadenamiento diseñado

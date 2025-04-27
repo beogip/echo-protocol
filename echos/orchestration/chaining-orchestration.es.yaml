@@ -1,0 +1,42 @@
+- echo: 🧩 Eco de Encadenamiento Cognitivo – Modo Orquestación
+  id: chaining-orchestration
+  mode: Simplified
+  purpose: >-
+    Conectar múltiples ecos de pensamiento en un flujo estructurado, permitiendo resolver procesos complejos mediante su ejecución encadenada y lógica.
+
+  trigger: >-
+    Cuando se necesita resolver un problema que excede la capacidad de un solo eco, diseñando un flujo combinado de ecos.
+
+  steps:
+    - name: Detección del objetivo compuesto
+      goal: Definir qué se quiere lograr que no puede ser resuelto por un solo eco.
+
+    - name: Selección de ecos relevantes
+      goal: Elegir qué ecos contribuyen a resolver el objetivo compuesto.
+
+    - name: Ordenamiento funcional
+      goal: Definir en qué secuencia deben ejecutarse los ecos para generar sinergia.
+
+    - name: Conexión entre salidas y entradas
+      goal: Asegurar que la salida de un eco sirva como input válido para el siguiente.
+
+    - name: Validación de continuidad
+      goal: Establecer reglas de corte, repetición o avance entre ecos.
+
+    - name: Visualización del flujo
+      goal: Representar el flujo encadenado de forma gráfica o esquemática.
+
+  output_format: >-
+    Mapa del flujo de ecos compuesto por:
+      - Objetivo general
+      - Ecos usados + funciones
+      - Secuencia lógica
+      - Conexiones entre ecos
+      - Reglas de avance o corte
+
+  notes: |-
+    Ideal para construir pipelines cognitivos complejos, estrategias de razonamiento para IA, o procesos de aprendizaje estructurado.
+    Puede combinarse con:
+      - 🧭 Coherencia → para validar sentido general
+      - 🛠 Diagnóstico → para detectar bloqueos
+      - 🧪 Evaluación → para medir efectividad
