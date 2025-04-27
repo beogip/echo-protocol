@@ -41,7 +41,7 @@ Each folder contains:
 | 🔢 **Prioritization**     | Order alternatives based on explicit decision-making criteria             |
 | 🧘 **Reflection**         | Closing cycles and integrating personal change                            |
 | 🎭 **Simulation**         | Controlled scenario generation with internal logic                        |
-| 🧪 **Technical Review**   | Evaluate code, architecture or design with structured technical reasoning |
+| 🛡️ **Technical Review**   | Evaluate code, architecture or design with structured technical reasoning |
 
 ---
 

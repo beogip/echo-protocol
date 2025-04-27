@@ -1,0 +1,52 @@
+echo: 🛡️ Echo of Technical Review – Audit Mode
+id: technical-review
+mode: Audit
+purpose: >-
+  Rigorously evaluate the quality of technical components (code, architecture, design) to decide whether they should be maintained, adjusted, or restructured.
+
+trigger: >-
+  When there is a need to audit or review a technical object ensuring structural quality and clear decision-making.
+
+config:
+  retry_on_fail: true
+  max_retries_per_step: 2
+
+steps:
+  - name: Definition of context
+    goal: >-
+      Determine the object to review (code, module, design) and its functional goal.
+    validation:
+      - Is the review target clearly identified?
+      - Is the intended purpose understood?
+    expected_output: Description of the object + functional purpose
+
+  - name: Identification of review criteria
+    goal: >-
+      Establish clear evaluation criteria (clarity, efficiency, scalability, maintainability, etc.).
+    validation:
+      - Are relevant criteria defined?
+      - Are they measurable or evaluable?
+    expected_output: List of applicable criteria
+
+  - name: Technical review by criteria
+    goal: >-
+      Evaluate the technical object by applying each defined criterion.
+    validation:
+      - Was each criterion individually evaluated?
+      - Were relevant observations justified?
+    expected_output: Review commented per criterion
+
+  - name: Final action recommendation
+    goal: >-
+      Suggest whether the technical object should be maintained, adjusted, or restructured.
+    validation:
+      - Is the recommendation based on the prior review?
+      - Is it clear and actionable?
+    expected_output: Final action conclusion (maintain / adjust / restructure)
+
+output_format: >-
+  Technical audit report including:
+    - Context and object
+    - Applied criteria
+    - Evaluations per criterion
+    - Final justified recommendation
