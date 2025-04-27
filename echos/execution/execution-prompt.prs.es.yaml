@@ -1,0 +1,56 @@
+echo: 🔁 Eco de Ejecución de Prompt – Modo Generativo
+id: execution-prompt
+mode: Generative
+purpose: >-
+  Transformar prompts informales o incompletos en prompts optimizados, validados y listos para ejecutar correctamente en el flujo de trabajo definido.
+
+trigger: >-
+  Cuando el input es un prompt crudo o ambiguo que necesita optimización antes de ejecutarlo, o cuando se busca mejorar la calidad de prompts antes de correrlos.
+
+config:
+  retry_on_fail: true
+  max_retries_per_step: 2
+
+steps:
+  - name: Registro del prompt original
+    goal: Capturar el input inicial del usuario de forma literal.
+    validation:
+      - ¿Se registró fielmente el input sin modificaciones?
+    expected_output: Prompt crudo capturado.
+
+  - name: Detección de información faltante
+    goal: Identificar vacíos o ambigüedades en el prompt original.
+    validation:
+      - ¿Se detectaron problemas de claridad o ejecución?
+    expected_output: Lista de elementos faltantes o ambiguos.
+
+  - name: Optimización del prompt
+    goal: Reescribir el prompt para que sea claro y ejecutable.
+    validation:
+      - ¿El nuevo prompt es claro, completo y ejecutable?
+    expected_output: Prompt optimizado listo para ejecución o revisión.
+
+  - name: Confirmación del prompt final (opcional)
+    goal: Mostrar el prompt optimizado al usuario para su confirmación.
+    validation:
+      - ¿Se validó la confirmación del usuario o se registró una corrección?
+    expected_output: Prompt final confirmado o corregido.
+
+  - name: Ejecución del prompt optimizado
+    goal: Ejecutar el prompt optimizado.
+    validation:
+      - ¿Se ejecutó correctamente sobre el nuevo input?
+    expected_output: Resultado de ejecución.
+
+  - name: Retroalimentación final (opcional)
+    goal: Recibir feedback del usuario sobre la utilidad del resultado.
+    validation:
+      - ¿Se registraron sugerencias de mejora si hubo?
+    expected_output: Comentarios de usuario.
+
+output_format: Registro completo incluyendo:
+  - Prompt original
+  - Información faltante detectada
+  - Prompt optimizado final
+  - Resultado ejecutado
+  - Feedback (opcional)

@@ -1,0 +1,34 @@
+echo: 🔁 Echo of Execution – Generative Mode
+id: execution-prompt
+mode: Simplified
+purpose: >-
+  Transform an informal, ambiguous, or incomplete prompt into a clear, validated, and optimized prompt according to good prompting practices, and then execute it correctly.
+
+trigger: >-
+  When the user provides a prompt that needs improvement before execution or wants help rewriting it properly.
+
+steps:
+  - name: Capture of the original prompt
+    goal: Capture the user’s original input exactly.
+
+  - name: Detection of missing information
+    goal: Identify gaps, ambiguities, or errors before executing the prompt.
+
+  - name: Prompt optimization
+    goal: Rewrite the prompt to make it clear, executable, and aligned with best practices.
+
+  - name: Final confirmation (optional)
+    goal: Show the optimized prompt to the user before execution.
+
+  - name: Execution of the optimized prompt
+    goal: Execute the final prompt and show the result.
+
+  - name: Final feedback (optional)
+    goal: Allow the user to comment on the result and suggest improvements.
+
+output_format: Structured result with:
+  - Original prompt
+  - Clarification Q&A (if any)
+  - Final optimized prompt
+  - Executed result
+  - (Optional) User feedback

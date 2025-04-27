@@ -1,0 +1,56 @@
+echo: 🔁 Echo of Execution – Generative Mode
+id: execution-prompt
+mode: Generative
+purpose: >-
+  Transform informal or incomplete prompts into optimized, validated prompts aligned with high-quality prompting practices, and execute them properly within the operational context.
+
+trigger: >-
+  When the input is a raw or ambiguous prompt needing optimization before being run, or when improving prompt quality is the goal.
+
+config:
+  retry_on_fail: true
+  max_retries_per_step: 2
+
+steps:
+  - name: Capture of the original prompt
+    goal: Record the user's original input faithfully.
+    validation:
+      - Was the original prompt captured without modifications?
+    expected_output: Raw prompt recorded.
+
+  - name: Detection of missing or ambiguous information
+    goal: Identify missing elements, ambiguities, or errors.
+    validation:
+      - Were issues of clarity or execution detected?
+    expected_output: List of missing/problematic elements.
+
+  - name: Prompt optimization
+    goal: Rewrite the prompt to ensure clarity and executability.
+    validation:
+      - Is the optimized prompt clear, complete, and ready for execution?
+    expected_output: Final optimized prompt.
+
+  - name: Final confirmation (optional)
+    goal: Request user confirmation or correction.
+    validation:
+      - Was user confirmation or correction recorded?
+    expected_output: Final prompt confirmed or modified.
+
+  - name: Execution of the optimized prompt
+    goal: Execute based on the optimized input.
+    validation:
+      - Was the execution based on the optimized prompt?
+    expected_output: Executed result.
+
+  - name: Final feedback (optional)
+    goal: Capture user feedback or improvement suggestions.
+    validation:
+      - Were suggestions recorded if given?
+    expected_output: User feedback (if any).
+
+output_format: Full execution record including:
+  - Original prompt
+  - Missing/problematic elements
+  - Optimized final prompt
+  - Execution result
+  - (Optional) User feedback

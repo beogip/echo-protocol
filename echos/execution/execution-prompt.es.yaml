@@ -1,0 +1,29 @@
+echo: 🔁 Eco de Ejecución de Prompt – Modo Generativo
+id: execution-prompt
+mode: Simplified
+purpose: >-
+  Transformar un prompt informal, ambiguo o incompleto en un prompt claro, validado y optimizado según estándares de prompting, y luego ejecutarlo correctamente.
+
+trigger: >-
+  Cuando el usuario entrega un prompt que necesita ser mejorado antes de ejecutarse, o desea ayuda para reformular y lanzar un prompt correctamente.
+
+steps:
+  - name: Registro del prompt original
+    goal: Capturar el input del usuario tal como fue escrito.
+  - name: Detección de información faltante
+    goal: Identificar vacíos, ambigüedades o errores antes de ejecutar el prompt.
+  - name: Optimización del prompt
+    goal: Reescribir el prompt para que sea claro, ejecutable y alineado con buenas prácticas.
+  - name: Confirmación del prompt final (opcional)
+    goal: Mostrar el nuevo prompt al usuario para su revisión antes de ejecutar.
+  - name: Ejecución del prompt optimizado
+    goal: Ejecutar el prompt final y mostrar el resultado.
+  - name: Retroalimentación final (opcional)
+    goal: Permitir al usuario comentar la utilidad del resultado y sugerir ajustes futuros.
+
+output_format: Resultado estructurado con:
+  - Prompt original
+  - Preguntas/respuestas de aclaración (si hubo)
+  - Prompt final optimizado
+  - Resultado ejecutado
+  - (Opcional) Retroalimentación del usuario
