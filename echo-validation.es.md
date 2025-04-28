@@ -22,11 +22,11 @@ Este documento presenta la estructura de esos ecos, su marco conceptual, y un pl
 2. Definición técnica de los Ecos
 
 Un eco de pensamiento es una estructura funcional de razonamiento compuesta por:
-• Propósito: Qué tipo de proceso cognitivo representa (p. ej. diagnóstico, planificación).
-• Condición de activación: Cuándo debe ejecutarse (disparador explícito).
-• Pasos: Secuencia ordenada de etapas cognitivas, cada una con su meta, validación interna y output parcial.
-• Output esperado: Resultado final del eco, estructurado según el tipo de razonamiento aplicado.
-• Modo de ejecución: Puede ser ejecutado por humanos, LLMs, o agentes mixtos, utilizando lenguaje natural estructurado.
+- Propósito: Qué tipo de proceso cognitivo representa (p. ej. diagnóstico, planificación).
+- Condición de activación: Cuándo debe ejecutarse (disparador explícito).
+- Pasos: Secuencia ordenada de etapas cognitivas, cada una con su meta, validación interna y output parcial.
+- Output esperado: Resultado final del eco, estructurado según el tipo de razonamiento aplicado.
+- Modo de ejecución: Puede ser ejecutado por humanos, LLMs, o agentes mixtos, utilizando lenguaje natural estructurado.
 
 Estructura formal (simplificada):
 
