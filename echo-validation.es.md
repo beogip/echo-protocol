@@ -29,7 +29,7 @@ Un eco de pensamiento es una estructura funcional de razonamiento compuesta por:
 - Modo de ejecución: Puede ser ejecutado por humanos, LLMs, o agentes mixtos, utilizando lenguaje natural estructurado.
 
 Estructura formal (simplificada):
-```
+```yaml
 - echo: Eco de Diagnóstico – Modo Técnico
   id: diagnostic-technical
   mode: Diagnostic
