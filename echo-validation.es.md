@@ -56,11 +56,13 @@ Estructura formal (simplificada):
 ```
 Propiedades destacadas:
 
-- Agente-agnóstico Puede ser usado por humanos o IA
-- Reusabilidad El mismo eco puede aplicarse en múltiples contextos
-- Auditabilidad Los pasos son explícitos y revisables
-- Modularidad Cada eco puede integrarse en flujos más complejos
-- Composabilidad Pueden encadenarse como funciones cognitivas secuenciales
+| Propiedad          | Descripción                                                |
+| ------------------ | -----------------------------------------------------------|
+| **Agente-agnóstico** | Puede ser usado por humanos o IA                         |
+| **Reusabilidad**    | El mismo eco puede aplicarse en múltiples contextos       |
+| **Auditabilidad**   | Los pasos son explícitos y revisables                     |
+| **Modularidad**     | Cada eco puede integrarse en flujos más complejos         |
+| **Composabilidad**  | Pueden encadenarse como funciones cognitivas secuenciales |
 
 A diferencia de estrategias como Chain-of-Thought o Reflexion, los ecos son estructuras declarativas de razonamiento, no tácticas de prompting.
 Esto los hace transferibles, documentables y versionables, como si fueran componentes cognitivos en un sistema operativo del pensamiento.
