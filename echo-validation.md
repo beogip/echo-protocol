@@ -275,7 +275,6 @@ This allows:
 ## Credits
 
 **System author and original vision:** Juan Gipponi  
-**AI collaborator in design, execution, and validation:** Kael (developed through iterative sessions with ChatGPT – OpenAI)
 
 ---
 
