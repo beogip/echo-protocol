@@ -13,6 +13,25 @@ There are two versions available for each echo:
 
 ---
 
+## 🚀 Starter Pack
+
+If you're new to Echo Protocol or want a ready-to-use collection for everyday reasoning, start with the official **Starter Pack**.
+
+It includes 6 core echoes:
+
+- 🧭 Planning
+- ✅ Coherence
+- 🔢 Prioritization
+- 🧪 Evaluation
+- ⚙️ Optimization
+- 🔁 Prompt Execution
+
+Each one is selected for daily workflows like decision-making, troubleshooting, and organizing thought processes in tools like ChatGPT.
+
+📄 [Read the Starter Pack README →](./starter-pack/README.md)
+
+---
+
 ## 📚 Echoes Available
 
 Each folder contains:
