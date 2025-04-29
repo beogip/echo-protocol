@@ -15,7 +15,7 @@ This starter pack includes the essential cognitive echos for daily work inside C
 
 ### 1. Download and unzip
 
-1. Download the `.zip` file containing the Starter Pack of Echos.
+1. Download the `.zip` file containing the [Starter Pack of Echos](./starter-pack.zip).
 2. Unzip it on your computer. You should get multiple `.yaml` files (one per echo).
 
 > ⚠️ All echo files must be in valid `.yaml` format, structured according to the Echo Protocol specification.
