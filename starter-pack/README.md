@@ -22,19 +22,23 @@ This starter pack includes the essential cognitive echos for daily work inside C
 
 ### 2. Upload echo files to your project
 
-1. Go to your [ChatGPT Projects](https://chat.openai.com/gpts/editor).
+1. Go to your [ChatGPT Projects](https://chatgpt.com/)
 2. Open the project where you want to install the echos.
-3. In the left panel, click **Settings > Files**.
+3. Click **Files**.
 4. Upload the `.yaml` files from the starter pack.
 5. Confirm they appear in the list. They’re now ready to be used as part of the project’s reasoning system.
+
+https://github.com/user-attachments/assets/046c56e7-d4fc-44d5-b76c-359f88436313
 
 ### 3. Add echo context to the system instructions
 
 1. Open the file `CONTEXT.md` included in the starter pack.
 2. Copy all its content.
-3. Go to **Settings > Instructions** inside the same project.
+3. Click **Instructions** inside the same project.
 4. Paste the content into the **“Instructions”** or **“System message”** field of your project.
 5. Save the changes.
+
+https://github.com/user-attachments/assets/ea091a9b-f846-4be3-8445-d7dd2f46a08b
 
 > ✅ This step is essential. Without the context, the assistant won’t recognize or properly execute the echos.
 
