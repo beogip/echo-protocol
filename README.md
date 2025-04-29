@@ -27,7 +27,6 @@ Each folder contains:
 | ✅ **Coherence**          | Self-correction of flow when focus or purpose is lost                     |
 | 🤝 **Consensus**          | Negotiate between different positions to reach shared agreements          |
 | 🌟 **Creativity**         | Generate diverse and divergent ideas with no initial judgment             |
-| 🧮 **Decision**           | Compare alternatives and decide using explicit criteria                   |
 | 🛠️ **Diagnostic**         | Technical analysis to detect the root of a problem                        |
 | 🧪 **Evaluation**         | Structured judgment using explicit criteria                               |
 | 🔁 **Execution (Prompt)** | Transform informal prompts into optimized, validated prompt flows         |
