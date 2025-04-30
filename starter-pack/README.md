@@ -28,7 +28,7 @@ This starter pack includes the essential cognitive echos for daily work inside C
 4. Upload the `.yaml` files from the starter pack.
 5. Confirm they appear in the list. They’re now ready to be used as part of the project’s reasoning system.
 
-https://github.com/user-attachments/assets/046c56e7-d4fc-44d5-b76c-359f88436313
+https://github.com/user-attachments/assets/26426fda-3a3a-4258-b661-81f3788f9cc9
 
 ### 3. Add echo context to the system instructions
 
@@ -38,7 +38,7 @@ https://github.com/user-attachments/assets/046c56e7-d4fc-44d5-b76c-359f88436313
 4. Paste the content into the **“Instructions”** or **“System message”** field of your project.
 5. Save the changes.
 
-https://github.com/user-attachments/assets/ea091a9b-f846-4be3-8445-d7dd2f46a08b
+https://github.com/user-attachments/assets/f01d27e0-b629-4cc2-8f70-119d97997d06
 
 > ✅ This step is essential. Without the context, the assistant won’t recognize or properly execute the echos.
 
