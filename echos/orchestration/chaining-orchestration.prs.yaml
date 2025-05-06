@@ -33,6 +33,7 @@ steps:
     validation:
       - Does the sequence respect logical dependencies?
       - Is the progression justified and redundancy avoided?
+      - Does the sequence include any echoes not declared in the previous step? (If yes, this is invalid)
     expected_output: >-
       Ordered sequence of echoes with rationale for the chosen order.
 

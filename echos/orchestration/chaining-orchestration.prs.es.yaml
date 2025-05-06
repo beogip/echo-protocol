@@ -33,6 +33,7 @@ steps:
     validation:
       - ¿El orden respeta dependencias lógicas entre pasos?
       - ¿Se justifica la progresión y se evita redundancia?
+      - ¿La secuencia incluye algún eco que no haya sido declarado en el paso anterior? (Si la respuesta es sí, esto invalida la orquestación)
     expected_output: >-
       Secuencia ordenada de ecos con descripción de por qué ese orden maximiza la efectividad del flujo.
 
