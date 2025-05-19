@@ -2,18 +2,18 @@
 
 ## Description
 
-The **Echo of Planning – Formative Mode** helps structure learning, development, or implementation processes step by step. It ensures clarity of objectives, gathers contextual information, and builds adaptive roadmaps tailored to individuals, teams, or projects.
+The **Echo of Planning – Formative Mode** guides the structured creation of learning, development, or implementation plans. It ensures clarity of objectives, collects relevant context, and builds adaptive, traceable roadmaps tailored to individuals, teams, or systems.
 
 This echo exists in two versions:
 
-- `Simplified`: Quick to use in assistant conversations.
-- `PRS`: Detailed structure with validations, outputs, retries, and step-by-step logic for robust implementation.
+- `Simplified`: For fast planning support in assistant conversations.
+- `PRS`: A robust version with validations, outputs, retries, and structured logic for integration with AI or coaching tools.
 
 ---
 
 ## Purpose
 
-To design a clear, contextualized and goal-driven plan for personal or collective growth. It helps organize complexity into a sequence of achievable steps with feedback loops.
+To design a step-by-step, goal-driven plan grounded in context and tailored to the actor who will execute it. It helps structure complexity into sequential, trackable actions.
 
 ---
 
@@ -21,40 +21,41 @@ To design a clear, contextualized and goal-driven plan for personal or collectiv
 
 Use this echo when:
 
-- You want to learn something in a structured way.
-- You need to organize a complex task or development process.
-- You want to plan training, onboarding, improvement, or delivery paths.
+- You want to structure learning or development goals.
+- You need to organize a complex or multi-phase task.
+- You're designing onboarding, training, or action paths.
+- You want to break down a project into executable steps with traceable logic.
 
 ---
 
 ## Steps (Simplified)
 
-1. **Clarification of the final goal**  
-   Define clearly what should be achieved at the end.
+1. **Clarification of the final objective**
+   Define exactly what is to be achieved.
 
-2. **Active collection of contextual information**  
-   Gather current level, resources, constraints, and expectations.
+2. **Active collection of contextual information**
+   Gather user level, resources, constraints, expectations, and history.
 
-3. **Diagnosis of the starting point**  
-   Identify the current state and gaps toward the goal.
+3. **Diagnosis of the starting point**
+   Describe the current state and gaps in relation to the objective.
 
-4. **Definition of the role of the actor**  
-   Adapt the plan to the person/team/agent who will execute it.
+4. **Definition of the actor's role**
+   Adapt the plan to the person/team/AI executing it.
 
-5. **Division of the path into modules**  
-   Break the path into progressive blocks with partial goals.
+5. **Detection of possible obstacles**
+   Anticipate what might interfere and plan how to prevent or mitigate it.
 
-6. **Detection of possible obstacles**  
-   Anticipate what could interfere and define prevention strategies.
+6. **Definition of the final deliverable**
+   Describe the expected output, skill, or knowledge to be acquired.
 
-7. **Visualization of progress + Adaptation**  
-   Define metrics and cycles for evaluating and adjusting the plan.
+7. **Progress visualization and dynamic adaptation**
+   Define how to measure progress, and how to adjust the plan over time.
 
-8. **Definition of the final deliverable**  
-   Describe what will be produced, learned, or demonstrated.
+8. **Division into execution modules**
+   Based on all prior analysis, split the process into concrete, sequential modules.
 
-9. **Return feedback**  
-   Reflect on the process to evaluate and improve future cycles.
+9. **Progress visualization + dynamic adaptation**
+   Set up indicators and a system for dynamic plan adjustment.
 
 ---
 
@@ -62,31 +63,36 @@ Use this echo when:
 
 The PRS version includes:
 
-- **Step validations** to ensure consistency and progression.
-- **Expected outputs** for each stage (goal, modules, deliverables...).
-- **Retries and blocking logic** if key context is missing.
-- **Adaptive structure** ready for integration with coaching systems, training flows, or AI assistants.
+- **Step-by-step validations** to ensure logical flow.
+- **Expected outputs** at each stage.
+- **Blocking and retry logic** when information is missing.
+- **Structured output format** for serialization or integration with assistants.
 
 ---
 
 ## Output Format
 
-A structured roadmap that includes:
+A complete plan structured as:
 
-- Defined goal
-- Modules or stages
-- Obstacles and adaptations
+- Final objective
+- Context map
+- Actor profile
+- Obstacles and mitigation
 - Final deliverable
-- Feedback loop
-
-All fully contextualized to the user or team executing the plan.
+- Tracking system (indicators, review cycles, format, adjustment rules)
+- **Execution module table**, with:
+  - name
+  - purpose
+  - context_description
+  - deliverables
+  - dependencies
 
 ---
 
 ## Example Usage
 
 ```text
-Help me structure a plan to learn JavaScript in 6 weeks.
+Help me build an onboarding plan for new engineers over 3 weeks.
 ```
 
 ---
@@ -95,14 +101,18 @@ Help me structure a plan to learn JavaScript in 6 weeks.
 
 This echo combines well with:
 
-- 🧘 Echo of Reflection – to close learning cycles
-- 🎭 Echo of Interpretation – to clarify intention before planning
-- 🛠️ Echo of Diagnostic – to detect starting limitations or technical blockers
-- 🧪 Echo of Evaluation – to assess the effectiveness of the plan or its results
+- 🧪 **Evaluation Echo** – to validate consistency and completeness
+- ✅ **Coherence Echo** – to ensure alignment with purpose
+- 🔁 **Execution Echo** – to trigger modular execution
+- 🧩 **Orchestration Echo** – to link planning to downstream flows
 
-It is ideal for:
+**Recommended serialization per module:**
+
+- `name`, `purpose`, `context_description`, `deliverables`, `dependencies`
+
+Ideal for:
 
 - Learning platforms
 - Coaching assistants
-- Project or skill development tools
-- AI systems that support user progress
+- AI-based planning systems
+- Project roadmapping tools

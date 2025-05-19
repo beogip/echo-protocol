@@ -1,101 +1,97 @@
-- echo: 🧭 Echo of Planning – Formative Mode
+- echo: Planning Echo – Formative Mode
   id: planning-formative
   mode: Formative
+
   purpose: >-
-    Plan a learning, development, or implementation process step by step, ensuring clarity, adapting to the context, and providing feedback. This echo helps create structured roadmaps for individuals, teams, or projects.
+    Guide step-by-step planning of a learning, development, or implementation process, ensuring clarity, adaptability, and structured feedback. Supports roadmap creation for individuals, teams, or systems.
+
   trigger: >-
-    When the user wants to learn something, organize a complex task, structure a path of improvement, or design a clear action plan.
+    Triggered when the user wants to learn something, organize a complex task, improve a situation, or build an action plan.
+
   config:
     retry_on_fail: true
     max_retries_per_step: 3
+
   steps:
-    - name: Clarification of the final goal
-      goal: >-
-        Determine precisely what is to be achieved at the end of the process.
+    - name: Clarification of the final objective
+      goal: Clearly define what is to be achieved.
       validation:
-        - Was a specific result or deliverable identified?
-        - Is it expressed in concrete, measurable terms?
-      expected_output: A phrase or paragraph that clearly defines the objective of the plan
+        - Is there a specific outcome or deliverable?
+        - Is it expressed in measurable and concrete terms?
+      expected_output: A sentence or paragraph defining the final goal.
 
     - name: Active collection of contextual information
-      goal: >-
-        Ensure that all relevant information is available before planning.
-      actions:
-        - Ask the user to provide:
-            - Current knowledge level (if this is a learning process)
-            - Available resources (time, team, tools)
-            - Technical or scheduling restrictions
-            - External expectations (clients, stakeholders)
-            - Relevant background (previous attempts, decisions made)
-      critical_instruction: >-
-        Do not proceed to the next step if key information is missing.
-        Actively validate that the context is complete before proceeding.
+      goal: Ensure all relevant information is available before planning.
       validation:
         - Were all key questions asked?
-        - Was all relevant information detected and documented?
-        - Was the flow stopped if any critical information was missing?
-      expected_output: >-
-        Structured context map with user responses, resource listing, restrictions, and background.
+        - Was relevant information documented?
+        - Was flow halted if information was missing?
+      expected_output: Context map with user input, resources, constraints, and background.
 
     - name: Diagnosis of the starting point
-      goal: >-
-        Evaluate where the user or system is now in relation to the stated goal.
+      goal: Evaluate the current position in relation to the goal.
       validation:
-        - Was the current state recognized in sufficient detail?
-        - Were gaps with respect to the goal identified?
-      expected_output: Diagnosis of the current situation with strengths and areas to improve
+        - Was the current state described in detail?
+        - Were gaps toward the goal identified?
+      expected_output: Diagnostic summary with strengths and gaps.
 
-    - name: Definition of the role of the learner or main actor
-      goal: >-
-        Adapt the plan to the person who will execute it, considering their abilities and learning or working style.
+    - name: Definition of the learner or main actor role
+      goal: Adapt the plan to the person, team, or AI that will execute it.
       validation:
-        - Is the subject of the plan described?
-        - Is their level, availability, style, or personal limitations considered?
-      expected_output: A summarized profile of the executor of the plan (person, team, AI, etc.)
-
-    - name: Division of the path into progressive modules
-      goal: >-
-        Structure the path in stages or blocks with partial objectives.
-      validation:
-        - Does each module have a clear purpose?
-        - Is the order logical and does it allow progression?
-      expected_output: A list of modules or stages with name, purpose, and sequence
+        - Was the executor described?
+        - Were level, availability, style, and limitations considered?
+      expected_output: Summary profile of the executor.
 
     - name: Detection of possible obstacles
-      goal: >-
-        Predict what might interfere with progress and how to handle it.
+      goal: Anticipate what might block progress and how to address it.
       validation:
-        - Are potential blocks (technical, motivational, time-related) identified?
-        - Are strategies proposed to bypass them?
-      expected_output: List of obstacles + preventive or containment plan
-
-    - name: Visualization of progress + Dynamic adaptation
-      goal: >-
-        Define how progress will be measured and how the plan will adapt if necessary.
-      validation:
-        - Are there clear signals or progress metrics defined?
-        - Is there a mechanism for adjustment?
-      expected_output: Strategy for monitoring and adaptation (indicators + cycles)
+        - Were potential blockers identified (technical, motivational, time)?
+        - Were preventive or mitigating strategies proposed?
+      expected_output: Obstacle list with contingency plan.
 
     - name: Definition of the final deliverable
-      goal: >-
-        Establish what the final product, skill, or knowledge will be at the end of the process.
+      goal: Establish the product, skill, or knowledge to be acquired.
       validation:
-        - Is the output aligned with the initial goal?
+        - Is it aligned with the initial objective?
         - Is it demonstrable, evaluable, or shareable?
-      expected_output: A description of the expected final result
+      expected_output: Clear description of the final output.
 
-    - name: Return feedback
-      goal: >-
-        Incorporate a reflection instance on the process and its effectiveness.
+    - name: Division into execution modules
+      goal: Split the path into concrete, sequential actions grounded in prior analysis.
       validation:
-        - Is a structured review of the process proposed?
-        - Is the user or system allowed to evaluate what worked and what didn't?
-      expected_output: User reflection + suggestions for future cycles
+        - Does each module reflect an actionable step based on previous insights?
+        - Does it have a clear operational purpose?
+        - Is it justified and logically connected to the overall plan?
+      expected_output: Structured table with:
+        - name
+        - purpose
+        - context_description
+        - deliverables
+        - dependencies
+
+    - name: Progress visualization + dynamic adaptation
+      goal: Define how progress will be measured and how the plan will be adjusted.
+      validation:
+        - Are there defined signals or metrics for progress?
+        - Is a dynamic adjustment mechanism included?
+      expected_output: Tracking system with:
+        - module indicators
+        - review frequency
+        - tracking format (dashboard, checklist, log)
+        - adjustment criteria
 
   output_format: >-
-    A structured roadmap with modules, timelines, critical points, and deliverables, adapted to the user's context.
+    Structured roadmap in YAML or Markdown format including:
+    - Table of modules (name, purpose, context_description, deliverables, dependencies)
+    - Critical checkpoints
+    - Tracking and adaptation system
 
   notes: |-
-    This echo can be used to create courses, training guides, continuous improvement programs, onboarding processes, or formative itineraries.
-    It can also be combined with the Echo of Diagnostic or Reflection at the beginning or end of the cycle.
+    This optimized version improves traceability for AI-driven flows through contextual module descriptions and a structured format.
+    Useful for distributed, asynchronous, or progressive executions.
+    Can be combined with:
+      - 🧪 Evaluation Echo for consistency checks
+      - ✅ Coherence Echo for goal alignment
+      - 🔁 Execution Echo for step-by-step modular execution
+      - 🧩 Orchestration Echo for complex flow chaining
+    Serialization recommended using: name, purpose, context_description, deliverables, dependencies

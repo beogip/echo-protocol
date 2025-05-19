@@ -1,28 +1,37 @@
-- echo: 🧭 Echo of Planning – Formative Mode
-  id: planning-formative
-  mode: Formative
-  purpose: >-
-    Plan a learning, development, or implementation process step by step, ensuring clarity, adapting to the context, and providing feedback.
-  trigger: >-
-    When the user needs to structure a plan of action or learning, organize complex tasks, or design a clear path of improvement.
-  steps:
-    - name: Clarification of the final goal
-      goal: Determine precisely what is to be achieved at the end of the process.
-    - name: Active collection of contextual information
-      goal: Ensure that all relevant information is available before planning.
-    - name: Diagnosis of the starting point
-      goal: Evaluate where the user or system is now in relation to the defined goal.
-    - name: Definition of the role of the learner or main actor
-      goal: Adapt the plan to the person who will execute it, considering their abilities and learning or working style.
-    - name: Division of the path into progressive modules
-      goal: Structure the path in stages or blocks with partial objectives.
-    - name: Detection of possible obstacles
-      goal: Anticipate what might interfere with progress and how to handle it.
-    - name: Visualization of progress + Dynamic adaptation
-      goal: Define how progress will be measured and how the plan will adapt if necessary.
-    - name: Definition of the final deliverable
-      goal: Establish what will be the product, skill, or knowledge acquired at the end of the process.
-    - name: Return feedback
-      goal: Incorporate a reflective instance of the process lived and its effectiveness.
-  output_format: >-
-    Structured roadmap with modules, times, critical points, and deliverables, adapted to the user's context.
+echo: Planning Echo – Formative Mode
+id: planning-formative
+mode: Formative
+
+purpose: >-
+  To plan a learning, development, or implementation process step-by-step, ensuring clarity, context fit, and feedback. Ideal for structured roadmaps.
+
+trigger: >-
+  When the user wants to learn something, organize a complex task, structure an improvement path, or design a clear action plan.
+
+steps:
+  - name: Clarification of the final objective
+    goal: Clearly define what is to be achieved.
+
+  - name: Active collection of contextual information
+    goal: Collect all relevant resources, constraints, and background.
+
+  - name: Diagnosis of the starting point
+    goal: Assess where the user or system currently stands.
+
+  - name: Definition of the learner or main actor role
+    goal: Adapt the plan to the executor’s capabilities and style.
+
+  - name: Detection of possible obstacles
+    goal: Predict and prepare for potential blockers.
+
+  - name: Definition of the final deliverable
+    goal: Establish the end product, skill, or knowledge.
+
+  - name: Division into execution modules
+    goal: Split the plan into justified, sequenced actions.
+
+  - name: Progress visualization + dynamic adaptation
+    goal: Set up indicators and a system for dynamic plan adjustment.
+
+output_format: >-
+  Structured roadmap with modules (name, purpose, context_description, deliverables, dependencies) and a dynamic tracking system.
