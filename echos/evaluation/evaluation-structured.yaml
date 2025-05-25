@@ -1,0 +1,31 @@
+echo: Structured Evaluation Echo
+id: evaluation-structured
+mode: Evaluative
+
+purpose: >-
+  To evaluate any object (proposal, code, result) using clear criteria and structured judgment.
+  Supports both general and technical evaluations.
+
+trigger: >-
+  Use when you want to assess quality, effectiveness, or alignment of something created.
+
+steps:
+  - name: Identify object
+    goal: Clarify what is being evaluated and why.
+
+  - name: Choose evaluation mode
+    goal: Decide between general (critical) or technical evaluation.
+    wait_for_user_input: true
+
+  - name: Set evaluation criteria
+    goal: Define the criteria to judge the object.
+    wait_for_user_input: true
+
+  - name: Evaluate per criterion
+    goal: Analyze strengths and weaknesses based on the chosen criteria.
+
+  - name: Global judgment
+    goal: Give a final judgment and recommendation based on the evaluation.
+
+output_format: >-
+  Structured evaluation with object, mode, criteria, per-criterion analysis, and a final recommendation.

@@ -1,0 +1,108 @@
+- echo: 🧪 Eco de Evaluación – Modo Estructurado
+  id: evaluation-structured
+  mode: Evaluative
+
+  purpose: >-
+    Emitir un juicio estructurado sobre un objeto (idea, resultado, proceso, código o diseño),
+    usando criterios claros. Este eco permite realizar evaluaciones tanto generales (modo crítico)
+    como específicas sobre objetos técnicos (modo técnico), garantizando trazabilidad, imparcialidad
+    y claridad en la recomendación final.
+
+  trigger: >-
+    Cuando se desea evaluar un objeto (entrega, resultado, propuesta, fragmento técnico),
+    para determinar su calidad, eficacia o alineación con criterios esperados.
+
+  config:
+    retry_on_fail: true
+    max_retries_per_step: 3
+
+  steps:
+    - name: Detección del objeto a evaluar
+      goal: >-
+        Identificar con claridad qué se va a evaluar: qué tipo de objeto es, su propósito,
+        y por qué es relevante evaluarlo en este momento.
+      validation:
+        - ¿Se nombró explícitamente el objeto de evaluación?
+        - ¿Se indicó su propósito o contexto?
+        - ¿Se justificó por qué se va a evaluar?
+      expected_output: >-
+        Descripción clara del objeto a evaluar, su función y razón de análisis.
+
+    - name: Selección de modo de evaluación
+      goal: >-
+        Determinar si la evaluación será de tipo general/crítica o técnica,
+        y condicionar el enfoque del análisis posterior.
+        Este paso requiere validación explícita del usuario antes de continuar.
+      validation:
+        - ¿Se propuso un modo inicial por el sistema?
+        - ¿El usuario confirmó o modificó el modo propuesto?
+        - ¿Se ajustaron los criterios posteriores según ese modo?
+      expected_output: >-
+        Declaración del modo de evaluación (crítico/técnico) validada por el usuario,
+        con notas de adaptación contextual.
+      wait_for_user_input: true
+
+    - name: Definición de criterios de evaluación
+      goal: >-
+        Establecer con claridad los criterios que se usarán para emitir el juicio.
+        Este paso requiere validación explícita del usuario antes de continuar.
+      validation:
+        - ¿Se propuso una lista inicial de criterios sugeridos por el sistema?
+        - ¿El usuario confirmó o ajustó la lista de criterios?
+      expected_output: >-
+        Lista de criterios aplicables final confirmada por el usuario, con breve definición de cada uno.
+      wait_for_user_input: true
+
+    - name: Evaluación por criterio
+      goal: >-
+        Analizar el objeto según cada criterio definido, señalando fortalezas y debilidades.
+      validation:
+        - ¿Se hizo una valoración por cada criterio?
+        - ¿Se justificó cada juicio con argumentos o evidencia?
+      expected_output: >-
+        Tabla o lista con análisis por criterio, incluyendo comentarios justificativos.
+
+    - name: Valoración global y recomendación
+      goal: >-
+        Emitir un juicio general, acompañado de una recomendación concreta
+        (mantener, ajustar, reestructurar, mejorar) y su justificación.
+      validation:
+        - ¿Se emitió una conclusión global?
+        - ¿Se recomendó una acción basada en los hallazgos?
+        - ¿La recomendación está alineada con los criterios aplicados?
+      expected_output: >-
+        Valoración global con recomendación final justificada.
+
+  output_format: >-
+    Evaluación estructurada con:
+      • descripción del objeto evaluado
+      • modo de evaluación elegido
+      • criterios aplicados (confirmados por el usuario)
+      • análisis por criterio
+      • recomendación final justificada
+
+  notes: |-
+    Este eco unifica los antiguos "Eco de Evaluación – Modo Crítico" y "Eco de Revisión Técnica",
+    permitiendo una única estructura adaptable a contextos generales o técnicos.
+
+    Submodos posibles:
+      • Crítico: para evaluar ideas, propuestas, procesos, resultados generales
+      • Técnico: para revisar código, diseño, arquitectura, estructuras técnicas
+
+    Ejemplos de uso:
+      • Evaluación crítica de una propuesta de curso: claridad del objetivo, utilidad pedagógica, viabilidad.
+      • Evaluación técnica de un componente React: calidad del código, performance, compatibilidad con arquitectura.
+
+    Instrucciones de control:
+      • Este eco requiere validación explícita del usuario luego de:
+        1. Seleccionar el modo de evaluación
+        2. Establecer los criterios
+      • No continuar automáticamente: debe pausarse y esperar input antes de pasar al siguiente paso.
+
+    Puede combinarse con:
+      • 🧐 Metaevaluación para auditar evaluaciones previas
+      • ⚙️ Optimización para mejorar tras la evaluación
+      • 🛠️ Diagnóstico si se detectan fallos estructurales
+
+    Ideal como paso posterior a cualquier eco de producción o generación de outputs,
+    para validar su calidad o alineación.
