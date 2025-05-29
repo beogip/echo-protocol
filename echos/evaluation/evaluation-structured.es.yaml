@@ -1,0 +1,31 @@
+echo: 🧪 Eco de Evaluación – Modo Estructurado
+id: evaluation-structured
+mode: Evaluative
+
+purpose: >-
+  Evaluar cualquier objeto (idea, propuesta, código, resultado) de forma estructurada y clara.
+  Permite tanto evaluaciones generales como técnicas.
+
+trigger: >-
+  Se usa cuando se quiere analizar la calidad, utilidad o alineación de algo creado.
+
+steps:
+  - name: Detección del objeto
+    goal: Aclarar qué se va a evaluar y por qué.
+
+  - name: Selección del modo de evaluación
+    goal: Elegir si la evaluación será crítica o técnica.
+    wait_for_user_input: true
+
+  - name: Definición de criterios
+    goal: Establecer los criterios que se usarán para juzgar el objeto.
+    wait_for_user_input: true
+
+  - name: Evaluación por criterio
+    goal: Analizar fortalezas y debilidades según cada criterio.
+
+  - name: Juicio final
+    goal: Emitir un juicio global y una recomendación concreta.
+
+output_format: >-
+  Evaluación estructurada con objeto evaluado, modo, criterios aplicados, análisis y recomendación.

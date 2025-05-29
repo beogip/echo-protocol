@@ -1,19 +1,19 @@
-# 🧪 Echo of Evaluation – Critical Mode
+# 🧪 Echo of Evaluation – Structured Mode
 
 ## Description
 
-The **Echo of Evaluation – Critical Mode** provides a structured way to assess the quality, effectiveness, or suitability of any object (text, code, decision, process, etc.). It supports multi-criteria evaluation, global judgment, and improvement suggestions to ensure consistency and clarity in decision-making.
+The **Echo of Evaluation – Structured Mode** provides a modular way to assess the quality, effectiveness, or technical solidity of any object (proposal, code, plan, output, etc.). It supports both general (critical) and technical evaluations, offering explicit criteria, user confirmation checkpoints, and actionable recommendations.
 
 This echo exists in two versions:
 
-- `Simplified`: Lightweight, ideal for quick reviews in assistants.
-- `PRS`: Detailed structure with validations, scoring, justifications, and improvement proposals.
+- `Simplified`: Lightweight, ideal for quick evaluations in assistants.
+- `PRS`: Full version with step validations, user checkpoints, and adaptive criteria logic.
 
 ---
 
 ## Purpose
 
-To critically evaluate something against explicit criteria, helping to validate its quality and propose refinements if necessary. It ensures an informed judgment is made, not only about the result, but also about the process that led to it.
+To evaluate a deliverable, idea, or technical artifact using explicit criteria confirmed by the user. It ensures traceable, fair, and structured judgments, and supports feedback loops for refinement.
 
 ---
 
@@ -21,26 +21,32 @@ To critically evaluate something against explicit criteria, helping to validate 
 
 Use this echo when:
 
-- You need to assess the quality of code, design, decisions, plans, or processes.
-- You're working with evaluation prompts like:  
-  “Evaluate this”, “Is this good?”, “Rate this idea”, or “Does this meet the criteria?”
-- You want a step-by-step judgment process with room for improvement.
+- You want to evaluate a result, code, decision, proposal, or design.
+- You see prompts like:  
+  “Can you review this?”, “How good is this?”, “Should we use this version?”
+- You want the evaluation to be clear, criteria-based, and actionable.
+- You need to distinguish between general criticism and technical review.
 
 ---
 
 ## Steps (Simplified)
 
 1. **Detection of the object to evaluate**  
-   Identify what is being evaluated and its context.
+   Clarify what is being evaluated and its purpose.
 
-2. **Verification of evaluation criteria**  
-   Check if criteria exist or propose appropriate ones.
+2. **Selection of evaluation mode**  
+   Choose between _critical_ (general) or _technical_ evaluation.  
+   _🛑 User input required._
 
-3. **Evaluation by criteria**  
-   Score or describe how the object performs against each criterion.
+3. **Definition of evaluation criteria**  
+   Suggest and confirm which criteria to apply.  
+   _🛑 User input required._
 
-4. **Global valuation**  
-   Deliver a summary judgment consistent with partial evaluations.
+4. **Evaluation by criteria**  
+   Analyze the object against each confirmed criterion.
+
+5. **Global valuation and recommendation**  
+   Conclude with a structured judgment and suggest what to do next.
 
 ---
 
@@ -48,11 +54,13 @@ Use this echo when:
 
 The PRS version includes:
 
-- **Validations per step** (object clarity, criteria coherence, scoring logic)
-- **Expected outputs**: descriptive object context, list of criteria, justified scores
-- **Optional fifth step**:  
-  **Improvement recommendation**, activated when results are suboptimal
-- **Retry logic** (`retry_on_fail: true`) with a max of 2 retries for step-level robustness
+- **Dynamic submodes**: `critical` for general quality, `technical` for code/architecture
+- **Explicit user checkpoints**:
+  - One after selecting the mode
+  - One after setting the criteria
+- **Step validations**: Object clarity, mode adaptation, per-criterion logic
+- **Output formatting**: clear, modular, and usable in assistant pipelines
+- **Retry logic**: `retry_on_fail: true`, up to 3 retries for robust flow integrity
 
 ---
 
@@ -60,18 +68,22 @@ The PRS version includes:
 
 A structured evaluation containing:
 
-- Scoring or rating by criteria
-- Global conclusion (e.g., acceptable, excellent, needs improvement)
-- Optional list of improvement suggestions (when applicable)
+- Description of the evaluated object
+- Confirmed evaluation mode and criteria
+- Per-criterion analysis (strengths, weaknesses, justification)
+- Final judgment and recommendation
 
 ---
 
 ## Example Usage
 
 ```text
-Evaluate the following code:
-function sum(a, b) { return a + b; }
-What are the strengths and weaknesses?
+Please review this function:
+function validateUserInput(input) {
+  if (!input.email.includes("@")) return "Invalid";
+  return "OK";
+}
+Is it good enough for production?
 ```
 
 ---
@@ -80,14 +92,14 @@ What are the strengths and weaknesses?
 
 This echo is compatible with:
 
-- ⚙️ Echo of Optimization – to improve low-rated outputs automatically
-- 🛠️ Echo of Diagnostic – to detect causes of poor evaluation
-- 🧿 Echo of Interpretation – to clarify the intention behind what is being evaluated
-- 🧭 Echo of Planning – to assess if a plan is suitable before execution
+- ⚙️ Echo of Optimization – to improve objects after weak evaluations
+- 🧐 Echo of Metaevaluation – to audit and reflect on prior judgments
+- 🛠️ Echo of Diagnostic – when low performance hints at underlying structural issues
+- 🧭 Echo of Planning – to validate the structure of a proposal before execution
 
 It is ideal for:
 
-- QA flows
-- Decision audits
-- AI assistant judgment calls
-- Rubric-based assessments in learning systems
+- Code reviews and architectural assessments
+- Assistant reasoning checkpoints
+- Plan and prompt evaluation in AI systems
+- Any system requiring evaluative traceability

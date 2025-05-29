@@ -40,26 +40,25 @@ Each folder contains:
 - `echo-name.prs.yaml` → Full PRS version
 - `README.md` → Human-readable explanation
 
-| Echo Type                 | Description                                                               |
-| ------------------------- | ------------------------------------------------------------------------- |
-| 🧾 **Audit**              | Structural analysis to detect missing, redundant, or misaligned elements  |
-| ✅ **Coherence**          | Self-correction of flow when focus or purpose is lost                     |
-| 🤝 **Consensus**          | Negotiate between different positions to reach shared agreements          |
-| 🌟 **Creativity**         | Generate diverse and divergent ideas with no initial judgment             |
-| 🛠️ **Diagnostic**         | Technical analysis to detect the root of a problem                        |
-| 🧪 **Evaluation**         | Structured judgment using explicit criteria                               |
-| 🔁 **Execution (Prompt)** | Transform informal prompts into optimized, validated prompt flows         |
-| 📘 **Explanation**        | Progressive teaching adapted to the user’s level                          |
-| 🧠 **Generalization**     | Extract generalizable principles from specific cases                      |
-| 🧿 **Interpretation**     | Semantic analysis of ambiguous or symbolic input                          |
-| 🧐 **Metaevaluation**     | Audit past evaluations to detect bias or improve criteria                 |
-| ⚙️ **Optimization**       | Refactor or improve without losing intention                              |
-| 🧩 **Orchestration**      | Connect multiple echoes into structured cognitive pipelines               |
-| 🧭 **Planification**      | Step-by-step structure for learning or execution                          |
-| 🔢 **Prioritization**     | Order alternatives based on explicit decision-making criteria             |
-| 🧘 **Reflection**         | Closing cycles and integrating personal change                            |
-| 🎭 **Simulation**         | Controlled scenario generation with internal logic                        |
-| 🛡️ **Technical Review**   | Evaluate code, architecture or design with structured technical reasoning |
+| Echo Type                      | Description                                                                                     |
+| ------------------------------ | ----------------------------------------------------------------------------------------------- |
+| 🧾 **Audit**                   | Structural analysis to detect missing, redundant, or misaligned elements                        |
+| ✅ **Coherence**               | Self-correction of flow when focus or purpose is lost                                           |
+| 🤝 **Consensus**               | Negotiate between different positions to reach shared agreements                                |
+| 🌟 **Creativity**              | Generate diverse and divergent ideas with no initial judgment                                   |
+| 🛠️ **Diagnostic**              | Technical analysis to detect the root of a problem                                              |
+| 🧪 **Evaluation (Structured)** | Critical or technical evaluation with explicit criteria, user confirmation, and recommendations |
+| 🔁 **Execution (Prompt)**      | Transform informal prompts into optimized, validated prompt flows                               |
+| 📘 **Explanation**             | Progressive teaching adapted to the user’s level                                                |
+| 🧠 **Generalization**          | Extract generalizable principles from specific cases                                            |
+| 🧿 **Interpretation**          | Semantic analysis of ambiguous or symbolic input                                                |
+| 🧐 **Metaevaluation**          | Audit past evaluations to detect bias or improve criteria                                       |
+| ⚙️ **Optimization**            | Refactor or improve without losing intention                                                    |
+| 🧩 **Orchestration**           | Connect multiple echoes into structured cognitive pipelines                                     |
+| 🧭 **Planification**           | Step-by-step structure for learning or execution                                                |
+| 🔢 **Prioritization**          | Order alternatives based on explicit decision-making criteria                                   |
+| 🧘 **Reflection**              | Closing cycles and integrating personal change                                                  |
+| 🎭 **Simulation**              | Controlled scenario generation with internal logic                                              |
 
 ---
 
