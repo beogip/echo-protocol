@@ -64,7 +64,7 @@
       validation:
         - ¿Se evaluó claridad, eficiencia y propósito?
         - ¿Se marcó si la mejora fue aprobada o no?
-      expected_output: Evaluación de mejora con resultado: aceptada o rechazada
+      expected_output: "Evaluación de mejora con resultado: aceptada o rechazada"
 
     - name: Feedback iterativo (si aplica)
       goal: >-

@@ -64,7 +64,7 @@ steps:
     validation:
       - Were clarity, efficiency, and purpose evaluated?
       - Was the improvement marked as accepted or rejected?
-    expected_output: Evaluation of the improvement with result: accepted or rejected
+    expected_output: "Evaluation of the improvement with result: accepted or rejected"
 
   - name: Iterative feedback (if applicable)
     goal: >-

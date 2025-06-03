@@ -62,7 +62,8 @@
         - Does each module reflect an actionable step based on previous insights?
         - Does it have a clear operational purpose?
         - Is it justified and logically connected to the overall plan?
-      expected_output: Structured table with:
+      expected_output: >-
+        Structured table with:
         - name
         - purpose
         - context_description
@@ -74,7 +75,8 @@
       validation:
         - Are there defined signals or metrics for progress?
         - Is a dynamic adjustment mechanism included?
-      expected_output: Tracking system with:
+      expected_output: >-
+        Tracking system with:
         - module indicators
         - review frequency
         - tracking format (dashboard, checklist, log)
