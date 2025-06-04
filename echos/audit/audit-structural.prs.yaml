@@ -1,80 +1,80 @@
-- echo: 🧾 Eco de Auditoría – Modo Estructural
+- echo: 🧾 Audit Echo – Structural Mode
   id: audit-structural
-  mode: Auditoría
+  mode: Audit
   purpose: >-
-    Auditar la arquitectura de un sistema funcional (ecos, módulos, flujos, herramientas, etc.) para detectar redundancias, vacíos, incoherencias o áreas de mejora estructural.
+    Audit the architecture of a functional system (echos, modules, flows, tools, etc.) to detect redundancies, gaps, inconsistencies, or areas for structural improvement.
 
   trigger: >-
-    Cuando se desea revisar la estructura general de un sistema para evaluar su organización, completitud y equilibrio funcional.
+    When you want to review the overall structure of a system to assess its organization, completeness, and functional balance.
 
   steps:
-    - name: Mapeo estructural
+    - name: Structural mapping
       goal: >-
-        Listar y representar visual o jerárquicamente todos los elementos del sistema a auditar.
+        List and visually or hierarchically represent all elements of the system to be audited.
       validation:
-        - ¿Se recuperó el listado completo?
-        - ¿Se representaron relaciones internas o jerarquías?
-      expected_output: Representación estructural del sistema actual
+        - Was the complete list retrieved?
+        - Were internal relationships or hierarchies represented?
+      expected_output: Structural representation of the current system
       input_required: true
       input_questions:
-        - ¿Qué sistema o conjunto querés auditar?
-        - ¿Podés listar los elementos, módulos o componentes que lo integran?
+        - What system or set do you want to audit?
+        - Can you list the elements, modules, or components that make it up?
 
-    - name: Clasificación funcional
+    - name: Functional classification
       goal: >-
-        Agrupar los elementos por dominios o categorías según su función, propósito o tipo de razonamiento.
+        Group the elements by domains or categories according to their function, purpose, or type of reasoning.
       validation:
-        - ¿Cada grupo tiene un criterio funcional claro?
-        - ¿Todos los elementos fueron asignados?
-      expected_output: Sistema organizado por dominios funcionales
+        - Does each group have a clear functional criterion?
+        - Were all elements assigned?
+      expected_output: System organized by functional domains
       input_required: optional
       input_questions:
-        - ¿Cómo te gustaría agrupar los elementos: por función, propósito o tipo de lógica?
-        - ¿Ya tenés categorías funcionales predefinidas?
+        - How would you like to group the elements: by function, purpose, or logic type?
+        - Do you already have predefined functional categories?
 
-    - name: Detección de redundancias
+    - name: Redundancy detection
       goal: >-
-        Identificar componentes que se solapan en función o lógica.
+        Identify components that overlap in function or logic.
       validation:
-        - ¿Se detectaron duplicidades o elementos análogos innecesarios?
-        - ¿Se propusieron fusiones o simplificaciones?
-      expected_output: Lista de redundancias con propuesta de simplificación
+        - Were unnecessary duplicates or analogous elements detected?
+        - Were mergers or simplifications proposed?
+      expected_output: List of redundancies with simplification proposal
       input_required: optional
       input_questions:
-        - ¿Hay elementos que sentís que hacen lo mismo o algo muy parecido?
-        - ¿Te gustaría fusionar alguno?
+        - Are there elements you feel do the same or something very similar?
+        - Would you like to merge any?
 
-    - name: Detección de vacíos
+    - name: Gap detection
       goal: >-
-        Identificar funciones, capacidades o componentes faltantes.
+        Identify missing functions, capabilities, or components.
       validation:
-        - ¿Hay dominios sin cobertura?
-        - ¿Se propusieron ideas para cubrirlos?
-      expected_output: Lista de vacíos + hipótesis de expansión
+        - Are there domains without coverage?
+        - Were ideas proposed to cover them?
+      expected_output: List of gaps + expansion hypotheses
       input_required: optional
       input_questions:
-        - ¿Falta algo que te gustaría que esté cubierto en este sistema?
-        - ¿Hay alguna función que esperabas y no está?
+        - Is there anything missing that you would like to see covered in this system?
+        - Is there any function you expected but is not present?
 
-    - name: Propuesta de mejora estructural
+    - name: Structural improvement proposal
       goal: >-
-        Integrar todos los hallazgos en una propuesta de reorganización, expansión o ajuste.
+        Integrate all findings into a proposal for reorganization, expansion, or adjustment.
       validation:
-        - ¿La propuesta está justificada por la auditoría previa?
-        - ¿Es clara, viable y alineada con los objetivos del sistema?
-      expected_output: Plan de mejora estructurado (con mapa comparativo si aplica)
+        - Is the proposal justified by the previous audit?
+        - Is it clear, viable, and aligned with the system's objectives?
+      expected_output: Structured improvement plan (with comparative map if applicable)
       input_required: true
       input_questions:
-        - ¿Querés reorganizar, eliminar o crear elementos nuevos?
-        - ¿Qué mejoras estructurales te parecen más útiles?
+        - Do you want to reorganize, remove, or create new elements?
+        - Which structural improvements do you find most useful?
 
   output_format: >-
-    Representación actual del sistema + clasificación funcional + lista de redundancias + vacíos detectados + propuesta de mejora estructural.
+    Current system representation + functional classification + list of redundancies + detected gaps + structural improvement proposal.
 
   notes: |-
-    Este eco actúa como una revisión arquitectónica. Ideal para ecosistemas de pensamiento, colecciones conceptuales o herramientas funcionales.
+    This echo acts as an architectural review. Ideal for thought ecosystems, conceptual collections, or functional tools.
 
-    Combinaciones sugeridas:
-    - 🧭 Coherencia → Para validar el propósito de cada parte
-    - 🧪 Evaluación → Para analizar calidad de cada componente
-    - ⚙️ Optimización → Para mejorar elementos individuales antes de reorganizar
+    Suggested combinations:
+    - 🧭 Coherence → To validate the purpose of each part
+    - 🧪 Evaluation → To analyze the quality of each component
+    - ⚙️ Optimization → To improve individual elements before reorganizing
