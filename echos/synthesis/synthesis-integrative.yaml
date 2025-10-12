@@ -1,0 +1,30 @@
+echo: Synthesis Echo – Integrative Mode
+id: synthesis-integrative
+mode: Integrative
+
+purpose: >-
+  Combine multiple sources, perspectives, or data points into a coherent and structured synthesis.
+  Identifies patterns, relationships, and creates unified understanding from diverse inputs.
+
+trigger: >-
+  Use when you have multiple sources of information that need to be combined, compared, 
+  or integrated into a single coherent output or decision.
+
+steps:
+  - name: Source identification
+    goal: Identify and catalog all sources, perspectives, or data points to be synthesized.
+
+  - name: Key pattern extraction
+    goal: Extract the most important patterns, themes, or insights from each source.
+
+  - name: Relationship mapping
+    goal: Identify connections, contradictions, and complementary relationships between sources.
+
+  - name: Integration framework
+    goal: Create a structured framework that accommodates all valid perspectives and data.
+
+  - name: Coherent synthesis
+    goal: Generate a unified output that preserves key insights while resolving contradictions.
+
+output_format: >-
+  Structured synthesis with source overview, key patterns, relationship map, and integrated conclusions.

@@ -1,0 +1,91 @@
+- echo: 🔗 Synthesis Echo – Integrative Mode
+  id: synthesis-integrative
+  mode: Integrative
+
+  purpose: >-
+    Combine multiple sources, perspectives, or data points into a coherent and structured synthesis.
+    This echo identifies patterns, resolves contradictions, maps relationships, and creates
+    unified understanding from diverse inputs while maintaining traceability to original sources.
+
+  trigger: >-
+    Triggered when you have multiple sources of information (documents, perspectives, data sets,
+    expert opinions) that need to be combined, compared, or integrated into a single coherent
+    output, decision, or strategic direction.
+
+  config:
+    retry_on_fail: true
+    max_retries_per_step: 2
+
+  steps:
+    - name: Source identification and cataloging
+      goal: >-
+        Identify, list, and briefly characterize all sources, perspectives, or data points
+        that will be synthesized.
+      validation:
+        - Are all relevant sources identified and listed?
+        - Is each source characterized (type, reliability, scope)?
+        - Are potential gaps in sources acknowledged?
+      expected_output: >-
+        Structured catalog of sources with: name, type, reliability assessment, and scope coverage.
+
+    - name: Key pattern and insight extraction
+      goal: >-
+        Extract the most important patterns, themes, insights, or conclusions from each source
+        separately before integration.
+      validation:
+        - Were key insights extracted from each source independently?
+        - Are insights expressed in comparable terms for integration?
+        - Were contradictory points identified and flagged?
+      expected_output: >-
+        Per-source insight summary with key patterns, themes, and notable contradictions flagged.
+
+    - name: Relationship mapping and contradiction analysis
+      goal: >-
+        Identify connections, contradictions, complementary relationships, and gaps between
+        sources and their insights.
+      validation:
+        - Were relationships between sources explicitly mapped?
+        - Were contradictions analyzed rather than just identified?
+        - Were complementary insights grouped appropriately?
+      expected_output: >-
+        Relationship matrix showing: complementary insights, contradictions with analysis,
+        and identified gaps or missing perspectives.
+
+    - name: Integration framework construction
+      goal: >-
+        Create a structured framework or schema that can accommodate all valid perspectives
+        and data while providing clear organization.
+      validation:
+        - Does the framework accommodate all valid perspectives?
+        - Is the organizational structure clear and logical?
+        - Are contradictions addressed with resolution strategies?
+      expected_output: >-
+        Integration framework with: organizational structure, contradiction resolution approach,
+        and accommodation strategy for all valid insights.
+
+    - name: Coherent synthesis generation
+      goal: >-
+        Generate a unified output that preserves key insights, resolves contradictions where
+        possible, and acknowledges unresolvable differences.
+      validation:
+        - Are key insights from all sources preserved or explained if omitted?
+        - Are contradictions resolved or clearly acknowledged as unresolvable?
+        - Is the final synthesis coherent and actionable?
+      expected_output: >-
+        Final synthesis with: integrated conclusions, preserved key insights, resolved contradictions,
+        acknowledged uncertainties, and actionable recommendations.
+
+  output_format: >-
+    Comprehensive synthesis document containing: executive summary, source overview, 
+    key patterns identified, relationship analysis, integration methodology, 
+    final conclusions, and recommendations with traceability to original sources.
+
+  notes: |-
+    ⚠️ This echo requires careful attention to maintaining source traceability throughout the process.
+    Each conclusion should be traceable back to contributing sources.
+
+    This echo can be combined with:
+    - 🧪 Evaluation to assess the quality of sources before synthesis
+    - 🔍 Diagnostic to identify why sources contradict each other
+    - 🧭 Planning to structure the synthesis process for complex multi-source projects
+    - 📊 Prioritization to rank sources by reliability or relevance
